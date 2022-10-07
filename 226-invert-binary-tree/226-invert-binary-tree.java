@@ -19,15 +19,21 @@ class Solution {
             return null;
         }
         
-        TreeNode newLeftNode = invertTree(root.right);
-        root.right = invertTree(root.left);
-        root.left = newLeftNode; 
+        Queue<TreeNode> queue = new LinkedList();
+        queue.add(root);
+        while(!queue.isEmpty()) {
+            TreeNode parent = queue.poll();
+            if(parent == null) {
+                continue;
+            }
+            TreeNode leftNode = parent.left;
+            parent.left = parent.right;
+            parent.right = leftNode;
+            
+            queue.add(parent.left);
+            queue.add(parent.right);
+        }
+        
         return root;
     }
 }
-
-/**
-- At every node in the tree, we invert the node's left with the node's right
-- TC: O(n) => We are visiting every node
-- SC: O(n) => In the worst case (skewed tree), calls to n nodes are in the stack
-*/
