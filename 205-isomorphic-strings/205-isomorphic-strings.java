@@ -19,6 +19,7 @@ class Solution {
                 if(map.get(sChar) != tChar) {
                     return false;
                 }
+                continue;
             }
             
             // If the tChar was already mapped before but not using 
