@@ -18,24 +18,24 @@ class Solution {
     public int diameterOfBinaryTree(TreeNode root) {
         if(root == null) {
             return 0;
-        } 
+        }
         
-        diameterOfBinaryTreeHelper(root);
+        int leftHeight = height(root.left);
+        int rightHeight = height(root.right);
+        maxDiameter = Math.max(maxDiameter, leftHeight + rightHeight);
+        
+        diameterOfBinaryTree(root.left);
+        diameterOfBinaryTree(root.right);
         
         return maxDiameter;
     }
     
-    private int diameterOfBinaryTreeHelper(TreeNode root) {
+    private int height(TreeNode root) {
         if(root == null) {
             return 0;
         }
         
-        // either include the root node with the left diameter and the right diameter. Keep. this as max diameter (root + left + right)
-        // pass the max(left, right) 
-        int leftDiameter = diameterOfBinaryTreeHelper(root.left);
-        int rightDiameter = diameterOfBinaryTreeHelper(root.right);
-        
-        maxDiameter = Math.max(maxDiameter, leftDiameter + rightDiameter);
-        return Math.max(leftDiameter, rightDiameter) + 1;
+        return Math.max(height(root.left), height(root.right)) + 1;
+       
     }
 }
