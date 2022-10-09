@@ -1,59 +1,59 @@
 class Solution {
-    public boolean isIsomorphic(String s, String t) {
-	    if(s == null && t == null || s.isEmpty() && t.isEmpty()) {
-		    return true;
-        }
-        if(s == null || s == null || s.isEmpty() || t.isEmpty()) {
-            return false;
-        }
-
-        Map<Character, Character> map = new HashMap<>();
-        int n = s.length();
-
-        for(int i = 0; i<n; i++) {
-        char sChar = s.charAt(i);
-            char tChar = t.charAt(i);
-
-            // a sChar was already mapped to someone else
-            if(map.containsKey(sChar)) {
-                if(map.get(sChar) != tChar) {
-                    return false;
-                }
-                continue;
-            }
-            
-            // If the tChar was already mapped before but not using 
-            if(map.containsValue(tChar)) {
-                if(!map.containsKey(sChar)) {
-                    // This means the tChar was already mapped
-                    return false;
-                }
-                if(map.containsKey(sChar)) {
-                    if(map.get(sChar) != tChar) {
-                        return false;
-                    }
-                }
-            }
-            
-            map.put(sChar, tChar);
-        }
+    private String transformString(String s) {
+        Map<Character, Integer> indexMapping = new HashMap<>();
+        StringBuilder builder = new StringBuilder();
         
-        return true;
+        for (int i = 0; i < s.length(); ++i) {
+            char c1 = s.charAt(i);
+            
+            if (!indexMapping.containsKey(c1)) {
+                indexMapping.put(c1, i);
+            }
+            
+            builder.append("" + indexMapping.get(c1) + ",");
+        }
+        return builder.toString();
+    }
+    
+    public boolean isIsomorphic(String s, String t) {
+        return transformString(s).equals(transformString(t));
     }
 }
 
 /*
-p -> t
-a -> i
-p -> t
-e -> l
-r -> e
+e -> 0
+g -> 1
 
-"badc"
-"baba"
+011
+a -> 0
+d -> 1
 
-b -> b
-a -> a
-d -> b
+s -> 0
+t -> 1
+e -> 2
+n -> 3
+o -> 4
+g -> 5
+r -> 6
+a -> 7
+p -> 8
+h -> 9
+i -> 10
+c -> 11
+s - > 0
 
+
+l -> 0
+o -> 1
+g -> 2
+a -> 3
+r -> 4
+i -> 5
+t -> 6
+h -> 7
+m -> 8
+s -> 9
+x -> 10
+o -> 1
+x -> 10
 */
