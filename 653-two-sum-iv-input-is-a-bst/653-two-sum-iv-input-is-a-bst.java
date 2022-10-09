@@ -14,22 +14,35 @@
  * }
  */
 class Solution {
-    HashSet<Integer> seen;
+    List<Integer> traversal;
     public boolean findTarget(TreeNode root, int k) {
-        seen = new HashSet();
-        return dfs(root, k);
-    }
-    
-    private boolean dfs(TreeNode root, int target) {
-        if(root == null) {
-            return false;
+        traversal = new ArrayList();
+        inorderTraversal(root);
+        
+        int left = 0, right = traversal.size()-1;
+        while(left < right) {
+            int sum = traversal.get(left) + traversal.get(right);
+            if(sum == k) {
+                return true;
+            }
+            if(sum > k) {
+                right--;
+            }
+            else {
+                left++;
+            }
         }
         
-        if(seen.contains(target - root.val)) {
-            return true;
-        }
-        seen.add(root.val);
-        return dfs(root.left, target) || dfs(root.right, target);
-    } 
+        return false;
+    }
     
+    private void inorderTraversal(TreeNode root) {
+        if(root == null) {
+            return;
+        }
+        
+        inorderTraversal(root.left);
+        traversal.add(root.val);
+        inorderTraversal(root.right);
+    }
 }
