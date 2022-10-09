@@ -14,35 +14,36 @@
  * }
  */
 class Solution {
-    List<Integer> traversal;
     public boolean findTarget(TreeNode root, int k) {
-        traversal = new ArrayList();
-        inorderTraversal(root);
-        
-        int left = 0, right = traversal.size()-1;
-        while(left < right) {
-            int sum = traversal.get(left) + traversal.get(right);
-            if(sum == k) {
-                return true;
-            }
-            if(sum > k) {
-                right--;
-            }
-            else {
-                left++;
-            }
-        }
-        
-        return false;
+        return dfs(root, root, k);
     }
     
-    private void inorderTraversal(TreeNode root) {
-        if(root == null) {
-            return;
+    // You need to maintain the startNode for whose complement you're searching to avoid comparing with
+    // itself
+    private boolean dfs(TreeNode root, TreeNode startNode, int target) {
+        if(startNode == null) {
+            return false;
+        }
+        // Now search for the complement of this node
+        boolean result = search(root, startNode, target-startNode.val);
+        if(result) {
+            return true;
         }
         
-        inorderTraversal(root.left);
-        traversal.add(root.val);
-        inorderTraversal(root.right);
+        return dfs(root, startNode.left, target) || dfs(root, startNode.right, target);
+    }
+    
+    private boolean search(TreeNode root, TreeNode startNode, int target) {
+        if(root == null) {
+            return false;
+        }
+        
+        if(root.val == target && root != startNode) {
+            return true;
+        }
+        if(target < root.val) {
+            return search(root.left, startNode, target);
+        }
+        return search(root.right, startNode, target);
     }
 }
