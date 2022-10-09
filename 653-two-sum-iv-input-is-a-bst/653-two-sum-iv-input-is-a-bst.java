@@ -13,31 +13,67 @@
  *     }
  * }
  */
-class Solution {
-    HashMap<Integer, Integer> map;
-    public boolean findTarget(TreeNode root, int k) {
-        map = new HashMap();
-        return bfs(root, 0, k);
+
+class BSTInorder {
+    private Stack<TreeNode> left, right;
+    
+    BSTInorder(TreeNode root) {
+        left = new Stack();
+        right = new Stack();
+        pushAllLeft(root);
+        pushAllRight(root);
     }
     
-    private boolean bfs(TreeNode root, int num, int target) {
-        Queue<TreeNode> queue = new LinkedList();
-        queue.add(root);
-        while(!queue.isEmpty()) {
-            TreeNode node = queue.poll();
-            if(node == null) {
-                continue;
-            }
-            map.put(node.val, num);
-            int diff = target - node.val;
-            if(map.containsKey(diff) && map.get(diff) != num) {
+    private void pushAllLeft(TreeNode root) {
+        TreeNode temp = root;
+        while(temp != null) {
+            left.push(temp);
+            temp = temp.left;
+        }
+    }
+    
+    private void pushAllRight(TreeNode root) {
+        TreeNode temp = root;
+        while(temp != null) {
+            right.push(temp);
+            temp = temp.right;
+        }
+    }
+    
+    private int next() {
+        TreeNode top = left.pop();
+        pushAllLeft(top.right);
+        return top.val;
+    }
+    
+    private int before() {
+        TreeNode top = right.pop();
+        pushAllRight(top.left);
+        return top.val;
+    }
+    
+    public boolean findTarget(int k) {
+        int l = next();
+        int r = before();
+        while(l < r) {
+            int sum = l+r;
+            if(sum == k) {
                 return true;
             }
-            num++;
-            queue.add(node.left);
-            queue.add(node.right);
+            if(sum > k) {
+                r = before();
+            }
+            else {
+                l = next();
+            }
         }
-        
         return false;
+    }
+}
+
+class Solution {
+    public boolean findTarget(TreeNode root, int k) {
+        BSTInorder bstInorder = new BSTInorder(root);
+        return bstInorder.findTarget(k);
     }
 }
