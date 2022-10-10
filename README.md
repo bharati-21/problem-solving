@@ -200,6 +200,160 @@ Check out the entire series [here](https://bharati.hashnode.dev/series/problem-s
         08/10/2022, 19:33 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        11
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/two-sum-iv-input-is-a-bst/">
+          653. Two Sum IV - Input is a BST
+        </a>
+      </td>
+      <td>
+        <code>Hash Table</code>
+        <code>Two Pointers</code>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Binary Search Tree</code>
+        <code>Breadth First Search</code>
+        <code>Depth First Search</code>
+      </td>
+      <td>
+        09/10/2022 11:30, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        12
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/binary-search-tree-iterator/">
+          173. Binary Search Tree Iterator
+        </a>
+      </td>
+      <td>
+        <code>Stack</code>
+        <code>Two Pointers</code>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Binary Search Tree</code>
+        <code>Design</code>
+        <code>Iterator</code>
+      </td>
+      <td>
+        09/10/2022 12:00, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        13
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/">
+          1203. Sort Items by Groups Respecting Dependencies
+        </a>
+      </td>
+      <td>
+        <code>Graph</code>
+        <code>Topological Sort</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        09/10/2022 13:18, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        14
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/course-schedule/">
+          207. Course Schedule
+        </a>
+      </td>
+      <td>
+        <code>Graph</code>
+        <code>Topological Sort</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        09/10/2022 13:54, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        15
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/course-schedule-ii/">
+          210. Course Schedule II
+        </a>
+      </td>
+      <td>
+        <code>Graph</code>
+        <code>Topological Sort</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        09/10/2022 15:33, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        16
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/island-perimeter/">
+          463. Island Perimeter
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Matrix</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        09/10/2022 15:33, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        17
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/is-subsequence/">
+          392. Is Subsequence
+        </a>
+      </td>
+      <td>
+        <code>Two Pointers</code>
+        <code>String</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        09/10/2022 22:32, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        18
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/break-a-palindrome/">
+          1328. Break a Palindrome
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Greedy</code>
+      </td>
+      <td>
+        10/10/2022 11:07, IST
+      </td>
+    </tr>
   </tbody>
 </table>
-
