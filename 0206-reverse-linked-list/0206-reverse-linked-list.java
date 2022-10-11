@@ -10,18 +10,29 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
+        return reverseListHelper(head, null);
+    }
+    // 1, null
+    // 2, 1
+        // nextNode = 5 -> 4 -> 3 -> 2
+    // 3, 2
+        // nextNode = 5 -> 4 -> 3
+        // nextNode.next = 2
+        // return 5 -> 4 -> 3 -> 2
+    // 4, 3
+        // nextNode = 5 -> 4
+        // nextNode.next = 3;
+        // return 5 -> 4 -> 3
+    // 5, 4
+        // 5.next = 4
+        // return 5 -> 4
+    // null, 5 (return null)
+    private ListNode reverseListHelper(ListNode head, ListNode prev) {
         if(head == null) {
-            return head;
+            return null;
         }
-        
-        ListNode temp = head;
-        ListNode prev = null;
-        while(temp != null) {
-            ListNode nextNode = temp.next;
-            temp.next = prev;
-            prev = temp;
-            temp = nextNode;
-        }
-        return prev;
+        ListNode nextNode = reverseListHelper(head.next, head);
+        head.next = prev;
+        return nextNode == null ? head : nextNode;
     }
 }
