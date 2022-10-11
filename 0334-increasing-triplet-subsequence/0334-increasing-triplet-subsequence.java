@@ -4,7 +4,7 @@ class Solution {
             return false;
         }
         
-        int first = Integer.MAX_VALUE;
+        int first = nums[0];
         int second = Integer.MAX_VALUE;
         int n = nums.length;
         
