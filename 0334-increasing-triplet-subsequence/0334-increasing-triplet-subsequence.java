@@ -8,7 +8,7 @@ class Solution {
         int second = Integer.MAX_VALUE;
         int n = nums.length;
         
-        for(int i = 0; i<n; i++) {
+        for(int i = 1; i<n; i++) {
             int curr = nums[i];
             if(curr < first) {
                 first = curr;
