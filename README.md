@@ -353,5 +353,98 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         10/10/2022 11:07, IST
       </td>
     </tr>
+    <tr>
+      <td>
+        19
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/binary-tree-preorder-traversal/">
+          144. Binary Tree Preorder Traversal
+        </a>
+      </td>
+      <td>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Stack</code>
+        <code>Recursion</code>
+        <code>Depth First Search</code>
+      </td>
+      <td>
+        10/10/2022 19:45, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        20
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/binary-tree-postorder-traversal/">
+          145. Binary Tree Postorder Traversal
+        </a>
+      </td>
+      <td>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Stack</code>
+        <code>Recursion</code>
+        <code>Depth First Search</code>
+      </td>
+      <td>
+        10/10/2022 20:34, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        21
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/merge-two-sorted-lists/">
+          21. Merge Two Sorted Lists
+        </a>
+      </td>
+      <td>
+        <code>Linked List</code>
+        <code>Recursion</code>
+      </td>
+      <td>
+        10/10/2022 22:59, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        22
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/binary-tree-postorder-traversal/">
+          206. Reverse Linked List
+        </a>
+      </td>
+      <td>
+        <code>Linked List</code>
+        <code>Recursion</code>
+      </td>
+      <td>
+        10/10/2022 23:01, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        23
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/balanced-binary-tree">
+          110. Balanced Binary Tree
+        </a>
+      </td>
+      <td>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Depth First Search</code>
+      </td>
+      <td>
+        10/10/2022 23:16, IST
+      </td>
+    </tr>
   </tbody>
 </table>
+
