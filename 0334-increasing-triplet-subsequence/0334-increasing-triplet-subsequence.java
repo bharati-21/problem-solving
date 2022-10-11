@@ -10,13 +10,13 @@ class Solution {
         
         for(int i = 1; i<n; i++) {
             int curr = nums[i];
-            if(curr < first) {
+            if(curr <= first) {
                 first = curr;
             }
-            else if(curr < second && curr > first) {
+            else if(curr <= second) {
                 second = curr;
             }
-            else if(curr > second) {
+            else {
                 return true;
             }
         }
