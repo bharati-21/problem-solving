@@ -5,25 +5,24 @@ class Solution {
         }
         HashMap<Character, Integer> frequency = new HashMap();
         
-        boolean isAllSingleFrequency = true;
         int n = s.length();
         for(int i = 0; i<n; i++) {
             char ch = s.charAt(i);
             frequency.put(ch, frequency.getOrDefault(ch,0)+1);
-            if(frequency.get(ch) != 1) {
-                isAllSingleFrequency = false;
-            }
         }
         
-        int len = 0;
+        int length = 0;
+        boolean oddOccurrencesCount = false;
         for(char ch: frequency.keySet()) {
-            int freq = frequency.get(ch);
-            len += (freq / 2)*2;
-            if(freq % 2 == 1 && len % 2 == 0) {
-                len+=1;
+            int count = frequency.get(ch);
+            if(count % 2 == 0) {
+                length += count;
+            }
+            else {
+                length += count-1;
+                oddOccurrencesCount = true;
             }
         }
-        
-        return len;
+        return length + (oddOccurrencesCount ? 1 : 0);
     }
 }
