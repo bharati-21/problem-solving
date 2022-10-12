@@ -555,7 +555,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        29
+        30
       </td>
       <td>
         <a href="https://leetcode.com/problems/di-string-match/">
@@ -574,7 +574,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        30
+        31
       </td>
       <td>
         <a href="https://leetcode.com/problems/largest-perimeter-triangle/">
@@ -593,7 +593,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        30
+        32
       </td>
       <td>
         <a href="https://leetcode.com/problems/lemonade-change/">
