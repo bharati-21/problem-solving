@@ -5,46 +5,32 @@ class Solution {
         }
         
         int n = nums.length;
-       
-        boolean[] ways = new boolean[n];
-        
-        ways[0] = true;
-        for(int i = 0; i<n; i++) {
-            int maxJump = nums[i];
-            if(!ways[i]) {
-                break;
-            }
-            for(int jump = 1; jump<=maxJump; jump++) {
-                int nextJump = jump+i;
-                if(nextJump >= n) {
-                    break;
-                }
-                if(nextJump == n-1) {
+        int jumps = 0;
+        Set<Integer> seen = new HashSet();
+        Queue<Integer> nextJumps = new LinkedList();
+        nextJumps.add(0);
+        int lastSeenMax = 0;
+        seen.add(0);
+        while(!nextJumps.isEmpty()) {
+            int size = nextJumps.size();
+            while(size-- > 0) {
+                int index = nextJumps.poll();
+                if(index == n-1){
+                    System.out.println(jumps);
                     return true;
                 }
-                ways[nextJump] = true;
+                int maxJump = nums[index];
+
+                int start = Math.max(index+1, lastSeenMax+1);
+                int end = index+maxJump;
+                for(int next = start; next <= end && next < n; next++) {
+                    if(!seen.contains(next)) {
+                        nextJumps.add(next);
+                    }
+                }
+                lastSeenMax = Math.max(end, lastSeenMax);
             }
-        }
-        return ways[n-1];
-    }
-    
-    // O(N^N) at max N branches and each of that N branches makes N-1 further calls
-    private boolean canJumpHelper(int index, int n, int[] nums) {
-        if(index >= n-1) {
-            return true;
-        }
-        
-        int jump = 1;
-        int maxJump = nums[index];
-        if(maxJump == 0) {
-            return false;
-        }
-        while(jump <= maxJump && jump < n) {
-            int nextJump = index + jump;
-            if(canJumpHelper(nextJump, n, nums)) {
-                return true;
-            }
-            jump++;
+            jumps++;
         }
         
         return false;
