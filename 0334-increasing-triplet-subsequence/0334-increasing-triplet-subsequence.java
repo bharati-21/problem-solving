@@ -10,13 +10,13 @@ class Solution {
         
         for(int i = 0; i<n; i++) {
             int curr = nums[i];
-            if(curr <= first) {
+            if(curr < first) {
                 first = curr;
             }
-            else if(curr <= second) {
+            else if(curr < second && curr > first) {
                 second = curr;
             }
-            else {
+            else if(curr > second) {
                 return true;
             }
         }
@@ -24,3 +24,13 @@ class Solution {
         return false;
     }
 }
+
+/*
+first = 1
+second = inf
+
+first = 1
+second = 2
+
+first = 
+*/
