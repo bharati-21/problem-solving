@@ -29,7 +29,7 @@ class Solution {
             int start = Math.max(index + minJump, lastMaxSeen + 1);
             int end = index + maxJump;
             for(int next = start; next<=end && next < n; next++) {
-                if(s.charAt(next) != '1') {
+                if(s.charAt(next) != '1' && !seen.contains(next)) {
                     seen.add(next);
                     nextJumps.add(next);
                 }
