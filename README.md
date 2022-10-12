@@ -445,6 +445,169 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         10/10/2022 23:16, IST
       </td>
     </tr>
+    <tr>
+      <td>
+        24
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/increasing-triplet-subsequence/">
+          334. Increasing Triplet Subsequence
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Greedy</code>
+      </td>
+      <td>
+        11/10/2022 09:48, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        25
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/longest-palindrome/">
+          409. Longest Palindrome
+        </a>
+      </td>
+      <td>
+        <code>Hash Table</code>
+        <code>String</code>
+        <code>Greedy</code>
+      </td>
+      <td>
+        11/10/2022 10:56, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        26
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/assign-cookies/">
+          455. Assign Cookies
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Two Pointers</code>
+        <code>Greedy</code>
+        <code>Sorting</code>
+      </td>
+      <td>
+        11/10/2022 12:13, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        27
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/array-partition/">
+          561. Array Partition
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Greedy</code>
+        <code>Counting Sort</code>
+        <code>Sorting</code>
+      </td>
+      <td>
+        11/10/2022 12:22, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        28
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/can-place-flowers/">
+          605. Can Place Flowers
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Greedy</code>
+      </td>
+      <td>
+        11/10/2022 16:36, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        29
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/valid-palindrome-ii/">
+          680. Valid Palindrome II
+        </a>
+      </td>
+      <td>
+        <code>Two Pointers</code>
+        <code>String</code>
+        <code>Greedy</code>
+      </td>
+      <td>
+        11/10/2022 17:39, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        29
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/di-string-match/">
+          942. DI String Match
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Two Pointers</code>
+        <code>String</code>
+        <code>Greedy</code>
+      </td>
+      <td>
+        11/10/2022 18:09, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        30
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/largest-perimeter-triangle/">
+          976. Largest Perimeter Triangle
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Math</code>
+        <code>Greedy</code>
+        <code>Sorting</code>
+      </td>
+      <td>
+        11/10/2022 18:23, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        30
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/lemonade-change/">
+          860. Lemonade Change
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Greedy</code>
+      </td>
+      <td>
+        11/10/2022 22:07, IST
+      </td>
+    </tr>
   </tbody>
 </table>
 
