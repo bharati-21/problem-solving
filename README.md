@@ -608,6 +608,24 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         11/10/2022 22:07, IST
       </td>
     </tr>
+    <tr>
+      <td>
+        33
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/maximum-subarray/">
+          53. Maximum Subarray
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Divide and Conquer</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        12/10/2022 09:45, IST
+      </td>
+    </tr>
   </tbody>
 </table>
 
