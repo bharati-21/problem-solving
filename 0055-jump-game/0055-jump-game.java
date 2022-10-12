@@ -7,12 +7,7 @@ class Solution {
         int n = nums.length;
        
         int[] ways = new int[n];
-        if(n == 1) {
-            return true;
-        }
-        if(nums[0] == 0) {
-            return false;
-        }
+        
         ways[0] = 1;
         for(int i = 0; i<n; i++) {
             int maxJump = nums[i];
