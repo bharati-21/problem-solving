@@ -23,7 +23,7 @@ class Solution {
             char ch = s.charAt(index);
             
             if(index == n-1) {
-                return ch == '0';
+                return true;
             }
             
             int start = Math.max(index + minJump, lastMaxSeen + 1);
