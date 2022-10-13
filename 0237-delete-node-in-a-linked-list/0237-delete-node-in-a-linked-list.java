@@ -17,6 +17,6 @@ class Solution {
         ListNode nextNode = curr.next;
         curr.val = nextNode.val;
         curr.next = nextNode.next;
-        
+        nextNode.next = null;
     }
 }
