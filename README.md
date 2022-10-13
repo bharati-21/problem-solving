@@ -702,6 +702,22 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         12/10/2022 17:56, IST
       </td>
     </tr>
+    tr>
+      <td>
+        38
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/delete-node-in-a-linked-list/">
+          237. Delete Node in a Linked List
+        </a>
+      </td>
+      <td>
+        <code>Linked List</code>
+      </td>
+      <td>
+        13/10/2022 09:24, IST
+      </td>
+    </tr>
   </tbody>
 </table>
 
