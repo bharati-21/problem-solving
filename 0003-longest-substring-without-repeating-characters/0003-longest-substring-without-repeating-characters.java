@@ -12,12 +12,9 @@ class Solution {
             char ch = s.charAt(right);
             
             // If this char was previously seen, then
-            int lastSeen = seen[ch]; 
-            // We need. this max(left, lastSeen + 1) because
-            // it can happen that in our new window, we see a value that appeared on a previous window
-            // We should not take into account that 
-			if(lastSeen != -1 && lastSeen >= left) {
-                left = lastSeen + 1;
+            int lastSeen = seen[ch];            
+			if(lastSeen != -1) {
+                left = Math.max(left, lastSeen+1);
             }
             
 			seen[ch] = right;
