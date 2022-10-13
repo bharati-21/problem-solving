@@ -14,7 +14,6 @@ class Solution {
 		if(l1 == null && l2 == null) {
 			return null;
         }
-        
         if(l1 == null) return l2;
         if(l2 == null) return l1;
 
@@ -23,21 +22,33 @@ class Solution {
         int carry = 0;
 
 
-        while(l1 != null || l2 != null || carry != 0) {
-            int sum = carry;
-            if(l1 != null) sum += l1.val;
-            if(l2 != null) sum += l2.val;
-
+        while(l1 != null && l2 != null) {
+            int sum = l1.val + l2.val + carry;
             carry = sum / 10;
             sum = sum % 10;
-
             ptr.next = new ListNode(sum);
-            if(l1 != null) l1 = l1.next;
-            if(l2 != null) l2 = l2.next;
+            l1 = l1.next;
+            l2 = l2.next;
             ptr = ptr.next;
+        }
+        
+        ptr.next = (l1 != null) ? l1 : l2;
+        
+        
+        if(carry != 0) {
+            ListNode prev = ptr;
+            ptr = ptr.next;
+            while(ptr != null) {
+                prev = ptr;
+                int sum = ptr.val + carry;
+                carry = sum / 10;
+                ptr.val = sum % 10;
+                ptr = ptr.next;
+            }
+
+            if(carry != 0) prev.next = new ListNode(carry);
         }
 
         return dummyHead.next;
     }
 }
-
