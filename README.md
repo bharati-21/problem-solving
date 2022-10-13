@@ -702,7 +702,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         12/10/2022 17:56, IST
       </td>
     </tr>
-    tr>
+    <tr>
       <td>
         38
       </td>
@@ -716,6 +716,94 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
       </td>
       <td>
         13/10/2022 09:24, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        39
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/two-sum/">
+          1. Two Sum
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Hash Table</code>
+      </td>
+      <td>
+        13/10/2022 09:35, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        40
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/add-two-numbers/">
+          2. Add Two Numbers
+        </a>
+      </td>
+      <td>
+        <code>Linked List</code>
+        <code>Math</code>
+        <code>Recursion</code>
+      </td>
+      <td>
+        13/10/2022 09:35, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        41
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">
+          3. Longest Substring Without Repeating Characters
+        </a>
+      </td>
+      <td>
+        <code>Hash Table</code>
+        <code>String</code>
+        <code>Sliding Window</code>
+      </td>
+      <td>
+        13/10/2022 15:38, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        42
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/valid-palindrome">
+          125. Valid Palindrome
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Two Pointers</code>
+      </td>
+      <td>
+        13/10/2022 15:30, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        43
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/">
+          1984. Minimum Difference Between Highest and Lowest of K Scores
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Sorting</code>
+        <code>Sliding Window</code>
+      </td>
+      <td>
+        13/10/2022 19:59	, IST
       </td>
     </tr>
   </tbody>
