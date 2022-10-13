@@ -626,6 +626,82 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         12/10/2022 09:45, IST
       </td>
     </tr>
+    <tr>
+      <td>
+        34
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/jump-game/">
+          55. Jump Game
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+        <code>Greedy</code>
+      </td>
+      <td>
+        12/10/2022 12:26, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        35
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/jump-game-iii/">
+          55. Jump Game III
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        12/10/2022 17:49, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        36
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/jump-game-vii/">
+          55. Jump Game VII
+        </a>
+      </td>
+      <td>
+        <code>Two Pointers</code>
+        <code>String</code>
+        <code>Prefix Sum</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        12/10/2022 17:56, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        37
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/jump-game-vii/">
+          55. Jump Game VII
+        </a>
+      </td>
+      <td>
+        <code>Two Pointers</code>
+        <code>String</code>
+        <code>Prefix Sum</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        12/10/2022 17:56, IST
+      </td>
+    </tr>
   </tbody>
 </table>
 
