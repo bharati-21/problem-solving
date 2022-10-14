@@ -803,7 +803,24 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Sliding Window</code>
       </td>
       <td>
-        13/10/2022 19:59	, IST
+        13/10/2022 19:59, IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        44
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/">
+          2095. Delete the Middle Node of a Linked List
+        </a>
+      </td>
+      <td>
+        <code>Linked List</code>
+        <code>Two Pointers</code>
+      </td>
+      <td>
+        14/10/2022, 07:43 IST	
       </td>
     </tr>
   </tbody>
