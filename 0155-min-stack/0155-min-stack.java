@@ -12,11 +12,7 @@ class MinStack {
     }
     
     public void push(int val) {
-        int minVal = Integer.MAX_VALUE;
-        if(!stack.isEmpty()) {
-            minVal = stack.peek().min;
-        }
-        minVal = Math.min(val, minVal);
+        int minVal = stack.isEmpty() ? val : Math.min(val, stack.peek().min);
         Pair pair = new Pair(val, minVal);
         stack.push(pair);
     }
