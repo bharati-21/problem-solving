@@ -823,6 +823,161 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         14/10/2022, 07:43 IST	
       </td>
     </tr>
+    <tr>
+      <td>
+        45
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/valid-parentheses/">
+          20. Valid Parentheses
+        </a>
+      </td>
+      <td>
+        <code>Stack</code>
+      </td>
+      <td>
+        14/10/2022, 11:24 IST	
+      </td>
+    </tr>
+    <tr>
+      <td>
+        46
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/baseball-game/">
+          682. Baseball Game
+        </a>
+      </td>
+      <td>
+        <code>Stack</code>
+      </td>
+      <td>
+        14/10/2022, 13:32 IST	
+      </td>
+    </tr>
+    <tr>
+      <td>
+        47
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/implement-stack-using-queues/">
+          225. Implement Stack using Queues
+        </a>
+      </td>
+      <td>
+        <code>Stack</code>
+        <code>Queues</code>
+        <code>Design</code>
+      </td>
+      <td>
+        14/10/2022, 16:12 IST	
+      </td>
+    </tr>
+    <tr>
+      <td>
+        48
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/min-stack/">
+          155. Min Stack
+        </a>
+      </td>
+      <td>
+        <code>Stack</code>
+        <code>Design</code>
+      </td>
+      <td>
+        14/10/2022, 17:47 IST	
+      </td>
+    </tr>
+    <tr>
+      <td>
+        49
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/">
+          150. Evaluate Reverse Polish Notation
+        </a>
+      </td>
+      <td>
+        <code>Stack</code>
+        <code>Math</code>
+      </td>
+      <td>
+        14/10/2022, 18:01 IST	
+      </td>
+    </tr>
+    <tr>
+      <td>
+        50
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/generate-parentheses/">
+          22. Generate Parentheses
+        </a>
+      </td>
+      <td>
+        <code>Stack</code>
+        <code>Math</code>
+        <code>Recursion</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        14/10/2022, 19:07 IST	
+      </td>
+    </tr>
+    <tr>
+      <td>
+        51
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/asteroid-collision/">
+          735. Asteroid Collision
+        </a>
+      </td>
+      <td>
+        <code>Stack</code>
+      </td>
+      <td>
+        14/10/2022, 20:07 IST	
+      </td>
+    </tr>
+    <tr>
+      <td>
+        52
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/daily-temperatures/">
+          739. Daily Temperatures
+        </a>
+      </td>
+      <td>
+        <code>Stack</code>
+        <code>Monotonic Stack</code>
+      </td>
+      <td>
+        14/10/2022, 20:51 IST	
+      </td>
+    </tr>
+    <tr>
+      <td>
+        53
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/online-stock-span/">
+          901. Online Stock Span
+        </a>
+      </td>
+      <td>
+        <code>Stack</code>
+        <code>Monotonic Stack</code>
+        <code>Design</code>
+      </td>
+      <td>
+        14/10/2022,  21:14 IST	
+      </td>
+    </tr>
   </tbody>
 </table>
+
 
