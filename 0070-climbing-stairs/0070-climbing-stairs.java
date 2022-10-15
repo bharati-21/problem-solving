@@ -3,11 +3,11 @@ class Solution {
         if(n <= 0) {
             return 0;
         }
-        
-        int[] tabulation = new int[n+1];
         if(n <= 2) {
             return n;
-        }
+        }    
+    
+        int[] tabulation = new int[n+1];
         
         tabulation[1] = 1;
         tabulation[2] = 2;
