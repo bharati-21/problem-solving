@@ -6,6 +6,8 @@ class Solution {
         }
         
         int[][] memo = new int[n+1][d+1];
+        
+        
         for(int[] row: memo) {
             Arrays.fill(row, Integer.MAX_VALUE);
         }
@@ -13,20 +15,21 @@ class Solution {
     }
         
     // 
-    private int minDifficultyHelper(int[] jobDifficulty, int d, int start, int end, int[][] memo) {
-        if(d == 1) {
-            // return the max at this value from start to end
-            return getMax(jobDifficulty, start, end-1);
-        }
-        
+    private int minDifficultyHelper(int[] jobDifficulty, int d, int start, int n, int[][] memo) {
         if(memo[start][d] != Integer.MAX_VALUE) {
             return memo[start][d];
         }
         
+        if(d == 1) {
+            // return the max at this value from start to n
+            return memo[d][1] = getMax(jobDifficulty, start, n-1);
+        }
+        
         int minValue = memo[start][d];
-        for(int i = start; i<=end-d; i++) {
-            // This gets the values at the cut [i+1, end)
-            int nextCut = minDifficultyHelper(jobDifficulty, d-1, i+1, end, memo);
+        // Every recursive call is O(n-d) work. Total calls is = n*d Therefore, n*d*n
+        for(int i = start; i<=n-d; i++) {
+            // This gets the values at the cut [i+1, n)
+            int nextCut = minDifficultyHelper(jobDifficulty, d-1, i+1, n, memo);
             int currentCutMax = getMax(jobDifficulty, start, i);
                 
             minValue = Math.min(minValue, (nextCut + currentCutMax));
