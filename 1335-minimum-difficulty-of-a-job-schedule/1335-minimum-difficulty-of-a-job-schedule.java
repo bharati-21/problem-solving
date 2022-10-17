@@ -1,110 +1,50 @@
 class Solution {
     public int minDifficulty(int[] jobDifficulty, int d) {
+        if(jobDifficulty == null || jobDifficulty.length == 0) {
+            return -1;
+        }
+        
         int n = jobDifficulty.length;
+        
+        // You have more days than jobs
         if(d > n) {
             return -1;
         }
         
-        int[][] memo = new int[n+1][d+1];
+        // When the day is 1, there's only 1 way to do jobs
+        // Do all the remaining tasks and then return the maximum of all
+        int[][] dp = new int[n+1][d+1];
         
-        
-        for(int[] row: memo) {
-            Arrays.fill(row, Integer.MAX_VALUE);
-        }
-        return minDifficultyHelper(jobDifficulty, d, 0, n, memo);
-    }
-        
-    // 
-    private int minDifficultyHelper(int[] jobDifficulty, int d, int start, int n, int[][] memo) {
-        if(memo[start][d] != Integer.MAX_VALUE) {
-            return memo[start][d];
+        // If on day 1 you choose to to 0th job, max diff is 0, 
+        // If you choose 0 and 1st job, maxDiff = max(job[0], job[1])
+        // If you choose 0,1,..j then maxDiff = max(j[0], job[1], .., job[j])
+        // int maxSoFar = 0;
+        int max = 0;
+        for(int i = n-1; i>=0; i--) {
+            max = dp[i][1] = Math.max(max, jobDifficulty[i]);
         }
         
-        if(d == 1) {
-            // return the max at this value from start to n
-            return memo[d][1] = getMax(jobDifficulty, start, n-1);
+        
+        // On other days, if you do jobs j, on day "day"then the value is the 
+        // The work done of dp[j-1][day-1] (j-1), because j-1 work was done before
+        // +
+        // Need to consider for the same day if more work was done
+        // dp[j][day] = min(
+        // max(dp[j-1][day-1] + job[j])
+        // doing 1 job on jth day, doing 2 jobs on jth day, doing k jobs on jth day
+        // The min of all of this
+       
+        for(int day = 2; day<=d; day++) {
+            for(int i = 0; i <= n-day; i++) {
+                max = 0;
+                int min = Integer.MAX_VALUE;
+                for(int j = i; j <= n - day; j++) {
+                    max = Math.max(max, jobDifficulty[j]);
+                    min = dp[i][day] = Math.min(min, max + dp[j + 1][day - 1]);
+                }
+            }
         }
         
-        int minValue = memo[start][d];
-        // Every recursive call is O(n-d) work. Total calls is = n*d Therefore, n*d*n
-        for(int i = start; i<=n-d; i++) {
-            // This gets the values at the cut [i+1, n)
-            int nextCut = minDifficultyHelper(jobDifficulty, d-1, i+1, n, memo);
-            int currentCutMax = getMax(jobDifficulty, start, i);
-                
-            minValue = Math.min(minValue, (nextCut + currentCutMax));
-            memo[start][d] = minValue;
-        }
-        
-        return memo[start][d] = minValue;
-    }
-    
-    private int getMax(int[] jobDifficulty, int i, int j) {
-        int currentCutMax = 0;
-        while(i <= j) {
-            currentCutMax = Math.max(jobDifficulty[i], currentCutMax);
-            i++;
-        }
-        
-        return currentCutMax;
+        return dp[0][d];
     }
 }
-
-/*
-- schedule list of jobs in d days
-- dependent. To finish ith job, have to complete all j jobs 0 <=j < i
-- at least 1 task everyday
-- Sum of difficulties of each of day 
-- diff(day) => max diff of job on that day
-
-6+5+4+3+2+1
-
-6+5+4 => 6
-3 => 3
-2+1 => 2
-
-6+5+4 => 6
-3+2 => 3
-1 => 1
-
-6+5 => 6 
-4+3 => 4
-2+1 => 2
-
-6+5 => 6
-4+3+2 => 4
-1 => 1
-
-6 => 6
-5+4 => 5
-3+2+1 => 3
-
-6 => 6
-5+4+3 => 5
-2+1 => 2
-
-6 => 6
-5+4 => 5
-3+2+1 => 3
-
-6+5+4+3 => 6
-2 => 2
-1 => 1
-
-*/
-
-
-/*
-[5,1,8,2,3,6,7]
-5+1+8 => 8
-2+3+6 => 6
-7 => 7
-
-5 => 5
-1 => 1
-8,2,3,6,7 => 8
-
-5+1
-8+2+3+6
-7
-*/
