@@ -1064,6 +1064,23 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         15/10/2022, 22:17 IST	
       </td>
     </tr>
+    <tr>
+      <td>
+        59
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/">
+         1335. Minimum Difficulty of a Job Schedule
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        16/10/2022, 10:31 IST	
+      </td>
+    </tr>
   </tbody>
 </table>
 
