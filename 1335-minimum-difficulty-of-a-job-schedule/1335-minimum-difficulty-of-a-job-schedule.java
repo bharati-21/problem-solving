@@ -19,11 +19,15 @@ class Solution {
         // If you choose 0 and 1st job, maxDiff = max(job[0], job[1])
         // If you choose 0,1,..j then maxDiff = max(j[0], job[1], .., job[j])
         // int maxSoFar = 0;
+         for(int i = 0; i<=n; i++) {
+            Arrays.fill(dp[i], Integer.MAX_VALUE);
+        }
         int max = 0;
         for(int i = n-1; i>=0; i--) {
             max = dp[i][1] = Math.max(max, jobDifficulty[i]);
         }
         
+       
         
         // On other days, if you do jobs j, on day "day"then the value is the 
         // The work done of dp[j-1][day-1] (j-1), because j-1 work was done before
@@ -37,10 +41,10 @@ class Solution {
         for(int day = 2; day<=d; day++) {
             for(int i = 0; i <= n-day; i++) {
                 max = 0;
-                int min = Integer.MAX_VALUE;
+                int min = dp[i][day];
                 for(int j = i; j <= n - day; j++) {
                     max = Math.max(max, jobDifficulty[j]);
-                    min = dp[i][day] = Math.min(min, max + dp[j + 1][day - 1]);
+                    dp[i][day]  = Math.min(dp[i][day], max + dp[j + 1][day - 1]);
                 }
             }
         }
