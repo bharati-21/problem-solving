@@ -974,7 +974,94 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Design</code>
       </td>
       <td>
-        14/10/2022,  21:14 IST	
+        14/10/2022, 21:14 IST	
+      </td>
+    </tr>
+    <tr>
+      <td>
+        54
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/car-fleet/">
+          853. Car Fleet
+        </a>
+      </td>
+      <td>
+        <code>Stack</code>
+        <code>Monotonic Stack</code>
+        <code>Sorting</code>
+      </td>
+      <td>
+        15/10/2022, 12:30 IST	
+      </td>
+    </tr>
+    <tr>
+      <td>
+        55
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/climbing-stairs/">
+          70. Climbing Stairs
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+        <code>Dynamic Programming</code>
+        <code>Memoization</code>
+      </td>
+      <td>
+        15/10/2022, 13:28 IST	
+      </td>
+    </tr>
+    <tr>
+      <td>
+        56
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/string-compression/">
+          443. String Compression
+        </a>
+      </td>
+      <td>
+        <code>Two Pointers</code>
+        <code>String</code>
+      </td>
+      <td>
+        15/10/2022, 15:41 IST	
+      </td>
+    </tr>
+    <tr>
+      <td>
+        57
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/string-compression/">
+         1531. String Compression II
+        </a>
+      </td>
+      <td>
+        <code>Two Pointers</code>
+        <code>String</code>
+      </td>
+      <td>
+        15/10/2022, 22:07 IST	
+      </td>
+    </tr>
+    <tr>
+      <td>
+        58
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/toeplitz-matrix/">
+         766. Toeplitz Matrix
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Matrix</code>
+      </td>
+      <td>
+        15/10/2022, 22:17 IST	
       </td>
     </tr>
   </tbody>
