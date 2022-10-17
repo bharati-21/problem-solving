@@ -1035,12 +1035,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         57
       </td>
       <td>
-        <a href="https://leetcode.com/problems/string-compression/">
+        <a href="https://leetcode.com/problems/string-compression-ii/submissions/">
          1531. String Compression II
         </a>
       </td>
       <td>
-        <code>Two Pointers</code>
+        <code>Dynamic Programming</code>
         <code>String</code>
       </td>
       <td>
