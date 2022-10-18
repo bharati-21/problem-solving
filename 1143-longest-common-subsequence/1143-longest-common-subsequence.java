@@ -29,11 +29,16 @@ class Solution {
             }
         }
         
-        return dp[n][m];
+        // return dp[n][m];
+        for(int[] row: dp) {
+            Arrays.fill(row, -1);
+        }
+        
+        return lcsHelper(text1, text2, n, m, n, m, dp);
     }
     
     private int lcsHelper(String s, String t, int i, int j, int n, int m, int[][] memo) {
-        if(i == n || j == m) {
+        if(i == 0 || j == 0) {
             return 0;
         }
         
@@ -41,15 +46,15 @@ class Solution {
             return memo[i][j];
         }
         
-        char sch = s.charAt(i);
-        char tch = t.charAt(j);
+        char sch = s.charAt(i-1);
+        char tch = t.charAt(j-1);
         
         if(sch == tch) {
-            return memo[i][j] = 1 + lcsHelper(s, t, i+1, j+1, n, m, memo);
+            return memo[i][j] = 1 + lcsHelper(s, t, i-1, j-1, n, m, memo);
         }
         
-        int incrementI = lcsHelper(s, t, i+1, j, n, m, memo);
-        int incrementJ = lcsHelper(s, t, i, j+1, n, m, memo);
+        int incrementI = lcsHelper(s, t, i-1, j, n, m, memo);
+        int incrementJ = lcsHelper(s, t, i, j-1, n, m, memo);
         return memo[i][j] =  Math.max(incrementI, incrementJ);
     }
 }
