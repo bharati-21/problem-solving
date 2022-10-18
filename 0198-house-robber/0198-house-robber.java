@@ -4,9 +4,20 @@ class Solution {
             return 0;
         }
         int n = nums.length;
-        int[] memo = new int[n];
-        Arrays.fill(memo, -1);
-        return robHelper(nums, 0, n, memo);
+        int[] dp = new int[n];
+        
+        dp[0] = nums[0];
+        
+        for(int i = 1; i<n; i++) {
+            if(i == 1) {
+                dp[i] = Math.max(dp[i-1], nums[i]);
+                continue;
+            }
+            dp[i] = Math.max(dp[i-2] + nums[i], dp[i-1]);
+        }
+        
+        return dp[n-1];
+        // return robHelper(nums, 0, n, memo);
     }
     
     private int robHelper(int[] nums, int index, int n, int[] memo) {
