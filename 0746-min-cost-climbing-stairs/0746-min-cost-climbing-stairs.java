@@ -5,26 +5,24 @@ class Solution {
         }
         
         int n = cost.length;
-        int[] memo = new int[n];
-        Arrays.fill(memo, -1);
-        int startZero = minCostClimbingStairsHelper(cost, 0, n, memo);
-        int startOne = minCostClimbingStairsHelper(cost, 1, n, memo);
-        return Math.min(startZero, startOne);
-    }
-    
-    private int minCostClimbingStairsHelper(int[] cost, int index, int n, int[] memo){
-        if(index >= n) {
-            return 0;
+        int[] dp = new int[n+1];
+        
+        dp[0] = cost[0];
+        dp[1] = Math.min(cost[0]+cost[1], cost[1]);
+        
+        // Can either start from 0 or 1
+        // start from 0, the cost is 0,
+        // start from 1, the cost is min(0+1, 1)
+        // to reach 2, the cost is either from 1, or 0
+        // to reach 3, the cost is either from 2, or 1
+        for(int i = 2; i<=n; i++) {
+            int first = dp[i-2];
+            int second = dp[i-1];
+            int c = i == n ? 0 : cost[i];
+            
+            dp[i] = Math.min(c + first, c + second);
         }
         
-        if(memo[index] != -1) {
-            return memo[index];
-        }
-        
-        int c = cost[index];
-        int climbOne = c + minCostClimbingStairsHelper(cost, index+1, n, memo);
-        int climbTwo = c + minCostClimbingStairsHelper(cost, index+2, n, memo);
-        
-        return memo[index] = Math.min(climbOne, climbTwo);
+        return dp[n];
     }
 }
