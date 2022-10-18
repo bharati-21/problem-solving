@@ -1081,6 +1081,42 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         16/10/2022, 10:31 IST	
       </td>
     </tr>
+    <tr>
+      <td>
+        61
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/check-if-the-sentence-is-pangram/">
+         1832. Check if the Sentence Is Pangram
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Bit Manipulation</code>
+        <code>Set</code>
+        <code>Hash Table</code>
+      </td>
+      <td>
+        17/10/2022, 10:27 IST	
+      </td>
+    </tr>
+    <tr>
+      <td>
+        62
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">
+         121. Best Time to Buy and Sell Stock
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        17/10/2022, 22:45 IST
+      </td>
+    </tr>
   </tbody>
 </table>
 
