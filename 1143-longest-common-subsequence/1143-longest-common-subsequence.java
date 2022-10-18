@@ -29,12 +29,12 @@ class Solution {
             }
         }
         
-        // return dp[n][m];
-        for(int[] row: dp) {
-            Arrays.fill(row, -1);
-        }
+        return dp[n][m];
+//         for(int[] row: dp) {
+//             Arrays.fill(row, -1);
+//         }
         
-        return lcsHelper(text1, text2, n, m, n, m, dp);
+//         return lcsHelper(text1, text2, n, m, n, m, dp);
     }
     
     private int lcsHelper(String s, String t, int i, int j, int n, int m, int[][] memo) {
