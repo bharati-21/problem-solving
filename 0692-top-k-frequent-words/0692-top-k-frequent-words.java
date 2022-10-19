@@ -33,13 +33,10 @@ class Solution {
         
         Collections.sort(sortedPairs, new CustomComparator());
         
-        int i = 0;
-        for(Pair p: sortedPairs) {
-            frequentWords.add(p.word);
-            i++;
-            if(i == k) {
-                break;
-            }
+        for(int i = 0; i<k; i++) {
+            Pair p = sortedPairs.get(i);
+            String word = p.word;
+            frequentWords.add(word);
         }
         
         
