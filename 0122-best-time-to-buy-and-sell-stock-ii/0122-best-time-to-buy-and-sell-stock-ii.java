@@ -23,12 +23,7 @@ class Solution {
             }
         }
         
-        for(int[] row: dp) {
-            System.out.println(Arrays.toString(row));
-        }
-        
         return dp[0][1];
-        
     }
     
     private int maxProfitHelper(int[] prices, int i, int canBuy, int n, Integer[][] memo) {
