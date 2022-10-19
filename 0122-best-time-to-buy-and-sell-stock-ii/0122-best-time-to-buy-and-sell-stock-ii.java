@@ -5,25 +5,29 @@ class Solution {
         }
         int n = prices.length;
         
-        int[][] dp = new int[n+1][2];
-        dp[n][0] = 0;
-        dp[n][1] = 0; 
+        // int[][] dp = new int[n+1][2];
+        // dp[n][0] = 0;
+        // dp[n][1] = 0; 
+        int[] curr = new int[2];
+        int[] prev = new int[2];
         // you cannot sell anything on day 1
         // you can buy the stock 1 on day 1
         for(int i = n-1; i>=0; i--) {
             for(int j = 1; j>=0; j--) {
                 if(j == 0) {
                     // sell here
-                    dp[i][j] = Math.max(prices[i] + dp[i+1][1], dp[i+1][0]);
+                    curr[j] = Math.max(prices[i] + prev[1], prev[0]);
                 }
                 else {
                     // buy here
-                    dp[i][j] = Math.max(-prices[i] + dp[i+1][0], dp[i+1][1]);
+                    curr[j] = Math.max(-prices[i] + curr[0], prev[1]);
                 }
             }
+            
+            prev = curr;
         }
         
-        return dp[0][1];
+        return prev[1];
     }
     
     private int maxProfitHelper(int[] prices, int i, int canBuy, int n, Integer[][] memo) {
