@@ -5,16 +5,22 @@ class Solution {
         }
         
         int n = nums.length;
-                
-        int lastPosition = n-1;
-        for(int i = n-1; i>=0; i--) {
+        boolean[] dp = new boolean[n];  
+        dp[0] = true;
+        for(int i = 0; i<n; i++) {
             int maxJump = nums[i];
-            if(maxJump + i >= lastPosition) {
-                lastPosition = i;
+            for(int next = i + 1; next <= i+maxJump && next < n; next++) {
+                if(dp[i]) {
+                    if(next == n-1) {
+                        return true;
+                    } 
+                    dp[next] = true;
+                }
             }
+            
         }
         
-        return lastPosition == 0;
+        return dp[n-1];
     }
     
     // If you've visited an index previously, then you know the answer of reaching n-1 from that index already
