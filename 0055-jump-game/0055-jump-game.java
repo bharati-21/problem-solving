@@ -5,34 +5,40 @@ class Solution {
         }
         
         int n = nums.length;
-        int jumps = 0;
-        Set<Integer> seen = new HashSet();
-        Queue<Integer> nextJumps = new LinkedList();
-        nextJumps.add(0);
-        int lastSeenMax = 0;
-        seen.add(0);
-        while(!nextJumps.isEmpty()) {
-            int size = nextJumps.size();
-            while(size-- > 0) {
-                int index = nextJumps.poll();
-                if(index == n-1){
-                    System.out.println(jumps);
-                    return true;
-                }
-                int maxJump = nums[index];
-
-                int start = Math.max(index+1, lastSeenMax+1);
-                int end = index+maxJump;
-                for(int next = start; next <= end && next < n; next++) {
-                    if(!seen.contains(next)) {
-                        nextJumps.add(next);
-                    }
-                }
-                lastSeenMax = Math.max(end, lastSeenMax);
-            }
-            jumps++;
+        Boolean[] memo = new Boolean[n];
+        Arrays.fill(memo, null);
+        return canJumpHelper(nums, 0, n, memo);
+    }
+    
+    // If you've visited an index previously, then you know the answer of reaching n-1 from that index already
+    // So use the computed value
+    private boolean canJumpHelper(int[] nums, int index, int n, Boolean[] memo) {
+        if(index == n-1) {
+            return true;
         }
         
-        return false;
+        if(index >= n) {
+            return false;
+        }
+        
+        if(memo[index] != null) {
+            return memo[index];
+        }
+        
+        int maxJump = nums[index];
+        
+        for(int i = 1; i <= maxJump; i++) {
+            int nextIndex = index + i;
+            boolean nextJump = canJumpHelper(nums, nextIndex, n, memo);
+            if(nextJump) {
+                return memo[index] = true;
+            }
+        }
+        
+        // all possibilities have been seen
+        return memo[index] = false;
     }
 }
+
+// Brute force can lead to n!
+// Since at every index, we might have to explore n-index places
