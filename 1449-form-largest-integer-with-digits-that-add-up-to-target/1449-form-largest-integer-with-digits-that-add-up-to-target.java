@@ -10,10 +10,6 @@ class Solution {
     }
     
     private String largestNumberHelper(int[] cost, int target, String[] memo) {
-        if(target < 0) {
-            return "0";
-        }
-        
         if(target == 0) {
             return "";
         }
@@ -26,6 +22,9 @@ class Solution {
         String largestNum = "0";
         for(int i = 0; i<cost.length; i++) {
             int nextTarget = target - cost[i];
+            if(nextTarget < 0) {
+                continue;
+            }
             
             String nextNum = largestNumberHelper(cost, nextTarget, memo);
             if(nextNum.equals("0")) {
