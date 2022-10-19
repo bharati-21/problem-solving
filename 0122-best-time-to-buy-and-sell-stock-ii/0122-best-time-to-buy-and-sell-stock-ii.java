@@ -12,22 +12,17 @@ class Solution {
         int[] prev = new int[2];
         // you cannot sell anything on day 1
         // you can buy the stock 1 on day 1
+        
+        int prevSell = 0, prevBuy = 0, currBuy = 0, currSell = 0;
         for(int i = n-1; i>=0; i--) {
-            for(int j = 1; j>=0; j--) {
-                if(j == 0) {
-                    // sell here
-                    curr[j] = Math.max(prices[i] + prev[1], prev[0]);
-                }
-                else {
-                    // buy here
-                    curr[j] = Math.max(-prices[i] + curr[0], prev[1]);
-                }
-            }
+            currBuy = Math.max(-prices[i] + prevSell, prevBuy);
+            currSell = Math.max(prices[i] + prevBuy, prevSell);
             
-            prev = curr;
+            prevBuy = currBuy;
+            prevSell = currSell;
         }
         
-        return prev[1];
+        return prevBuy;
     }
     
     private int maxProfitHelper(int[] prices, int i, int canBuy, int n, Integer[][] memo) {
