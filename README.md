@@ -1204,7 +1204,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        66
+        67
       </td>
       <td>
         <a href="https://leetcode.com/problems/house-robber">
@@ -1221,7 +1221,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        67
+        68
       </td>
       <td>
         <a href="https://leetcode.com/problems/longest-palindromic-substring/">
@@ -1238,7 +1238,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        68
+        69
       </td>
       <td>
         <a href="https://leetcode.com/problems/longest-common-subsequence/">
@@ -1255,7 +1255,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        69
+        70
       </td>
       <td>
         <a href="https://leetcode.com/problems/palindromic-substrings/">
