@@ -4,9 +4,31 @@ class Solution {
             return 0;
         }
         int n = prices.length;
-        Integer[][] memo = new Integer[n][2];
         
-        return maxProfitHelper(prices, 0, 1, n, memo);
+        int[][] dp = new int[n+1][2];
+        dp[n][0] = 0;
+        dp[n][1] = 0; 
+        // you cannot sell anything on day 1
+        // you can buy the stock 1 on day 1
+        for(int i = n-1; i>=0; i--) {
+            for(int j = 1; j>=0; j--) {
+                if(j == 0) {
+                    // sell here
+                    dp[i][j] = Math.max(prices[i] + dp[i+1][1], dp[i+1][0]);
+                }
+                else {
+                    // buy here
+                    dp[i][j] = Math.max(-prices[i] + dp[i+1][0], dp[i+1][1]);
+                }
+            }
+        }
+        
+        for(int[] row: dp) {
+            System.out.println(Arrays.toString(row));
+        }
+        
+        return dp[0][1];
+        
     }
     
     private int maxProfitHelper(int[] prices, int i, int canBuy, int n, Integer[][] memo) {
@@ -37,3 +59,12 @@ class Solution {
         return memo[i][canBuy] = Math.max(buyNext, sellNext);
     }
 }
+
+/*
+f(0,1)
+ => -7 + f(1,0)
+        => 1 + f(2,1)
+            => -5 + f(3,0)
+                => 
+
+*/
