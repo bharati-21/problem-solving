@@ -1117,6 +1117,159 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         17/10/2022, 22:45 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        63
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/count-and-say/">
+         38. Count and Say
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Recursion</code>
+      </td>
+      <td>
+        18/10/2022, 10:03 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        64
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/min-cost-climbing-stairs/">
+          746. Min Cost Climbing Stairs
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        18/10/2022, 11:20 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        64
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/min-cost-climbing-stairs/">
+          746. Min Cost Climbing Stairs
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        18/10/2022, 11:20 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        65
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/house-robber">
+          198. House Robber
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        18/10/2022, 12:33 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        66
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/house-robber">
+          198. House Robber
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        18/10/2022, 12:33 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        66
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/house-robber">
+          213. House Robber II
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        18/10/2022, 12:33 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        67
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/longest-palindromic-substring/">
+          5. Longest Palindromic Substring
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        18/10/2022, 18:54 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        68
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/longest-common-subsequence/">
+          1143. Longest Common Subsequence
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        18/10/2022, 21:07 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        69
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/palindromic-substrings/">
+          647. Palindromic Substrings
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        18/10/2022, 22:52 IST
+      </td>
+    </tr>
   </tbody>
 </table>
 
