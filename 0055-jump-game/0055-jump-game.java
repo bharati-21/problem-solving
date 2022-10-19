@@ -5,9 +5,16 @@ class Solution {
         }
         
         int n = nums.length;
-        Boolean[] memo = new Boolean[n];
-        Arrays.fill(memo, null);
-        return canJumpHelper(nums, 0, n, memo);
+                
+        int lastPosition = n-1;
+        for(int i = n-1; i>=0; i--) {
+            int maxJump = nums[i];
+            if(maxJump + i >= lastPosition) {
+                lastPosition = i;
+            }
+        }
+        
+        return lastPosition == 0;
     }
     
     // If you've visited an index previously, then you know the answer of reaching n-1 from that index already
