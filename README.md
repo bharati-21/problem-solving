@@ -1270,7 +1270,153 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         18/10/2022, 22:52 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        71
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/">
+          1449. Form Largest Integer With Digits That Add up to Target
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        19/10/2022, 08:22 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        71
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/">
+          1449. Form Largest Integer With Digits That Add up to Target
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        19/10/2022, 08:22 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        72
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/top-k-frequent-words/">
+          692. Top K Frequent Words
+        </a>
+      </td>
+      <td>
+        <code>Hash Table</code>
+        <code>String</code>
+        <code>Trie</code>
+        <code>Sorting</code>
+        <code>Heap</code>
+        <code>Priority Queue</code>
+      </td>
+      <td>
+        19/10/2022, 08:47 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        73
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/validate-binary-search-tree/">
+          98. Validate Binary Search Tree
+        </a>
+      </td>
+      <td>
+        <code>Binary Tree</code>
+        <code>Binary Search Tree</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        19/10/2022, 11:57 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        74
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/">
+          98. Validate Binary Search Tree
+        </a>
+      </td>
+      <td>
+        <code>Binary Tree</code>
+        <code>Binary Search Tree</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        19/10/2022, 11:52 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        75
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii">
+          122. Best Time to Buy and Sell Stock II
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Greedy</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        19/10/2022, 23:16 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        75
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii">
+          122. Best Time to Buy and Sell Stock II
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Greedy</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        19/10/2022, 23:16 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        76
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii">
+          123. Best Time to Buy and Sell Stock III
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        19/10/2022, 23:46 IST
+      </td>
+    </tr>
   </tbody>
 </table>
-
 
