@@ -8,15 +8,27 @@ class Solution {
         
         // At index i, you are buying or selling with 2/1/0 transactions left, then
         // What is the max profit at that point?
-        int[][][] memo = new int[n][2][3];
+        int[][][] dp = new int[n+1][2][3];
         
-        for(int[][] row1: memo) {
-            for(int[] row2: row1) {
-                Arrays.fill(row2, -1);
+        // All the choices for the last indices are 0
+        
+        for(int i = n-1; i>=0; i--) {
+            for(int j = 0; j<=1; j++) {
+                for(int t = 1; t<=2; t++) {
+                    if(j == 0) {
+                        // you sell today
+                        dp[i][j][t] = Math.max(prices[i] + dp[i+1][j+1][t-1], dp[i+1][j][t]);
+                    }
+                    else {
+                        // buy now
+                        dp[i][j][t] = Math.max(-prices[i] + dp[i+1][j-1][t], dp[i+1][j][t]);
+                    }
+                }
             }
         }
         
-        return maxProfitHelper(prices, 0, 1, 2, n, memo);
+        return dp[0][1][2];
+        // return maxProfitHelper(prices, 0, 1, 2, n, memo);
     }
     
     private int maxProfitHelper(int[] prices, int i, int canBuy, int transactions, int n, int[][][] memo) {
@@ -39,7 +51,7 @@ class Solution {
         // This means you can buy now
         if(canBuy == 1) {
             // buy now or buy next
-            int buyNow = -price + maxProfitHelper(prices, i+1, 0, transactions-1, n, memo);
+            int buyNow = -price + maxProfitHelper(prices, i+1, 0, transactions, n, memo);
             int buyNext = maxProfitHelper(prices, i+1, canBuy, transactions, n, memo);
             
             return memo[i][canBuy][transactions] = Math.max(buyNow, buyNext);
@@ -48,7 +60,7 @@ class Solution {
         // You can only sell today and move to next day to buy
         // or sell the next day
         int sellNext = maxProfitHelper(prices, i+1, canBuy, transactions, n, memo);
-        int sellNowBuyNext = price + maxProfitHelper(prices, i+1, 1, transactions, n, memo);
+        int sellNowBuyNext = price + maxProfitHelper(prices, i+1, 1, transactions-1, n, memo);
 
         return memo[i][canBuy][transactions] = Math.max(sellNext, sellNowBuyNext);
     }
