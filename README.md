@@ -1435,6 +1435,62 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         20/10/2022, 11:42 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        80
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/clone-graph">
+          133. Clone Graph
+        </a>
+      </td>
+      <td>
+        <code>Graph</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        20/10/2022, 12:28 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        81
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/max-area-of-island/">
+          695. Max Area of Island
+        </a>
+      </td>
+      <td>
+        <code>Graph</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+        <code>Union Find</code>
+      </td>
+      <td>
+        20/10/2022, 12:28 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        82
+      </td>
+      <td>
+        <a href=https://leetcode.com/problems/pacific-atlantic-water-flow/">
+          417. Pacific Atlantic Water Flow
+        </a>
+      </td>
+      <td>
+        <code>Graph</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+        <code>Matrix</code>
+      </td>
+      <td>
+        20/10/2022, 23:27 IST
+      </td>
+    </tr>
   </tbody>
 </table>
 
