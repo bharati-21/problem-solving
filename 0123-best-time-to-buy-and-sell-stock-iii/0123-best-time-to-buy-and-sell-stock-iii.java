@@ -9,6 +9,8 @@ class Solution {
         // At index i, you are buying or selling with 2/1/0 transactions left, then
         // What is the max profit at that point?
         int[][][] dp = new int[n+1][2][3];
+        int next[][] = new int[2][3];
+        int curr[][] = new int[2][3];
         
         // All the choices for the last indices are 0
         
@@ -17,17 +19,18 @@ class Solution {
                 for(int t = 1; t<=2; t++) {
                     if(j == 0) {
                         // you sell today
-                        dp[i][j][t] = Math.max(prices[i] + dp[i+1][j+1][t-1], dp[i+1][j][t]);
+                        curr[j][t] = Math.max(prices[i] + next[j+1][t-1], next[j][t]);
                     }
                     else {
                         // buy now
-                        dp[i][j][t] = Math.max(-prices[i] + dp[i+1][j-1][t], dp[i+1][j][t]);
+                        curr[j][t] = Math.max(-prices[i] + next[j-1][t], next[j][t]);
                     }
                 }
             }
+            next = curr;
         }
         
-        return dp[0][1][2];
+        return next[1][2];
         // return maxProfitHelper(prices, 0, 1, 2, n, memo);
     }
     
