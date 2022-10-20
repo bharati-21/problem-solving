@@ -1289,7 +1289,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        71
+        72
       </td>
       <td>
         <a href="https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/">
@@ -1306,7 +1306,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        72
+        73
       </td>
       <td>
         <a href="https://leetcode.com/problems/top-k-frequent-words/">
@@ -1327,7 +1327,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        73
+        74
       </td>
       <td>
         <a href="https://leetcode.com/problems/validate-binary-search-tree/">
@@ -1346,7 +1346,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        74
+        75
       </td>
       <td>
         <a href="https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/">
@@ -1366,43 +1366,43 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        75
-      </td>
-      <td>
-        <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii">
-          122. Best Time to Buy and Sell Stock II
-        </a>
-      </td>
-      <td>
-        <code>Array</code>
-        <code>Greedy</code>
-        <code>Dynamic Programming</code>
-      </td>
-      <td>
-        19/10/2022, 23:16 IST
-      </td>
-    </tr>
-    <tr>
-      <td>
-        75
-      </td>
-      <td>
-        <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii">
-          122. Best Time to Buy and Sell Stock II
-        </a>
-      </td>
-      <td>
-        <code>Array</code>
-        <code>Greedy</code>
-        <code>Dynamic Programming</code>
-      </td>
-      <td>
-        19/10/2022, 23:16 IST
-      </td>
-    </tr>
-    <tr>
-      <td>
         76
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii">
+          122. Best Time to Buy and Sell Stock II
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Greedy</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        19/10/2022, 23:16 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        77
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii">
+          122. Best Time to Buy and Sell Stock II
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Greedy</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        19/10/2022, 23:16 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        78
       </td>
       <td>
         <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii">
