@@ -1417,6 +1417,24 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         19/10/2022, 23:46 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        79
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/integer-to-roman/">
+          12. Integer to Roman
+        </a>
+      </td>
+      <td>
+        <code>Hash Table</code>
+        <code>String</code>
+        <code>Math</code>
+      </td>
+      <td>
+        20/10/2022, 11:42 IST
+      </td>
+    </tr>
   </tbody>
 </table>
 
