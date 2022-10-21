@@ -11,9 +11,7 @@ class Solution {
             int num = nums[i];
             // If the window of [i, i+k] is done
             // remove the left most number
-            // E.g. if the window was k = 2, and i was 3, [0,1,2,3], then we 
-            // remove oth 
-            if(i-k > 0) {
+            if(i > k) {
                 int leftMostNum = i-k-1;
                 set.remove(nums[leftMostNum]);
             }
