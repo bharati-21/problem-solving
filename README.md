@@ -1547,7 +1547,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        86
+        22
       </td>
       <td>
         <a href="https://leetcode.com/problems/minimum-window-substring/">
