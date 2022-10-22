@@ -1545,23 +1545,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         21/10/2022, 22:53 IST
       </td>
     </tr>
-    <tr>
-      <td>
-        85
-      </td>
-      <td>
-        <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/">
-          167. Two Sum II - Input Array Is Sorted
-        </a>
-      </td>
-      <td>
-        <code>Array</code>
-        <code>Two Pointers</code>
-        <code>Binary Search</code>
-      </td>
-      <td>
-        21/10/2022, 22:53 IST
-      </td>
-    </tr>
   </tbody>
 </table>
