@@ -9,31 +9,37 @@ class Solution {
         int n = nums.length;
         Arrays.sort(nums);
         
-        for(int i = 0; i<n-2; i++) {
-            if(i == 0 || nums[i] != nums[i-1]) {
-                int num = nums[i];
-                int j = i+1, k = n-1;
-                int target = 0-num;
+        for(int i = 0; i<n; i++) {
+            if(i > 0 && nums[i] == nums[i-1]) {
+                continue;
+            }
+            
+            int j = i+1;
+            int k = n-1;
+            int target = 0 - nums[i];
+            
+            while(j < k) {
+                int sum = nums[j] + nums[k];
                 
-                while(j < k) {
-                    int sum = nums[j] + nums[k];
-                    if(sum == target) {
-                        list.add(Arrays.asList(nums[i], nums[j], nums[k]));
-                        while(j < k && nums[j] == nums[j+1]) {
-                            j++;
-                        }
-                        while(k > j && nums[k] == nums[k-1]) {
-                            k--;
-                        }
-                        j++;
-                        k--;
-                    }
-                    else if(sum < target) {
-                        j++;
-                    }
-                    else {
-                        k--;
-                    }
+                if(sum == target) {
+                    List<Integer> l = new ArrayList();
+                    l.add(nums[i]);
+                    l.add(nums[j]);
+                    l.add(nums[k]);
+                    list.add(l);
+                    
+                    while(j < k && nums[j] == nums[j+1]) j++;
+                    while(j < k && nums[k] == nums[k-1]) k--;
+                    
+                    j++;
+                    k--;
+                }
+                
+                else if(sum < target) {
+                    j++;
+                }
+                else {
+                    k--;
                 }
             }
         }
