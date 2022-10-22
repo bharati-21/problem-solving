@@ -217,7 +217,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Depth First Search</code>
       </td>
       <td>
-        09/10/2022 11:30, IST
+        09/10/2022, 11:30 IST
       </td>
     </tr>
     <tr>
@@ -239,7 +239,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Iterator</code>
       </td>
       <td>
-        09/10/2022 12:00, IST
+        09/10/2022, 12:00 IST
       </td>
     </tr>
     <tr>
@@ -258,7 +258,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Breadth First Search</code>
       </td>
       <td>
-        09/10/2022 13:18, IST
+        09/10/2022, 13:18 IST
       </td>
     </tr>
     <tr>
@@ -277,7 +277,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Breadth First Search</code>
       </td>
       <td>
-        09/10/2022 13:54, IST
+        09/10/2022, 13:54 IST
       </td>
     </tr>
     <tr>
@@ -296,7 +296,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Breadth First Search</code>
       </td>
       <td>
-        09/10/2022 15:33, IST
+        09/10/2022, 15:33 IST
       </td>
     </tr>
     <tr>
@@ -315,7 +315,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Breadth First Search</code>
       </td>
       <td>
-        09/10/2022 15:33, IST
+        09/10/2022, 15:33 IST
       </td>
     </tr>
     <tr>
@@ -333,7 +333,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Dynamic Programming</code>
       </td>
       <td>
-        09/10/2022 22:32, IST
+        09/10/2022, 22:32 IST
       </td>
     </tr>
     <tr>
@@ -350,7 +350,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Greedy</code>
       </td>
       <td>
-        10/10/2022 11:07, IST
+        10/10/2022, 11:07 IST
       </td>
     </tr>
     <tr>
@@ -370,7 +370,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Depth First Search</code>
       </td>
       <td>
-        10/10/2022 19:45, IST
+        10/10/2022, 19:45 IST
       </td>
     </tr>
     <tr>
@@ -390,7 +390,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Depth First Search</code>
       </td>
       <td>
-        10/10/2022 20:34, IST
+        10/10/2022, 20:34 IST
       </td>
     </tr>
     <tr>
@@ -407,7 +407,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Recursion</code>
       </td>
       <td>
-        10/10/2022 22:59, IST
+        10/10/2022, 22:59 IST
       </td>
     </tr>
     <tr>
@@ -424,7 +424,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Recursion</code>
       </td>
       <td>
-        10/10/2022 23:01, IST
+        10/10/2022, 23:01 IST
       </td>
     </tr>
     <tr>
@@ -442,7 +442,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Depth First Search</code>
       </td>
       <td>
-        10/10/2022 23:16, IST
+        10/10/2022, 23:16 IST
       </td>
     </tr>
     <tr>
@@ -459,7 +459,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Greedy</code>
       </td>
       <td>
-        11/10/2022 09:48, IST
+        11/10/2022, 09:48 IST
       </td>
     </tr>
     <tr>
@@ -477,7 +477,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Greedy</code>
       </td>
       <td>
-        11/10/2022 10:56, IST
+        11/10/2022, 10:56 IST
       </td>
     </tr>
     <tr>
@@ -496,7 +496,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Sorting</code>
       </td>
       <td>
-        11/10/2022 12:13, IST
+        11/10/2022, 12:13 IST
       </td>
     </tr>
     <tr>
@@ -515,7 +515,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Sorting</code>
       </td>
       <td>
-        11/10/2022 12:22, IST
+        11/10/2022, 12:22 IST
       </td>
     </tr>
     <tr>
@@ -532,7 +532,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Greedy</code>
       </td>
       <td>
-        11/10/2022 16:36, IST
+        11/10/2022, 16:36 IST
       </td>
     </tr>
     <tr>
@@ -550,7 +550,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Greedy</code>
       </td>
       <td>
-        11/10/2022 17:39, IST
+        11/10/2022, 17:39 IST
       </td>
     </tr>
     <tr>
@@ -569,7 +569,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Greedy</code>
       </td>
       <td>
-        11/10/2022 18:09, IST
+        11/10/2022, 18:09 IST
       </td>
     </tr>
     <tr>
@@ -588,7 +588,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Sorting</code>
       </td>
       <td>
-        11/10/2022 18:23, IST
+        11/10/2022, 18:23 IST
       </td>
     </tr>
     <tr>
@@ -605,7 +605,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Greedy</code>
       </td>
       <td>
-        11/10/2022 22:07, IST
+        11/10/2022, 22:07 IST
       </td>
     </tr>
     <tr>
@@ -623,7 +623,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Dynamic Programming</code>
       </td>
       <td>
-        12/10/2022 09:45, IST
+        12/10/2022, 09:45 IST
       </td>
     </tr>
     <tr>
@@ -641,7 +641,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Greedy</code>
       </td>
       <td>
-        12/10/2022 12:26, IST
+        12/10/2022, 12:26 IST
       </td>
     </tr>
     <tr>
@@ -659,7 +659,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Breadth First Search</code>
       </td>
       <td>
-        12/10/2022 17:49, IST
+        12/10/2022, 17:49 IST
       </td>
     </tr>
     <tr>
@@ -679,7 +679,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Breadth First Search</code>
       </td>
       <td>
-        12/10/2022 17:56, IST
+        12/10/2022, 17:56 IST
       </td>
     </tr>
     <tr>
@@ -699,7 +699,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Breadth First Search</code>
       </td>
       <td>
-        12/10/2022 17:56, IST
+        12/10/2022, 17:56 IST
       </td>
     </tr>
     <tr>
@@ -715,7 +715,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Linked List</code>
       </td>
       <td>
-        13/10/2022 09:24, IST
+        13/10/2022, 09:24 IST
       </td>
     </tr>
     <tr>
@@ -732,7 +732,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Hash Table</code>
       </td>
       <td>
-        13/10/2022 09:35, IST
+        13/10/2022, 09:35 IST
       </td>
     </tr>
     <tr>
@@ -750,7 +750,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Recursion</code>
       </td>
       <td>
-        13/10/2022 09:35, IST
+        13/10/2022, 09:35 IST
       </td>
     </tr>
     <tr>
@@ -768,7 +768,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Sliding Window</code>
       </td>
       <td>
-        13/10/2022 15:38, IST
+        13/10/2022, 15:38 IST
       </td>
     </tr>
     <tr>
@@ -785,7 +785,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Two Pointers</code>
       </td>
       <td>
-        13/10/2022 15:30, IST
+        13/10/2022, 15:30 IST
       </td>
     </tr>
     <tr>
@@ -803,7 +803,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Sliding Window</code>
       </td>
       <td>
-        13/10/2022 19:59, IST
+        13/10/2022, 19:59 IST
       </td>
     </tr>
     <tr>
@@ -1477,7 +1477,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         82
       </td>
       <td>
-        <a href=https://leetcode.com/problems/pacific-atlantic-water-flow/">
+        <a href="https://leetcode.com/problems/pacific-atlantic-water-flow/">
           417. Pacific Atlantic Water Flow
         </a>
       </td>
@@ -1560,7 +1560,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         <code>Hash Table</code>
       </td>
       <td>
-        212/10/2022, 11:37 IST
+        22/10/2022, 11:37 IST
       </td>
     </tr>
   </tbody>
