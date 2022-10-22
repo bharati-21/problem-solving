@@ -16,9 +16,9 @@ class Solution {
         
         // This is the number of unique characters in T 
         // that are required in the min substring
-        int required = mapT.size();
+        int numUniqueCharsRequired = mapT.size();
         
-        int left = 0, right = 0, formed = 0;
+        int left = 0, right = 0, numUniqueCharsFormed = 0;
         Map<Character, Integer> mapS = new HashMap();
         
         int smallestWindow = -1;
@@ -34,10 +34,10 @@ class Solution {
             mapS.put(ch, c);
     
             if(mapT.containsKey(ch) && mapT.get(ch) == c) {
-                formed++;
+                numUniqueCharsFormed++;
             }
             
-            while(left <= right && formed == required) {
+            while(left <= right && numUniqueCharsFormed == numUniqueCharsRequired) {
                 char leftC = s.charAt(left);
                 int currWindow = right - left + 1;
                 if(smallestWindow == -1 || currWindow < smallestWindow) {
@@ -50,7 +50,7 @@ class Solution {
                 // check if the removed left most char
                 // still matches in the current window
                 if(mapT.containsKey(leftC) && mapT.get(leftC) > mapS.get(leftC)) {
-                    formed--;
+                    numUniqueCharsFormed--;
                 }
                 
                 // increment the window from the left
