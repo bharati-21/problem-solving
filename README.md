@@ -1491,6 +1491,77 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         20/10/2022, 23:27 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        83
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/contains-duplicate-ii/">
+          1219. Contains Duplicate II
+        </a>
+      </td>
+      <td>
+        <code>Hash Table</code>
+        <code>Array</code>
+        <code>Sliding Window</code>
+      </td>
+      <td>
+        21/10/2022, 10:54 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        84
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/redundant-connection/">
+          684. Redundant Connection 
+        </a>
+      </td>
+      <td>
+        <code>Graph</code>
+        <code>Union Find</code>
+        <code>Depth First Search</code>
+      </td>
+      <td>
+        21/10/2022, 13:03 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        85
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/">
+          167. Two Sum II - Input Array Is Sorted
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Two Pointers</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        21/10/2022, 22:53 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        85
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/">
+          167. Two Sum II - Input Array Is Sorted
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Two Pointers</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        21/10/2022, 22:53 IST
+      </td>
+    </tr>
   </tbody>
 </table>
-
