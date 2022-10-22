@@ -1545,5 +1545,23 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         21/10/2022, 22:53 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        86
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/minimum-window-substring/">
+          76. Minimum Window Substring
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Two Pointers</code>
+        <code>Hash Table</code>
+      </td>
+      <td>
+        21/10/2022, 22:53 IST
+      </td>
+    </tr>
   </tbody>
 </table>
