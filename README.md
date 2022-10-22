@@ -1547,7 +1547,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        22
+        86
       </td>
       <td>
         <a href="https://leetcode.com/problems/minimum-window-substring/">
@@ -1561,6 +1561,78 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
       </td>
       <td>
         22/10/2022, 11:37 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        87
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/3sum/">
+          15. 3Sum
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Two Pointers</code>
+        <code>Hash Table</code>
+        <code>Sorting</code>
+      </td>
+      <td>
+        22/10/2022, 13:31 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        88
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/container-with-most-water/">
+          11. Container With Most Water
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Two Pointers</code>
+      </td>
+      <td>
+        22/10/2022, 15:39 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        89
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/trapping-rain-water/">
+          42. Trapping Rain Water
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+        <code>Two Pointers</code>
+      </td>
+      <td>
+        22/10/2022, 18:35 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        90
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/4sum/">
+          18. 4Sum
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Sorting</code>
+        <code>Two Pointers</code>
+      </td>
+      <td>
+        22/10/2022, 19:16 IST
       </td>
     </tr>
   </tbody>
