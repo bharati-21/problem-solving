@@ -6,21 +6,35 @@ class Solution {
         
         int n = height.length;
         
-        int[] leftMax = new int[n];
-        for(int i = 1; i<n; i++) {
-            leftMax[i] = Math.max(height[i-1], leftMax[i-1]);
-        }
-        
-        int[] rightMax = new int[n];
-        for(int i = n-2; i>=0; i--) {
-            rightMax[i] = Math.max(height[i+1], rightMax[i+1]);
-        }
-        
+        int leftMax = 0;
+        int rightMax = 0;
         int blocks = 0;
-        for(int i = 0; i<n; i++) {
-            int diff = Math.min(leftMax[i], rightMax[i]) - height[i]; 
+        
+        
+        int left = 0, right = n-1;
+        while(left < right) {
+            int lHeight = height[left];
+            int rHeight = height[right];
+            
+            int diff = 0;
+            if(leftMax <= rightMax) {
+                diff = leftMax - lHeight;
+            }
+            else {
+                diff = rightMax - rHeight;
+            }
+            
             if(diff > 0) {
                 blocks+=diff;
+            }
+        
+            leftMax = Math.max(leftMax, lHeight);
+            rightMax = Math.max(rightMax, rHeight);
+            if(leftMax <= rightMax) {
+                left++;
+            }
+            else { 
+                right--;    
             }
         }
         
