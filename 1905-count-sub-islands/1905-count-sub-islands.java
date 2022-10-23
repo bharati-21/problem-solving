@@ -36,10 +36,6 @@ class Solution {
         visited[row][col] = true;
         
         boolean subIsland = true;
-        if(grid2[row][col] == 0) {
-            // Since there's a clear mismatch
-            subIsland = false;
-        }
         
         for(int[] dir: directions) {
             int nRow = row + dir[0];
@@ -55,7 +51,10 @@ class Solution {
             }
         }
         
-        
+        if(grid2[row][col] == 0) {
+            // Since there's a clear mismatch
+            subIsland = false;
+        }
         return subIsland;
     }
     
