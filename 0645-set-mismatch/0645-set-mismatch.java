@@ -16,7 +16,7 @@ class Solution {
                 missing[0] = num;
             }
             else if(num > prev+1) {
-                missing[1] = prev+1;
+                missing[1] = num-1;
             }
         }
         
