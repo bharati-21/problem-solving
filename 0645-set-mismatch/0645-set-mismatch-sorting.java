@@ -9,15 +9,14 @@ class Solution {
         
         Arrays.sort(nums);
         
-        missing[1] = 1;
-        for(int i = 1; i<n; i++) {
+        for(int i = 0; i<n; i++) {
             int num = nums[i];
-            int prev = nums[i-1];
-            if(prev == num) {
+            int prev = i > 0 ? nums[i-1] : 0;
+            if(i > 0 && prev == num) {
                 missing[0] = num;
             }
             else if(num > prev+1) {
-                missing[1] = prev+1;
+                missing[1] = num-1;
             }
         }
         
