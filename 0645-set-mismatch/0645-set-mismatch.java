@@ -7,25 +7,22 @@ class Solution {
         int n = nums.length;
         int[] missing = new int[2];
         
-        Arrays.sort(nums);
+        Map<Integer, Integer> frequency = new HashMap();
         
         for(int i = 0; i<n; i++) {
             int num = nums[i];
-            int prev = i > 0 ? nums[i-1] : 0;
-            if(i > 0 && prev == num) {
-                missing[0] = num;
+            frequency.put(num, frequency.getOrDefault(num, 0) + 1);
+        }
+        
+        for(int i = 1; i <= n; i++) {
+            if(!frequency.containsKey(i)) {
+                missing[1] = i;
             }
-            else if(num > prev+1) {
-                missing[1] = num-1;
+            else if(frequency.get(i) == 2) {
+                missing[0] = i;
             }
         }
         
-        if(nums[n-1] != n) {
-            missing[1] = n;
-        }
         return missing;
     }
 }
-
-// 2 3 3 4 5 6
-// 1 2 2 4
