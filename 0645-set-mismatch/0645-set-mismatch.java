@@ -9,8 +9,8 @@ class Solution {
         
         Arrays.sort(nums);
         
-        for(int i = 0; i<n; i++) {
-            int num = nums[i];
+        for(int i = 0; i<=n; i++) {
+            int num = i == n ? n+1 : nums[i];
             int prev = i > 0 ? nums[i-1] : 0;
             if(i > 0 && prev == num) {
                 missing[0] = num;
@@ -20,9 +20,6 @@ class Solution {
             }
         }
         
-        if(nums[n-1] != n) {
-            missing[1] = n;
-        }
         return missing;
     }
 }
