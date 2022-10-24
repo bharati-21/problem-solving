@@ -1635,5 +1635,80 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         22/10/2022, 19:16 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        91
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/4sum/">
+         645. Set Mismatch
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Sorting</code>
+        <code>Hash Table</code>
+        <code>Bit Manipulation</code>
+      </td>
+      <td>
+        23/10/2022, 09:59 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        92
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/count-sub-islands/">
+         1905. Count Sub Islands
+        </a>
+      </td>
+      <td>
+        <code>Graph</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+        <code>Union Find</code>
+      </td>
+      <td>
+        23/10/2022, 10:32 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        93
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/">
+         1466. Reorder Routes to Make All Paths Lead to the City Zero
+        </a>
+      </td>
+      <td>
+        <code>Graph</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        23/10/2022, 10:53 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        94
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/open-the-lock/">
+         752. Open the Lock
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Hash Table</code>
+        <code>Breadth First Search</code>
+        <code>String</code>
+      </td>
+      <td>
+        23/10/2022, 11:46 IST
+      </td>
+    </tr>
   </tbody>
 </table>
