@@ -3,42 +3,36 @@ class Solution {
         if(arr == null || arr.size() == 0){
             return 0;
         }
-                
-        return maxLengthHelper(arr, 0, new StringBuilder(""));
+        return maxLengthHelper(arr, 0, new int[26]);
     }
     
-    private int maxLengthHelper(List<String> arr, int index, StringBuilder sb) {
+    private int maxLengthHelper(List<String> arr, int index, int[] seen) {
         if(index == arr.size()) {
-            return sb.length();
+            return 0;
         }
         
-        String subsequence = arr.get(index);
-                
-        // If we can combine the current subsequence with the previous string
-        boolean hasUniqueChars = hasUnique(sb.toString() + subsequence);
-            
+        int[] currSeen = seen.clone();
+        String sequence = arr.get(index);
+        boolean hasUnique = hasUniqueChars(sequence, currSeen);
+        
         int includeCurr = 0;
-        if(hasUniqueChars) {
-            includeCurr =  maxLengthHelper(arr, index+1, sb.append(subsequence));
-            
-            int n = sb.length();
-            int m = subsequence.length();
-            sb = sb.delete(n-m, n);
+        if(hasUnique) {
+           includeCurr =  sequence.length() +  maxLengthHelper(arr, index+1, currSeen);
         }
-                
-        int excludeCurr = maxLengthHelper(arr, index+1, sb);
+        
+        int excludeCurr = 0 + maxLengthHelper(arr, index+1, seen);
         
         return Math.max(includeCurr, excludeCurr);
     }
     
-    private boolean hasUnique(String s) {
-        int[] seen = new int[26];
-        for(int j = 0; j < s.length(); j++) {
-            char c = s.charAt(j);
-            if(seen[c - 'a'] == 1) {
+    private boolean hasUniqueChars(String sequence, int[] seen) {
+        for(char ch: sequence.toCharArray()) {
+            if(seen[ch - 'a'] == 1) {
                 return false;
             }
-            seen[c - 'a']++;
+            else {
+                seen[ch - 'a']+=1;
+            }
         }
         
         return true;
