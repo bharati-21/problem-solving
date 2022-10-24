@@ -13,17 +13,7 @@ class Solution {
         
         int[] currSeen = seen.clone();
         String sequence = arr.get(index);
-        boolean hasUnique = true;
-        
-        for(char ch: sequence.toCharArray()) {
-            if(currSeen[ch - 'a'] == 1) {
-                hasUnique = false;
-                break;
-            }
-            else {
-                currSeen[ch - 'a']+=1;
-            }
-        }
+        boolean hasUnique = hasUniqueChars(sequence, currSeen);
         
         int includeCurr = 0;
         if(hasUnique) {
@@ -33,5 +23,18 @@ class Solution {
         int excludeCurr = 0 + maxLengthHelper(arr, index+1, seen);
         
         return Math.max(includeCurr, excludeCurr);
+    }
+    
+    private boolean hasUniqueChars(String sequence, int[] seen) {
+        for(char ch: sequence.toCharArray()) {
+            if(seen[ch - 'a'] == 1) {
+                return false;
+            }
+            else {
+                seen[ch - 'a']+=1;
+            }
+        }
+        
+        return true;
     }
 }
