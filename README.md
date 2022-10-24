@@ -1710,5 +1710,41 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         23/10/2022, 11:46 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        95
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/">
+          1239. Maximum Length of a Concatenated String with Unique Characters
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>String</code>
+        <code>Backtracking</code>
+        <code>Recursion</code>
+      </td>
+      <td>
+        24/10/2022, 18:19 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        96
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/roman-to-integer/">
+          13. Roman to Integer
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+        <code>Hash Table</code>
+      </td>
+      <td>
+        24/10/2022, 23:13 IST
+      </td>
+    </tr>
   </tbody>
 </table>
