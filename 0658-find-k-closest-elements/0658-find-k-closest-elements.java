@@ -24,8 +24,8 @@ class Solution {
         int right = start, left = start-1;
         while(k-- != 0) {
             if(right < n && left >= 0) {
-                int distLeft = x - arr[left];
-                int distRight = arr[right] - x;
+                int distLeft = Math.abs(arr[left] - x);
+                int distRight = Math.abs(arr[right] - x);
                 if(distLeft <= distRight) {
                     left--;
                 }
