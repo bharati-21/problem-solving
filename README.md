@@ -1746,5 +1746,212 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         24/10/2022, 23:13 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        97
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/">
+          1662. Check If Two String Arrays are Equivalent
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>String</code>
+      </td>
+      <td>
+        25/10/2022, 09:15 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        98
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/search-a-2d-matrix/">
+          74. Search a 2D Matrix
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Matrix</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        25/10/2022, 09:46 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        99
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/search-a-2d-matrix-ii/">
+          240. Search a 2D Matrix II
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Matrix</code>
+        <code>Binary Search</code>
+        <code>Divide and Conquer</code>
+      </td>
+      <td>
+        25/10/2022, 09:52 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        100
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/koko-eating-bananas/">
+          875. Koko Eating Bananas
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        25/10/2022, 10:35 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        101
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/search-in-rotated-sorted-array/">
+          33. Search in Rotated Sorted Array
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        25/10/2022, 16:35 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        102
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">
+          153. Find Minimum in Rotated Sorted Array
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        25/10/2022, 16:59 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        103
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/">
+          34. Find First and Last Position of Element in Sorted Array
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        25/10/2022, 17:26 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        104
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/binary-search/">
+          704. Binary Search
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        25/10/2022, 17:49 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        105
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/sqrtx/">
+          69. Sqrt(x)
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        25/10/2022, 18:05 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        106
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/guess-number-higher-or-lower/">
+          374. Guess Number Higher or Lower
+        </a>
+      </td>
+      <td>
+        <code>Interactive</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        25/10/2022, 18:25 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        107
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/first-bad-version/">
+          278. First Bad Version
+        </a>
+      </td>
+      <td>
+        <code>Interactive</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        25/10/2022, 20:59 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        108
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/find-peak-element/">
+          162. Find Peak Element
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        25/10/2022, 21:03 IST
+      </td>
+    </tr>
   </tbody>
 </table>
