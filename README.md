@@ -2216,5 +2216,150 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         26/10/2022, 20:14 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        122
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/image-overlap/">
+          835. Image Overlap
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Matrix</code>
+      </td>
+      <td>
+        27/10/2022, 10:12 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        123
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/implement-trie-prefix-tree/">
+          208. Implement Trie (Prefix Tree)
+        </a>
+      </td>
+      <td>
+        <code>Deisgn</code>
+        <code>String</code>
+        <code>Hash Table</code>
+        <code>Trie</code>
+      </td>
+      <td>
+        27/10/2022, 14:11 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        124
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/top-k-frequent-elements/">
+          347. Top K Frequent Elements
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Heap</code>
+        <code>Hash Table</code>
+        <code>Priority Queue</code>
+      </td>
+      <td>
+        27/10/2022, 17:41 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        125
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/product-of-array-except-self/">
+          238. Product of Array Except Self
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Prefix Sum</code>
+      </td>
+      <td>
+        27/10/2022, 17:44 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        126
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/longest-consecutive-sequence/">
+          128. Longest Consecutive Sequence
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Hash Table</code>
+      </td>
+      <td>
+        27/10/2022, 18:12 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        127
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/find-median-from-data-stream/">
+          295. Find Median from Data Stream
+        </a>
+      </td>
+      <td>
+        <code>Heap</code>
+        <code>Priority Queue</code>
+        <code>Two Pointers</code>
+        <code>Sorting</code>
+        <code>Design</code>
+      </td>
+      <td>
+        27/10/2022, 18:22 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        128
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/map-sum-pairs/">
+          677. Map Sum Pairs
+        </a>
+      </td>
+      <td>
+        <code>Triw</code>
+        <code>String Queue</code>
+        <code>Hash Table</code>
+        <code>Design</code>
+      </td>
+      <td>
+        27/10/2022, 18:58 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        129
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/insert-interval/">
+          57. Insert Interval
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+      </td>
+      <td>
+        27/10/2022, 22:44 IST
+      </td>
+    </tr>
   </tbody>
 </table>
+
