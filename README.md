@@ -1953,5 +1953,268 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         25/10/2022, 21:03 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        109
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/find-k-closest-elements/">
+          658. Find K Closest Elements
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Binary Search</code>
+        <code>Two Pointers</code>
+        <code>Sorting</code>
+        <code>Heap</code>
+        <code>Priority Queue</code>
+      </td>
+      <td>
+        26/10/2022, 08:07 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        110
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/powx-n/">
+          50. Pow(x, n)
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        26/10/2022, 08:41 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        111
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/valid-perfect-square/">
+         367. Valid Perfect Square
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        26/10/2022, 08:52 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        112
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/find-smallest-letter-greater-than-target/">
+          744. Find Smallest Letter Greater Than Target
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        26/10/2022, 09:04 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        113
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii//">
+          154. Find Minimum in Rotated Sorted Array II
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        26/10/2022, 09:14 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        114
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/intersection-of-two-arrays/">
+          349. Intersection of Two Arrays
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Binary Search</code>
+        <code>Hash Table</code>
+        <code>Sorting</code>
+        <code>Two Pointers</code>
+      </td>
+      <td>
+        26/10/2022, 09:29 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        115
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/intersection-of-two-arrays-ii/">
+          350. Intersection of Two Arrays II
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Binary Search</code>
+        <code>Hash Table</code>
+        <code>Sorting</code>
+        <code>Two Pointers</code>
+      </td>
+      <td>
+        26/10/2022, 09:38 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        116
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/median-of-two-sorted-arrays/">
+          4. Median of Two Sorted Arrays
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Binary Search</code>
+        <code>Divide and Conquer</code>
+      </td>
+      <td>
+        26/10/2022, 09:47 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        117
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/continuous-subarray-sum/">
+          523. Continuous Subarray Sum
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Hash Table</code>
+        <code>Math</code>
+        <code>Prefix Sum</code>
+      </td>
+      <td>
+        26/10/2022, 10:19 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        118
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/maximum-number-of-removable-characters/">
+          1898. Maximum Number of Removable Characters
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Binary Search</code>
+        <code>String</code>
+      </td>
+      <td>
+        26/10/2022, 10:59 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        118
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/">
+          116. Populating Next Right Pointers in Each Node
+        </a>
+      </td>
+      <td>
+        <code>Linked List</code>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Breadth First Search</code>
+        <code>Depth First Search</code>
+      </td>
+      <td>
+        26/10/2022, 11:14 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        119
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/search-suggestions-system/">
+          1268. Search Suggestions System
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>String</code>
+        <code>Trie</code>
+      </td>
+      <td>
+        26/10/2022, 11:45 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        120
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/smallest-string-with-swaps/">
+          1202. Smallest String With Swaps
+        </a>
+      </td>
+      <td>
+        <code>Hash Table</code>
+        <code>String</code>
+        <code>Union Find</code>
+        <code>Breadth First Search</code>
+        <code>Depth First Search</code>
+      </td>
+      <td>
+        26/10/2022, 19:39 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        121
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/evaluate-division/">
+          399. Evaluate Division
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Hash Table</code>
+        <code>Shortest Path</code>
+        <code>Union Find</code>
+        <code>Breadth First Search</code>
+        <code>Depth First Search</code>
+      </td>
+      <td>
+        26/10/2022, 20:14 IST
+      </td>
+    </tr>
   </tbody>
 </table>
