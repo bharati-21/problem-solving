@@ -13,15 +13,19 @@ class Solution {
         int newX = newInterval[0];
         int newY = newInterval[1];
         
-        for(int[] interval: intervals) {
+        int i = 0;
+        boolean merged = false; 
+        for(; i<intervals.length; i++) {
+            int[] interval = intervals[i];
             int x = interval[0], y = interval[1];
             
             if(newY < x) {
                 newIntervals.add(new int[] {
                     newX, newY
                 });
-                newX = x;
-                newY = y;
+                
+                merged = true;
+                break;
             } 
             if(y < newX) {
                 newIntervals.add(new int[]{
@@ -34,12 +38,17 @@ class Solution {
             }
         }
         
-        newIntervals.add(new int[] {
-            newX, newY
-        });
+        if(!merged) {
+            newIntervals.add(new int[] {
+                newX, newY
+            });
+        }
+        for(; i<intervals.length; i++) {
+            newIntervals.add(intervals[i]);
+        }
         
         int[][] ans = new int[newIntervals.size()][2];
-        for(int i = 0; i<newIntervals.size(); i++) {
+        for(i = 0; i<newIntervals.size(); i++) {
             ans[i] = newIntervals.get(i);
         }
         
