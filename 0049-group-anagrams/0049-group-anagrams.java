@@ -8,22 +8,22 @@ class Solution {
         Map<String, List<String>> map = new HashMap();
         
         for(String str: strs) {
-            String countRepresentation = getCountRepresentation(str);
-            if(!map.containsKey(countRepresentation)) {
-                map.put(countRepresentation, new ArrayList());
+            String sortedStr = getSortedString(str);
+            if(!map.containsKey(sortedStr)) {
+                map.put(sortedStr, new ArrayList());
             }
-            map.get(countRepresentation).add(str);
+            map.get(sortedStr).add(str);
         }
         
-        for(String countRepresentation: map.keySet()) {
-            System.out.println(countRepresentation);
-            groups.add(map.get(countRepresentation));
+        for(String sortedStr: map.keySet()) {
+            System.out.println(sortedStr);
+            groups.add(map.get(sortedStr));
         }
         
         return groups;
     }
     
-    private String getCountRepresentation(String s) {
+    private String getSortedString(String s) {
         int[] count = new int[26];
         
         for(int i = 0; i<s.length(); i++) {
