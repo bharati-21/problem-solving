@@ -16,6 +16,7 @@ class Solution {
         }
         
         for(String countRepresentation: map.keySet()) {
+            System.out.println(countRepresentation);
             groups.add(map.get(countRepresentation));
         }
         
@@ -30,6 +31,15 @@ class Solution {
             count[ch - 'a']++;
         }
         
-        return Arrays.toString(count);
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i<26; i++) {
+            int c = count[i];
+            char ch = (char)('a' + i);
+            while(c-- > 0) {
+                sb.append(ch);
+            }
+        }
+        
+        return sb.toString();
     }
 }
