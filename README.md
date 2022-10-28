@@ -2379,6 +2379,110 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         28/10/2022, 11:09 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        131
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/unique-paths/">
+          62. Unique Paths
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        28/10/2022, 12:53 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        132
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/minimum-path-sum/">
+          64. Minimum Path Sum
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+        <code>Dynamic Programming</code>
+        <code>Matrix</code>
+      </td>
+      <td>
+        28/10/2022, 13:16 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        133
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/">
+          2087. Minimum Cost Homecoming of a Robot in a Grid
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+        <code>Greedy</code>
+        <code>Matrix</code>
+      </td>
+      <td>
+        28/10/2022, 13:43 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        134
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/">
+          2400. Number of Ways to Reach a Position After Exactly k Steps
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        28/10/2022, 16:33 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        135
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/triangle/">
+          120. Triangle
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        28/10/2022, 20:21 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        135
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/triangle/">
+          120. Triangle
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        28/10/2022, 20:21 IST
+      </td>
+    </tr>
   </tbody>
 </table>
 
