@@ -2360,6 +2360,25 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         27/10/2022, 22:44 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        130
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/group-anagrams/">
+          49. Group Anagrams
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>String</code>
+        <code>Hash Table</code>
+        <code>Sorting</code>
+      </td>
+      <td>
+        28/10/2022, 11:09 IST
+      </td>
+    </tr>
   </tbody>
 </table>
 
