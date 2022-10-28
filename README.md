@@ -2466,23 +2466,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         28/10/2022, 20:21 IST
       </td>
     </tr>
-    <tr>
-      <td>
-        135
-      </td>
-      <td>
-        <a href="https://leetcode.com/problems/triangle/">
-          120. Triangle
-        </a>
-      </td>
-      <td>
-        <code>Array</code>
-        <code>Dynamic Programming</code>
-      </td>
-      <td>
-        28/10/2022, 20:21 IST
-      </td>
-    </tr>
   </tbody>
 </table>
 
