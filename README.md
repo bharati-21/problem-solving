@@ -2466,6 +2466,113 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         28/10/2022, 20:21 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        136
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/earliest-possible-day-of-full-bloom/">
+          2136. Earliest Possible Day of Full Bloom
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Greedy</code>
+        <code>Sorting</code>
+      </td>
+      <td>
+        29/10/2022, 08:27 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        137
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/minimum-falling-path-sum/">
+          931. Minimum Falling Path Sum
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+        <code>Matrix</code>
+      </td>
+      <td>
+        29/10/2022, 10:15 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        138
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/reaching-points/">
+          780. Reaching Points
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+      </td>
+      <td>
+        29/10/2022, 12:55 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        139
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/subsets/">
+          78. Subsets
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Backtracking</code>
+        <code>Bit Manipulation</code>
+      </td>
+      <td>
+        29/10/2022, 18:31 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        140
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/partition-equal-subset-sum/">
+          416. Partition Equal Subset Sum
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        29/10/2022, 19:54 IST
+      </td>
+    </tr>
+     <tr>
+      <td>
+        141
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/">
+          1498. Number of Subsequences That Satisfy the Given Sum Condition
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>DynTwo Pointers</code>
+        <code>Binary Search</code>
+        <code>Sorting</code>
+      </td>
+      <td>
+        29/10/2022, 21:10 IST
+      </td>
+    </tr>
   </tbody>
 </table>
+
 
