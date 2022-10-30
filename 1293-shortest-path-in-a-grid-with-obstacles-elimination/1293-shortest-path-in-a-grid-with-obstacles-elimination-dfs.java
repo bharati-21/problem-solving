@@ -54,7 +54,7 @@ class Solution {
         if(l >= 0) {
             if(curr == 0)
                 left = shortestPathHelper(i, l, grid, k, visited, memo);
-            if(curr == 1 && k > 0) {
+            if(curr == 1) {
                 // remove this obstacle and also check
                 left = Math.min(left, shortestPathHelper(i, l, grid, k-1, visited, memo));
             }
@@ -62,7 +62,7 @@ class Solution {
         if(r < n) {
             if(curr == 0)
                 right = shortestPathHelper(i, r, grid, k, visited, memo);
-            if(curr == 1 && k > 0) {
+            if(curr == 1 ) {
                 // remove this obstacle and also check
                 right = Math.min(right, shortestPathHelper(i, r, grid, k-1, visited, memo));
             }
@@ -70,7 +70,7 @@ class Solution {
         if(t >= 0) {
             if(curr == 0)
                 top = shortestPathHelper(t, j, grid, k, visited, memo);
-            if(curr == 1 && k > 0) {
+            if(curr == 1) {
                 // remove this obstacle and also check
                 top = Math.min(top, shortestPathHelper(t, j, grid, k-1, visited, memo));
             }
@@ -78,7 +78,7 @@ class Solution {
         if(d < m) {
             if(curr == 0)
                 down = shortestPathHelper(d, j, grid, k, visited, memo);
-            if(curr == 1 && k > 0) {
+            if(curr == 1) {
                 // remove this obstacle and also check
                 down = Math.min(down, shortestPathHelper(d, j, grid, k-1, visited, memo));
             }
