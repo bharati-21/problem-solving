@@ -26,7 +26,7 @@ class Solution {
             return memo[i][j][k];
         }
         
-        if(k >= i + j) return memo[i][j][k] = i+j;
+        // if(k >= i + j) return memo[i][j][k] = i+j;
         
         visited[i][j][k] = true;
         int left = Integer.MAX_VALUE, 
