@@ -16,8 +16,6 @@ class Solution {
             nums[i] = temp;
         }
         
-        System.out.println(Arrays.toString(nums));
-        
         for(i = 0; i<n; i++) {
             int num = nums[i];
             if(num != (i+1)) return i+1;
