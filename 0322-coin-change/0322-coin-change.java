@@ -1,17 +1,43 @@
 class Solution {
     public int coinChange(int[] coins, int amount) {
         int n = coins.length;
-        int[][] memo = new int[n][amount+1];
-        for(int[] row: memo) {
-            Arrays.fill(row, -1);
+        int[][] dp = new int[n][amount+1];
+        
+        for(int i = 0; i<=amount; i++) {
+            int c = coins[0];
+            if(i % c == 0) {
+                dp[0][i] = i/c;
+            }
+            else {
+                dp[0][i] = Integer.MAX_VALUE;
+            }
         }
-        int ans = coinChangeHelper(n-1, coins, amount, memo);
-        return ans == Integer.MAX_VALUE ? -1 : ans;
+        
+        for(int i = 1; i<n; i++) {
+            for(int j = 0; j<=amount; j++) {
+                int c = coins[i];
+                int take = Integer.MAX_VALUE;
+                
+                if(j >= c) {
+                    int prev = dp[i][j-c];
+                    if(prev != Integer.MAX_VALUE) {
+                        prev += 1;
+                    }
+                    take = prev;
+                }
+                
+                int notTake = dp[i-1][j];
+                dp[i][j] = Math.min(take, notTake);
+            }
+        }
+        
+        return dp[n-1][amount] == Integer.MAX_VALUE ? -1 : dp[n-1][amount];
     }
     
     private int coinChangeHelper(int i, int[] coins, int amount, int[][] memo) {
         if(i == 0) {
             int c = coins[0];
+            // amount can be anything from 0 to amount
             if(amount % c != 0) {
                 return Integer.MAX_VALUE;
             }
