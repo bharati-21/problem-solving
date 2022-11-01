@@ -24,10 +24,8 @@ class Solution {
             
         int next = j+1;
         if(next < n && p.charAt(next) == '*') {
-            return (
-                    isMatchHelper(s, p, i, j+2) ||
-                        (matches && isMatchHelper(s, p, i+1, j))
-                 );
+            boolean notTakeStar = isMatchHelper(s, p, i, j+2);
+            return notTakeStar || (matches && isMatchHelper(s, p, i+1, j));
         }
             
         if(matches) {
