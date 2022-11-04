@@ -13,10 +13,17 @@ class Solution {
             char left = reversed[i];
             char right = reversed[j];
             
-            if(!isVowel(left)) {
+            boolean isLeftCharVowel = isVowel(left);
+            boolean isRightCharVowel = isVowel(right);
+            
+            if(!isLeftCharVowel && !isRightCharVowel) {
+                i++;
+                j--;
+            }
+            else if(!isLeftCharVowel) {
                 i++;
             }
-            else if(!isVowel(right)) {
+            else if(!isRightCharVowel) {
                 j--;
             }
             else {
