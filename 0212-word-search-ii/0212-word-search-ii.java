@@ -1,24 +1,9 @@
 class TrieNode {
     Map<Character, TrieNode> children;
     boolean isEnd;
+    String word;
     TrieNode() {
         children = new HashMap();
-        this.isEnd = isEnd;
-    }
-    
-    public void addWord(String word) {
-        TrieNode curr = this;
-        for(int i = 0; i<word.length(); i++) {
-            char ch = word.charAt(i);
-            
-            if(!curr.children.containsKey(ch)) {
-                curr.children.put(ch, new TrieNode());
-            }
-            
-            curr = curr.children.get(ch);
-        }
-        
-        curr.isEnd = true;
     }
 }
 
@@ -27,32 +12,48 @@ class Solution {
         int m = board.length;
         int n = board[0].length;
         
-        TrieNode root = new TrieNode();
-        for(String word: words) {
-            root.addWord(word);
-        }
-        
+        TrieNode root = addWordsToTrie(words);
         List<String> output = new ArrayList();
          
-        Set<String> visitedWord = new HashSet();
         boolean[][] visited = new boolean[m][n];
         
         for(int i = 0; i<m; i++) {
             for(int j = 0; j<n; j++) {
-                searchBoard(board, i, j, root, "", visited, visitedWord);
+                if(!root.children.containsKey(board[i][j])) {
+                    continue;
+                }
+                
+                searchBoard(board, i, j, root, visited, output);
             }
         }
         
-        for(String word: visitedWord) {
-            output.add(word);
-        }
         return output;
     }
     
-    // 
-    private void searchBoard(char[][] board, int row, int col, TrieNode root, String word, boolean[][] visited, Set<String> visitedWord) {
+    public TrieNode addWordsToTrie(String[] words) {
+        TrieNode root = new TrieNode();
+        
+        for(String word: words) {
+            TrieNode curr = root;
+            
+            for(int i = 0; i<word.length(); i++) {
+                char ch = word.charAt(i);
+
+                if(!curr.children.containsKey(ch)) {
+                    curr.children.put(ch, new TrieNode());
+                }
+
+                curr = curr.children.get(ch);
+            }
+            curr.word = word;
+            curr.isEnd = true;
+        }
+        
+        return root;
+    }
+
+    private void searchBoard(char[][] board, int row, int col, TrieNode root, boolean[][] visited, List<String> output) {
         int m = board.length, n = board[0].length;
-        int wordLen = word.length();
         
         if(row >= m || row < 0 || col >= n || col < 0 || visited[row][col]) {
             return;
@@ -70,18 +71,16 @@ class Solution {
         };
         
         root = root.children.get(currChar);
-        word += currChar;
-        
-        
         if(root.isEnd) {
-            
-            visitedWord.add(word);
+            output.add(new String(root.word));
+            root.isEnd = false;
+            root.word = null;
         }
         
         for(int[] dir: directions) {
             int nRow = dir[0] + row;
             int nCol = dir[1] + col;
-            searchBoard(board, nRow, nCol, root, word, visited, visitedWord);
+            searchBoard(board, nRow, nCol, root, visited, output);
         }
         
         visited[row][col] = false;
