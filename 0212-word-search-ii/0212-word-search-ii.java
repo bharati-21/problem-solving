@@ -55,6 +55,12 @@ class Solution {
     private void searchBoard(char[][] board, int row, int col, TrieNode root, boolean[][] visited, List<String> output) {
         int m = board.length, n = board[0].length;
         
+        if(root.isEnd) {
+            output.add(new String(root.word));
+            root.isEnd = false;
+            root.word = null;
+        }
+        
         if(row >= m || row < 0 || col >= n || col < 0 || visited[row][col]) {
             return;
         }
@@ -71,11 +77,6 @@ class Solution {
         };
         
         root = root.children.get(currChar);
-        if(root.isEnd) {
-            output.add(new String(root.word));
-            root.isEnd = false;
-            root.word = null;
-        }
         
         for(int[] dir: directions) {
             int nRow = dir[0] + row;
