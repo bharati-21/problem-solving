@@ -72,7 +72,7 @@ class Solution {
         
         root = root.children.get(currChar);
         if(root.isEnd) {
-            output.add(root.word);
+            output.add(new String(root.word));
             root.isEnd = false;
             root.word = null;
         }
