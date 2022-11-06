@@ -2812,5 +2812,22 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         03/11/2022, 08:49	IST
       </td>
     </tr>
+    <tr>
+      <td>
+        155
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/reverse-vowels-of-a-string/">
+          345. Reverse Vowels of a String
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Two Pointers</code>
+      </td>
+      <td>
+        04/11/2022, 09:57	IST
+      </td>
+    </tr>
   </tbody>
 </table>
