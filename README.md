@@ -2293,6 +2293,24 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         126
       </td>
       <td>
+        <a href="https://leetcode.com/problems/spiral-matrix/">
+          54. Spiral Matrix
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Matrix</code>
+        <code>Simulation</code>
+      </td>
+      <td>
+        27/10/2022, 18:09 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        127
+      </td>
+      <td>
         <a href="https://leetcode.com/problems/longest-consecutive-sequence/">
           128. Longest Consecutive Sequence
         </a>
@@ -2307,7 +2325,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        127
+        128
       </td>
       <td>
         <a href="https://leetcode.com/problems/find-median-from-data-stream/">
@@ -2327,7 +2345,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        128
+        129
       </td>
       <td>
         <a href="https://leetcode.com/problems/map-sum-pairs/">
@@ -2346,7 +2364,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        129
+        130
       </td>
       <td>
         <a href="https://leetcode.com/problems/insert-interval/">
@@ -2362,7 +2380,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        130
+        131
       </td>
       <td>
         <a href="https://leetcode.com/problems/group-anagrams/">
@@ -2381,7 +2399,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        131
+        132
       </td>
       <td>
         <a href="https://leetcode.com/problems/unique-paths/">
@@ -2398,7 +2416,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        132
+        133
       </td>
       <td>
         <a href="https://leetcode.com/problems/minimum-path-sum/">
@@ -2416,7 +2434,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        133
+        134
       </td>
       <td>
         <a href="https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/">
@@ -2434,7 +2452,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        134
+        135
       </td>
       <td>
         <a href="https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/">
@@ -2451,7 +2469,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        135
+        136
       </td>
       <td>
         <a href="https://leetcode.com/problems/triangle/">
@@ -2468,7 +2486,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        136
+        137
       </td>
       <td>
         <a href="https://leetcode.com/problems/earliest-possible-day-of-full-bloom/">
@@ -2486,7 +2504,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        137
+        138
       </td>
       <td>
         <a href="https://leetcode.com/problems/minimum-falling-path-sum/">
@@ -2504,7 +2522,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        138
+        139
       </td>
       <td>
         <a href="https://leetcode.com/problems/reaching-points/">
@@ -2520,7 +2538,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        139
+        140
       </td>
       <td>
         <a href="https://leetcode.com/problems/subsets/">
@@ -2538,7 +2556,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        140
+        141
       </td>
       <td>
         <a href="https://leetcode.com/problems/partition-equal-subset-sum/">
@@ -2555,7 +2573,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
      <tr>
       <td>
-        141
+        142
       </td>
       <td>
         <a href="https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/">
@@ -2574,7 +2592,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        142
+        143
       </td>
       <td>
         <a href="https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/">
@@ -2592,7 +2610,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        143
+        144
       </td>
       <td>
         <a href="https://leetcode.com/problems/merge-k-sorted-lists/">
@@ -2611,7 +2629,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        144
+        145
       </td>
       <td>
         <a href="https://leetcode.com/problems/coin-change/">
@@ -2629,7 +2647,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        145
+        146
       </td>
       <td>
         <a href="https://leetcode.com/problems/lru-cache/">
@@ -2648,7 +2666,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        146
+        147
       </td>
       <td>
         <a href="https://leetcode.com/problems/first-missing-positive/">
@@ -2665,7 +2683,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        147
+        148
       </td>
       <td>
         <a href="https://leetcode.com/problems/where-will-the-ball-fall/">
@@ -2685,7 +2703,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        148
+        149
       </td>
       <td>
         <a href="https://leetcode.com/problems/regular-expression-matching/">
@@ -2703,7 +2721,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        149
+        150
       </td>
       <td>
         <a href="https://leetcode.com/problems/same-tree/">
@@ -2722,7 +2740,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        150
+        151
       </td>
       <td>
         <a href="https://leetcode.com/problems/subtree-of-another-tree/">
@@ -2741,7 +2759,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        151
+        152
       </td>
       <td>
         <a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/">
@@ -2760,7 +2778,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        152
+        153
       </td>
       <td>
         <a href="https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/">
@@ -2778,7 +2796,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        153
+        154
       </td>
       <td>
         <a href="https://leetcode.com/problems/minimum-genetic-mutation/">
@@ -2796,7 +2814,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        154
+        155
       </td>
       <td>
         <a href="https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/">
@@ -2815,7 +2833,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        155
+        156
       </td>
       <td>
         <a href="https://leetcode.com/problems/verifying-an-alien-dictionary/">
@@ -2833,7 +2851,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        156
+        157
       </td>
       <td>
         <a href="https://leetcode.com/problems/reverse-vowels-of-a-string/">
@@ -2850,7 +2868,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        157
+        158
       </td>
       <td>
         <a href="https://leetcode.com/problems/word-search-ii/">
