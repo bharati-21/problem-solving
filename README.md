@@ -2775,5 +2775,42 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         02/11/2022, 21:57 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        153
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/">
+          2131. Longest Palindrome by Concatenating Two Letter Words
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Array</code>
+        <code>Hash Table</code>
+        <code>Greedy</code>
+      </td>
+      <td>
+        03/11/2022, 07:15	IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        154
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/verifying-an-alien-dictionary/">
+          953. Verifying an Alien Dictionary
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Array</code>
+        <code>Hash Table</code>
+      </td>
+      <td>
+        03/11/2022, 08:49	IST
+      </td>
+    </tr>
   </tbody>
 </table>
