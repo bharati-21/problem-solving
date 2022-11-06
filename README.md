@@ -2829,5 +2829,25 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         04/11/2022, 09:57	IST
       </td>
     </tr>
+    <tr>
+      <td>
+        156
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/word-search-ii/">
+          212. Word Search II
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>String</code>
+        <code>Backtracking</code>
+        <code>Trie</code>
+        <code>Matrix</code>
+      </td>
+      <td>
+        05/11/2022, 11:04	IST
+      </td>
+    </tr>
   </tbody>
 </table>
