@@ -13,6 +13,10 @@ class Solution {
             for(int j = 0; j<n; j++) {
                 int cell = matrix[i][j];
                 if(cell == 0) {
+                    // If any of the columns in row 1 == 0
+                    // Then it will set the [0][0] = 0 as well
+                    // Which will further set the col 0 in the future as 0
+                    // Which is incorrect
                     if(i > 0) matrix[i][0] = 0;
                     else firstRowZero = true;
                     matrix[0][j] = 0;
