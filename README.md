@@ -2644,7 +2644,118 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         31/10/2022, 22:33 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        146
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/where-will-the-ball-fall/">
+          1706. Where Will the Ball Fall
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+        <code>Depth First Search</code>
+        <code>Matrix</code>
+        <code>Simulation</code>
+      </td>
+      <td>
+        01/11/2022, 08:17 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        147
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/regular-expression-matching/">
+          10. Regular Expression Matching
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Dynamic Programming</code>
+        <code>Recursion</code>
+      </td>
+      <td>
+        01/11/2022, 09:08 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        148
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/same-tree/">
+          100. Same Tree
+        </a>
+      </td>
+      <td>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Breadth First Search</code>
+        <code>Depth First Search</code>
+      </td>
+      <td>
+        01/11/2022, 16:30 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        149
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/subtree-of-another-tree/">
+          572. Subtree of Another Tree
+        </a>
+      </td>
+      <td>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>String Matching</code>
+        <code>Depth First Search</code>
+      </td>
+      <td>
+        01/11/2022, 16:34 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        150
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/">
+          235. Lowest Common Ancestor of a Binary Search Tree
+        </a>
+      </td>
+      <td>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Breadth First Search</code>
+        <code>Depth First Search</code>
+      </td>
+      <td>
+        01/11/2022, 17:31 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        151
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/">
+          28. Find the Index of the First Occurrence in a String
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Two Pointers</code>
+        <code>String Matching</code>
+      </td>
+      <td>
+        01/11/2022, 22:32 IST
+      </td>
+    </tr>
   </tbody>
 </table>
-
-
