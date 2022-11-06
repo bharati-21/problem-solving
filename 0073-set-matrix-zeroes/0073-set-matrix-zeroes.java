@@ -8,16 +8,14 @@ class Solution {
         
         boolean firstRowZero = false;
         
-        for(int j = 0; j<n; j++) {
-            if(matrix[0][j] == 0) firstRowZero = true;
-        }
         
-        for(int i = 1; i<m; i++) {
+        for(int i = 0; i<m; i++) {
             for(int j = 0; j<n; j++) {
                 int cell = matrix[i][j];
                 if(cell == 0) {
+                    if(i > 0) matrix[i][0] = 0;
+                    else firstRowZero = true;
                     matrix[0][j] = 0;
-                    matrix[i][0] = 0;
                 }
             }
         }
