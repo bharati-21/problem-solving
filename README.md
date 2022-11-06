@@ -2592,7 +2592,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        142
+        143
       </td>
       <td>
         <a href="https://leetcode.com/problems/merge-k-sorted-lists/">
@@ -2607,6 +2607,41 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
       </td>
       <td>
         30/10/2022, 20:31 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        144
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/coin-change/">
+          322. Coin Change
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        31/10/2022, 12:45 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        145
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/first-missing-positive/">
+          41. First Missing Positive
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Hash Table</code>
+      </td>
+      <td>
+        31/10/2022, 22:33 IST
       </td>
     </tr>
   </tbody>
