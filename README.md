@@ -2564,12 +2564,49 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
       </td>
       <td>
         <code>Array</code>
-        <code>DynTwo Pointers</code>
+        <code>Two Pointers</code>
         <code>Binary Search</code>
         <code>Sorting</code>
       </td>
       <td>
         29/10/2022, 21:10 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        142
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/">
+          1293. Shortest Path in a Grid with Obstacles Elimination
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Matrix</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        30/10/2022, 09:40 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        142
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/merge-k-sorted-lists/">
+          23. Merge k Sorted Lists
+        </a>
+      </td>
+      <td>
+        <code>Linked List</code>
+        <code>Divide and Conquer</code>
+        <code>Heap Sort</code>
+        <code>Merge Sort</code>
+      </td>
+      <td>
+        30/10/2022, 20:31 IST
       </td>
     </tr>
   </tbody>
