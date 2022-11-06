@@ -2757,5 +2757,23 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         01/11/2022, 22:32 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        152
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/minimum-genetic-mutation/">
+          433. Minimum Genetic Mutation
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Hash Table</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        02/11/2022, 21:57 IST
+      </td>
+    </tr>
   </tbody>
 </table>
