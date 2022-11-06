@@ -2632,6 +2632,25 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         145
       </td>
       <td>
+        <a href="https://leetcode.com/problems/lru-cache/">
+          146. LRU Cache
+        </a>
+      </td>
+      <td>
+        <code>Linked List</code>
+        <code>Doubly Linked List</code>
+        <code>Hash Table</code>
+        <code>Design</code>
+      </td>
+      <td>
+        31/10/2022, 20:46 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        146
+      </td>
+      <td>
         <a href="https://leetcode.com/problems/first-missing-positive/">
           41. First Missing Positive
         </a>
@@ -2646,7 +2665,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        146
+        147
       </td>
       <td>
         <a href="https://leetcode.com/problems/where-will-the-ball-fall/">
@@ -2666,7 +2685,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        147
+        148
       </td>
       <td>
         <a href="https://leetcode.com/problems/regular-expression-matching/">
@@ -2684,7 +2703,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        148
+        149
       </td>
       <td>
         <a href="https://leetcode.com/problems/same-tree/">
@@ -2703,7 +2722,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        149
+        150
       </td>
       <td>
         <a href="https://leetcode.com/problems/subtree-of-another-tree/">
@@ -2722,7 +2741,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        150
+        151
       </td>
       <td>
         <a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/">
@@ -2741,7 +2760,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        151
+        152
       </td>
       <td>
         <a href="https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/">
@@ -2759,7 +2778,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        152
+        153
       </td>
       <td>
         <a href="https://leetcode.com/problems/minimum-genetic-mutation/">
@@ -2777,7 +2796,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        153
+        154
       </td>
       <td>
         <a href="https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/">
@@ -2796,7 +2815,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        154
+        155
       </td>
       <td>
         <a href="https://leetcode.com/problems/verifying-an-alien-dictionary/">
@@ -2814,7 +2833,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        155
+        156
       </td>
       <td>
         <a href="https://leetcode.com/problems/reverse-vowels-of-a-string/">
@@ -2831,7 +2850,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
     </tr>
     <tr>
       <td>
-        156
+        157
       </td>
       <td>
         <a href="https://leetcode.com/problems/word-search-ii/">
