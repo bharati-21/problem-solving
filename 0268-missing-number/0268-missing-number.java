@@ -5,15 +5,14 @@ class Solution {
         }
         
         int n = nums.length;
-        int i = 0;
+        int sum = (n * (n+1))/2;
+        int arrSum = 0;
         
-        int xor = 0;
-        for(; i<n; i++) {
-            int num = nums[i];
-            xor = xor ^ i ^ num;
+        for(int num: nums) {
+            arrSum += num;
         }
         
-        return xor ^ i;
+        return sum - arrSum;
     }
 }
 
