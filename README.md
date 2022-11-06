@@ -2886,5 +2886,168 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         05/11/2022, 11:04	IST
       </td>
     </tr>
+    <tr>
+      <td>
+        159
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/orderly-queue/">
+          899. Orderly Queue
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+        <code>String</code>
+        <code>Sorting</code>
+      </td>
+      <td>
+        06/11/2022, 09:39	IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        160
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/missing-number/">
+          268. Missing Number
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Math</code>
+        <code>Hash Table</code>
+        <code>Sorting</code>
+        <code>Bit Manipulation</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        06/11/2022, 09:51	IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        161
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/">
+          448. Find All Numbers Disappeared in an Array
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Hash Table</code>
+      </td>
+      <td>
+        06/11/2022, 10:18	IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        162
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/single-number/">
+          136. Single Number
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Bit Manipulation</code>
+      </td>
+      <td>
+        06/11/2022, 10:53	IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        163
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/convert-1d-array-into-2d-array/">
+          2022. Convert 1D Array Into 2D Array
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Matrix</code>
+        <code>Simulation</code>
+      </td>
+      <td>
+        06/11/2022, 12:06	IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        164
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/find-the-duplicate-number/">
+          287. Find the Duplicate Number
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Two Pointers</code>
+        <code>Binary Search</code>
+        <code>Bit Manipulation</code>
+      </td>
+      <td>
+        06/11/2022, 17:46	IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        165
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/find-all-duplicates-in-an-array/">
+          442. Find All Duplicates in an Array
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Hash Table</code>
+      </td>
+      <td>
+        06/11/2022, 18:39	IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        166
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/set-matrix-zeroes/">
+          73. Set Matrix Zeroes
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Hash Table</code>
+        <code>Matrix</code>
+      </td>
+      <td>
+        06/11/2022, 18:47 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        167
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/rotate-image/">
+          48. Rotate Image
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Math</code>
+        <code>Matrix</code>
+      </td>
+      <td>
+        06/11/2022, 19:52 IST
+      </td>
+    </tr>
   </tbody>
 </table>
