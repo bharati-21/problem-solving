@@ -7,13 +7,15 @@ class Solution {
         
         for(int row = 1; row < numRows; row++) {
             List<Integer> l = new ArrayList();
-            l.add(1);
-            for(int col = 1; col<row; col++) {
+            for(int col = 0; col<=row; col++) {
                 List<Integer> prev = triangle.get(row-1);
-                int sum = prev.get(col-1) + prev.get(col);
+                
+                int first = (col < 1) ? 0 : prev.get(col-1);
+                int second = (col == row) ? 0 : prev.get(col);
+                
+                int sum = first + second;
                 l.add(sum);
             }
-            l.add(1);
             
             triangle.add(row, l);
         }
