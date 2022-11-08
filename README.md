@@ -3287,5 +3287,41 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         07/11/2022, 19:28 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        182
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/make-the-string-great/solution/">
+          1544. Make The String Great
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Stack</code>
+      </td>
+      <td>
+        08/11/2022, 08:06 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        182
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/find-if-path-exists-in-graph/">
+          1971. Find if Path Exists in Graph
+        </a>
+      </td>
+      <td>
+        <code>Graph</code>
+        <code>Breadth First Search</code>
+        <code>Depth First Search</code>
+        <code>Union Find</code>
+      </td>
+      <td>
+        08/11/2022, 10:45 IST
+      </td>
+    </tr>
   </tbody>
 </table>
