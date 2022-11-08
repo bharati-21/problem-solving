@@ -12,6 +12,8 @@ class Solution {
     // visited = [0]
     // 
     
+    // TC: O(n + m)
+    // SC: O(n + m)
     private boolean dfs(List<List<Integer>> adj, int source, int dest, Set<Integer> visited) {
         visited.add(source);
         if(source == dest) {
