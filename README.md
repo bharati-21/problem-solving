@@ -3049,5 +3049,243 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         06/11/2022, 19:52 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        168
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/maximum-69-number/">
+          1323. Maximum 69 Number
+        </a>
+      </td>
+      <td>
+        <code>Greedy</code>
+        <code>Math</code>
+      </td>
+      <td>
+        07/11/2022, 08:02 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        169
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/zigzag-conversion/">
+          6. Zigzag Conversion
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+      </td>
+      <td>
+        07/11/2022, 08:42 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        170
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/palindrome-number/">
+          9. Palindrome Number
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+      </td>
+      <td>
+        07/11/2022, 08:58 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        171
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/h-index/">
+          274. H-Index
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Counting</code>
+      </td>
+      <td>
+        07/11/2022, 10:25 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        172
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/poor-pigs/">
+          458. Poor Pigs
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+        <code>Dynamic Programming</code>
+        <code>Combinatorics</code>
+      </td>
+      <td>
+        07/11/2022, 12:30 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        173
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/valid-square/">
+          593. Valid Square
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+        <code>Geometry</code>
+      </td>
+      <td>
+        07/11/2022, 12:57 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        174
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/">
+          1299. Replace Elements with Greatest Element on Right Side
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+      </td>
+      <td>
+        07/11/2022, 13:40 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        175
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/length-of-last-word/">
+          58. Length of Last Word
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+      </td>
+      <td>
+        07/11/2022, 13:42 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        176
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/longest-common-prefix/">
+          14. Longest Common Prefix
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+      </td>
+      <td>
+        07/11/2022, 14:31 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        177
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/pascals-triangle/">
+          118. Pascal's Triangle
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        07/11/2022, 14:59 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        178
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/remove-element/">
+          27. Remove Element
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Two Pointers</code>
+      </td>
+      <td>
+        07/11/2022, 15:21 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        179
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/unique-email-addresses/">
+          929. Unique Email Addresses
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>String</code>
+        <code>Hash Table</code>
+      </td>
+      <td>
+        07/11/2022, 15:36 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        180
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/majority-element/">
+          169. Majority Element
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Sorting</code>
+        <code>Hash Table</code>
+        <code>Divide and Conquer</code>
+        <code>Counting</code>
+      </td>
+      <td>
+        07/11/2022, 16:11 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        181
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/maximum-population-year/">
+          1854. Maximum Population Year
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Counting</code>
+      </td>
+      <td>
+        07/11/2022, 19:28 IST
+      </td>
+    </tr>
   </tbody>
 </table>
