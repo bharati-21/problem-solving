@@ -1,37 +1,24 @@
 class Solution {
     public int maximumPopulation(int[][] logs) {
-        HashMap<Integer, Integer> population = new HashMap();
+        int[] count = new int[101];  
         
         for(int[] log: logs) {
             int birth = log[0], death = log[1];
-            int year = birth;
-            
-            while(year < death) {
-                if(population.containsKey(year)) {
-                    population.put(year, population.get(year) + 1);
-                }
-                else {
-                    population.put(year, 1);
-                }
-                year++;
-            }
-            
+            count[birth - 1950]++;
+            count[death - 1950]--;
         }
         
-        int maxPopulationYear = 0, maxPopulation = 0;
         
-        for(int year: population.keySet()) {
-            int count = population.get(year);
-            if(count > maxPopulation) {
-                maxPopulation = count;
-                maxPopulationYear = year;
-            }
-            else if(count == maxPopulation && year < maxPopulationYear) {
-                maxPopulation = count;
-                maxPopulationYear = year;
+        int maxPopulationYear = 1950, maxPopulation = count[0];
+       
+        for(int i = 1; i<=100; i++) {
+            count[i] += count[i-1];
+            
+            if(count[i] > maxPopulation) {
+                maxPopulationYear = i + 1950;
+                maxPopulation = count[i];
             }
         }
-        
         return maxPopulationYear;
     }
 }
