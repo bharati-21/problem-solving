@@ -1,9 +1,11 @@
 class Union {
     int n;
     int[] parent;
+    int[] rank;
     
     Union(int n) {
         this.n = n;
+        this.rank = new int[n];
         this.parent = new int[n];
         
         for(int i = 0; i<n; i++) {
@@ -21,8 +23,16 @@ class Union {
     public void union(int u, int v) {
         int parU = find(u);
         int parV = find(v);
+        
         if(parU != parV) {
-            parent[parV] = parU;
+            if(rank[u] >= rank[v]) {
+                parent[parV] = parU;
+                rank[u]++;
+            }
+            else {
+                parent[parU] = parV;
+                rank[v]++;
+            }
         }
     }
     
@@ -30,9 +40,6 @@ class Union {
         return find(u) == find(v);
     }
 }
-
-// [0,0,2]
-// [0,0,1]
 
 class Solution {
     public boolean validPath(int n, int[][] edges, int source, int destination) {
@@ -49,65 +56,3 @@ class Solution {
         return union.areConnected(source, destination);
     }
 }
-
-/*
-10
-[[4,3],[1,4],[4,8],[1,7],[6,4],[4,2],[7,4],[4,0],[0,9],[5,4]]
-5
-9
-
-[0,1,2,3,4,5,6,7,8,9]
-union(4,3)
-parent[3] == 3
-parent[3] = 4
-[0,1,2,1,1,5,6,7,8,9]
-
-union(1,4)
-parent[3] == 4 && parent[4] == 4
-parent[3] = 1
-parent[4] = 1
-[0,1,2,4,4,5,6,7,8,9]
-
-union(4,8)
-parent[8] == 8
-parent[8] = parent[4](1)
-[0,1,2,1,1,5,6,7,1,9]
-
-union(1,7)
-parent[7] == 7
-parent[7] = 1
-[0,1,2,1,1,5,6,1,1,9]
-
-union(6,4)
-parent[4] = 1
-parent[4] == 1
-parent[1] == 1
-parent[3] == 1
-parent[7] == 1
-parent[8] == 1
-parent[4] = parent[1] = parent[3] = parent[7] = parent[8] = 6
-[0,6,2,6,6,5,6,6,6,9]
-
-union(4,2)
-parent[2] = 2
-parent[2] = 6
-[0,6,6,6,6,5,6,6,6,9]
-
-union(4,7) 
-parent[4] == parent[7]
-
-union(4,0)
-parent[0] = parent[4]
-[6,6,6,6,6,5,6,6,6,9]
-
-union(0,9)
-parent[9] == 9
-parent[9] = 6
-[0,0,0,0,0,5,0,0,0,0]
-
-union(5,4)
-parent[5] = 5
-parent[4] = 0
-[5,5,5,5,5,5,5,5,5,5]
-
-*/
