@@ -3323,5 +3323,85 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         08/11/2022, 10:45 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        183
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/">
+          108. Convert Sorted Array to Binary Search Tree
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Divide and Conquer</code>
+        <code>Binary Search Tree</code>
+      </td>
+      <td>
+        08/11/2022, 14:03 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        184
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/flatten-binary-tree-to-linked-list/">
+          114. Flatten Binary Tree to Linked List
+        </a>
+      </td>
+      <td>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Linked List</code>
+        <code>Depth First Search</code>
+        <code>Stack</code>
+      </td>
+      <td>
+        08/11/2022, 15:09 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        185
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/">
+          104. Maximum Depth of Binary Tree
+        </a>
+      </td>
+      <td>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Breadth First Search</code>
+        <code>Depth First Search</code>
+        <code>Stack</code>
+      </td>
+      <td>
+        08/11/2022, 20:09 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        185
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/">
+          104. Maximum Depth of Binary Tree
+        </a>
+      </td>
+      <td>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Breadth First Search</code>
+        <code>Depth First Search</code>
+        <code>Stack</code>
+      </td>
+      <td>
+        08/11/2022, 20:09 IST
+      </td>
+    </tr>
   </tbody>
 </table>
