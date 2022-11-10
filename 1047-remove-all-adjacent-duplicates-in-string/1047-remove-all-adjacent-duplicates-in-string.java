@@ -5,25 +5,17 @@ class Solution {
         }
         
         int n = s.length();
-        char[] arr = s.toCharArray();
-        
-        int nonDupIndex = 0;
-        int i = 0;
-        
-        while(i < n) {
-            arr[nonDupIndex] = arr[i];
-            if(nonDupIndex > 0) {
-                if(arr[nonDupIndex - 1] == arr[nonDupIndex]) {
-                    nonDupIndex -= 2;
-                }
-            }
-            i++;
-            nonDupIndex++;
-        }
-        
         StringBuilder sb = new StringBuilder();
-        for(int j = 0; j < nonDupIndex; j++) {
-            sb.append(arr[j]);
+
+        for(int i = 0; i < n; i++) {
+            char ch = s.charAt(i);
+            int m = sb.length();
+            if(m > 0 && ch == sb.charAt(m-1)) {
+                sb.delete(m-1, m);
+            }
+            else {
+                sb.append(ch);
+            }
         }
         
         return sb.toString();
