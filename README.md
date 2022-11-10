@@ -3422,5 +3422,22 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         09/11/2022, 22:48 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        189
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/">
+          1047. Remove All Adjacent Duplicates In String
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Stack</code>
+      </td>
+      <td>
+        10/11/2022, 08:38 IST
+      </td>
+    </tr>
   </tbody>
 </table>
