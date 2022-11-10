@@ -5,18 +5,16 @@ class Solution {
         }
         
         int n = s.length();
-        StringBuilder sb = new StringBuilder(s);
-        int i = 0;
-        while(i < sb.length() - 1) {
-            char curr = sb.charAt(i);
-            char next = sb.charAt(i+1);
-            
-            if(next == curr) {
-                sb.delete(i, i+2);
-                if(i > 0) i -= 1;
+        StringBuilder sb = new StringBuilder();
+
+        for(int i = 0; i < n; i++) {
+            char ch = s.charAt(i);
+            int m = sb.length();
+            if(m > 0 && ch == sb.charAt(m-1)) {
+                sb.delete(m-1, m);
             }
             else {
-                i++;
+                sb.append(ch);
             }
         }
         
