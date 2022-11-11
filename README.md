@@ -3439,5 +3439,41 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         10/11/2022, 08:38 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        190
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/n-ary-tree-preorder-traversal/">
+          589. N-ary Tree Preorder Traversal
+        </a>
+      </td>
+      <td>
+        <code>Tree</code>
+        <code>Stack</code>
+        <code>Depth First Search</code>
+      </td>
+      <td>
+        10/11/2022, 08:50 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        191
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/cherry-pickup-ii/">
+          589. N-ary Tree Preorder Traversal
+        </a>
+      </td>
+      <td>
+        <code>Tree</code>
+        <code>Stack</code>
+        <code>Depth First Search</code>
+      </td>
+      <td>
+        10/11/2022, 08:50 IST
+      </td>
+    </tr>
   </tbody>
 </table>
