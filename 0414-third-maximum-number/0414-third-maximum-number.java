@@ -1,25 +1,32 @@
 class Solution {
     public int thirdMax(int[] nums) {
-        TreeSet<Integer> set = new TreeSet();
+        long third = Long.MIN_VALUE;
+        long second = Long.MIN_VALUE;
+        long first = Long.MIN_VALUE;
         
         for(int num: nums) {
-            if(set.contains(num)) continue;
-            if(set.size() == 3) {
-                if(set.first() < num) {
-                    set.remove(set.first());
-                    set.add(num);
-                }
+            if(first == num || second == num || third == num) {
+                continue;
             }
-            else {
-                set.add(num);
+            if(num > first) {
+                third = second;
+                second = first;
+                first = num;
+            }
+            else if(num > second) {
+                third = second;
+                second = num;
+            }
+            else if(num > third) {
+                third = num;
             }
         }
         
-        if(set.size() == 3) {
-            return set.first();
+        if(third == Long.MIN_VALUE) {
+            return (int) first;
         }
         
-        return set.last();
+        return (int) third;
     }
 }
 
