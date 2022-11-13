@@ -3,11 +3,6 @@ class Solution {
         if(n == 0) return 1;
         
         int res = 10;
-        /*
-        n = 3
-            _ _ _
-        */
-        
         while(n > 1) {
             int digits = n-1;
             int digitsAvailable = 9;
@@ -26,6 +21,3 @@ class Solution {
         return res;
     }
 }
-
-/*
-*/
