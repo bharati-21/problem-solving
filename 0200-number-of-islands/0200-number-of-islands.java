@@ -4,19 +4,18 @@ class Solution {
             return 0;
         }
         
+        int m = grid.length, n = grid[0].length;
+        boolean[][] visited = new boolean[m][n];
+        
         int islands = 0;
-        int m = grid.length, n = grid[0].length;    
-        Set<List<Integer>> visited = new HashSet();
-            
-        for(int row = 0; row < m; row++) {
-            for(int col = 0; col < n; col++) {
-                List<Integer> coordinate = new ArrayList();
-                coordinate.add(row);
-                coordinate.add(col);
+        
+        for(int r = 0; r<m; r++) {
+            for(int c = 0; c<n; c++) {
+                int cell = grid[r][c];
+                boolean seen = visited[r][c];
                 
-                if(grid[row][col] == '1' && !visited.contains(coordinate)) { 
-                    visited.add(coordinate);
-                    bfs(row, col, grid, visited);
+                if(cell == '1' && !seen) {
+                    bfs(r, c, m, n, grid, visited);
                     islands++;
                 }
             }
@@ -25,41 +24,35 @@ class Solution {
         return islands;
     }
     
-    private void bfs(int row, int col, char[][] grid, Set<List<Integer>> visited) {
-        Queue<Pair<Integer, Integer>> queue = new LinkedList();
-        Pair startNode = new Pair(row, col);
-        queue.add(startNode);
+    private void bfs(int r, int c, int m, int n, char[][] grid, boolean[][] visited) {
+        Queue<int []> queue = new LinkedList();
+        
+        visited[r][c] = true;
+        queue.add(new int[] {r,c});
+        
         int[][] directions = new int[][] {
-            {-1, 0}, {1, 0}, {0, -1}, {0, 1}
+            {-1,0}, {1,0}, {0,-1}, {0,1}
         };
         
         while(!queue.isEmpty()) {
-            Pair<Integer, Integer> parent = queue.poll();
-            int parentRow = parent.getKey();
-            int parentCol = parent.getValue();
-                        
+            int[] cell = queue.poll();
+            
             for(int[] dir: directions) {
-                int childRow = dir[0] + parentRow;
-                int childCol = dir[1] + parentCol;
-                
-                List<Integer> coordinate = new ArrayList();
-                coordinate.add(childRow);
-                coordinate.add(childCol);
-                
-                if(isInvalid(childRow, childCol, grid, visited, coordinate)) {
-                    continue;
+                int nextRow = dir[0] + cell[0];
+                int nextCol = dir[1] + cell[1];
+                if(isInvalidCell(nextRow, nextCol, m, n, grid, visited)) {
+                    visited[nextRow][nextCol] = true;
+                    queue.add(new int[] { nextRow, nextCol });
                 }
-                
-                Pair<Integer, Integer> child = new Pair(childRow, childCol);
-                visited.add(coordinate);
-                queue.add(child);
             }
         }
     }
     
-    private boolean isInvalid(int row, int col, char[][] grid, Set<List<Integer>> visited, List<Integer> coordinate) {
-        int m = grid.length, n = grid[0].length;
-        return (row < 0 || row >= m || col < 0 || col >= n || 
-                grid[row][col] == '0' || visited.contains(coordinate));
+    private boolean isInvalidCell(int r, int c, int m, int n, char[][] grid, boolean[][] visited) {
+        if(r < 0 || r >= m || c < 0 || c >= n || grid[r][c] == '0' || visited[r][c]) {
+            return false;
+        }
+        
+        return true;
     }
 }
