@@ -16,21 +16,11 @@
 class Solution {
     public boolean hasPathSum(TreeNode root, int targetSum) {
         if(root == null) return false;
-        return hasPathSumHelper(root, targetSum);
-    }
-    
-    private boolean hasPathSumHelper(TreeNode root, int target) {
-        int curr = root.val;
+        
+        int nextTarget = targetSum - root.val;
         if(root.left == null && root.right == null) {
-            if(target - curr == 0) return true;
-            return false;
+            return nextTarget == 0;
         }
-        
-        boolean ans = false;
-        
-        if(root.left != null) ans = ans || hasPathSumHelper(root.left, target - curr);
-        if(root.right != null) ans = ans || hasPathSumHelper(root.right, target - curr);
-        
-        return ans;
+        return hasPathSum(root.left, nextTarget) || hasPathSum(root.right, nextTarget);
     }
 }
