@@ -1,0 +1,33 @@
+/** 
+ * Forward declaration of guess API.
+ * @param  num   your guess
+ * @return 	     -1 if num is higher than the picked number
+ *			      1 if num is lower than the picked number
+ *               otherwise return 0
+ * int guess(int num);
+ */
+
+public class Solution extends GuessGame {
+    public int guessNumber(int n) {
+        int start = 1, end = n;
+        while(start <= end) {
+            int mid = start + (end - start)/2;
+            int result = guess(mid);
+            
+            if(result == 0) return mid;
+            if(result == -1)  {
+                end = mid-1;
+            }
+            else {
+                start = mid+1;
+            }
+        }
+        
+        return -1;
+    }
+}
+
+/*
+Naive: start the number to be guessed from 1 until n
+Binary search: since 1 to n are sorted, apply binary search. If too high, reduce search space, if too low, increase search space
+*/
