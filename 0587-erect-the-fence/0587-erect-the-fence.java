@@ -68,10 +68,6 @@ class Solution {
     }
    
     private int checkAngles(Point p, Point q, Point r) {
-        double crossProduct = (q.x - p.x) * (r.y - p.y) - (q.y - p.y)* (r.x - p.x);
-        
-        if(crossProduct < 0) return -1;
-        if(crossProduct > 0) return 1;
-        return 0;
+        return (q.x - p.x) * (r.y - p.y) - (q.y - p.y)* (r.x - p.x);
     }
 }
