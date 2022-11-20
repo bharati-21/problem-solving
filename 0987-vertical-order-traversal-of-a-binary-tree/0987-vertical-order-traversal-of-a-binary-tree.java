@@ -27,27 +27,22 @@ class Solution {
     public List<List<Integer>> verticalTraversal(TreeNode root) {
         List<List<Integer>> traversal = new ArrayList<>();
         
-        int leftMostCol = 0, rightMostCol = 0;
         if(root == null) return traversal;
         
         Queue<Node> queue = new LinkedList();
         queue.add(new Node(root, 0, 0));
-        Map<Integer, List<Node>> map = new TreeMap();
+        Map<Integer, PriorityQueue<Node>> map = new TreeMap();
         
         
         // O(N) => all nodes visited
         while(!queue.isEmpty()) {
             Node front = queue.poll();
             TreeNode node = front.node;
+            
             int row = front.row, col = front.col;
-            if(col < leftMostCol) {
-                leftMostCol = col;
-            }
-            else if(col > rightMostCol) {
-                rightMostCol = col;
-            }
+            
             if(!map.containsKey(col)) {
-                map.put(col, new ArrayList());
+                map.put(col, new PriorityQueue(new CustomComparator()));
             }
             map.get(col).add(front);
             
@@ -65,20 +60,29 @@ class Solution {
         int index = 0;
         for(int column: map.keySet()) {
             traversal.add(new ArrayList());
-            List<Node> list = map.get(column);
-            Collections.sort(list, (a,b) -> 
-                             (a.col == b.col) ? 
-                                (a.row == b.row) ? a.node.val - b.node.val 
-                                : a.row - b.row 
-                             : a.col - b.col
-            );
             
-            for(Node node: map.get(column)) {
+            PriorityQueue<Node> pq = map.get(column);
+            while(!pq.isEmpty()) {
+                Node node = pq.poll();
                 traversal.get(index).add(node.node.val);
             }
             index++;
         }
         
         return traversal;
+    }
+}
+
+class CustomComparator implements Comparator<Node> {
+    public int compare(Node a, Node b) {
+        
+        if(a.col == b.col) {
+            if(a.row == b.row) {
+                return a.node.val - b.node.val;
+            }
+            return a.row - b.row;
+        }
+        
+        return a.col - b.col;
     }
 }
