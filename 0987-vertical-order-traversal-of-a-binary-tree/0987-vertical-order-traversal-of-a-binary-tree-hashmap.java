@@ -35,6 +35,7 @@ class Solution {
         Map<Integer, List<Node>> map = new HashMap();
         
         
+        // O(N) => all nodes visited
         while(!queue.isEmpty()) {
             Node front = queue.poll();
             TreeNode node = front.node;
@@ -60,6 +61,7 @@ class Solution {
             }
         }
         
+        // If there are k cols and each col has j values then (k * jlog j)
         for(int column: map.keySet()) {
             List<Node> list = map.get(column);
             Collections.sort(list, (a,b) -> 
@@ -71,6 +73,7 @@ class Solution {
         }
         
         int index = 0;
+        // If there are k cols and each col has j values, then O(k * j)
         while(leftMostCol <= rightMostCol) {
             traversal.add(new ArrayList());
             
