@@ -3563,5 +3563,75 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         12/11/2022, 12:46 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        197
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/reverse-words-in-a-string/">
+          151. Reverse Words in a String
+        </a>
+      </td>
+      <td>
+        <code>Two Pointers</code>
+        <code>String</code>
+      </td>
+      <td>
+        13/11/2022, 11:05 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        198
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/subsets-ii/">
+          90. Subsets II
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>BackTracking</code>
+        <code>Bit Manipulation</code>
+      </td>
+      <td>
+        13/11/2022, 12:13 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        199
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/count-numbers-with-unique-digits/">
+          357. Count Numbers with Unique Digits
+        </a>
+      </td>
+      <td>
+        <code>Math</code>
+        <code>BackTracking</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        13/11/2022, 14:49 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        200
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/substring-with-largest-variance/">
+          2272. Substring With Largest Variance
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+      </td>
+      <td>
+        13/11/2022, 16:25 IST
+      </td>
+    </tr>
   </tbody>
 </table>
