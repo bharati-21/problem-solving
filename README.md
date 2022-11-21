@@ -3911,5 +3911,23 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         20/11/2022, 18:53 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        215
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/">
+          1926. Nearest Exit from Entrance in Maze
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Breadth First Search</code>
+        <code>Matrix</code>
+      </td>
+      <td>
+        21/11/2022, 10:20 IST
+      </td>
+    </tr>
   </tbody>
 </table>
