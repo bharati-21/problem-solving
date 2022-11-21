@@ -3633,5 +3633,101 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         13/11/2022, 16:25 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        201
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/">
+          947. Most Stones Removed with Same Row or Column
+        </a>
+      </td>
+      <td>
+        <code>Graph</code>
+        <code>Depth First Search</code>
+        <code>Union Find</code>
+      </td>
+      <td>
+        14/11/2022, 09:17 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        202
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/closest-subsequence-sum/">
+          1755. Closest Subsequence Sum
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Two Pointers</code>
+        <code>Dynamic Programming</code>
+        <code>Bit Masking</code>
+        <code>Bit Manipulation</code>
+      </td>
+      <td>
+        14/11/2022, 12:54 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        202
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/">
+          2035. Partition Array Into Two Arrays to Minimize Sum Difference
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Two Pointers</code>
+        <code>Dynamic Programming</code>
+        <code>Bit Masking</code>
+        <code>Binary Search</code>
+        <code>Bit Manipulation</code>
+      </td>
+      <td>
+        14/11/2022, 15:58 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        203
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/">
+          1568. Minimum Number of Days to Disconnect Island
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+        <code>Graph</code>
+        <code>Matrix</code>
+      </td>
+      <td>
+        14/11/2022, 18:03 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        204
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/h-index-ii/">
+          275. H-Index II
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Binary Search</code>
+      </td>
+      <td>
+        14/11/2022, 21:56 IST
+      </td>
+    </tr>
   </tbody>
 </table>
