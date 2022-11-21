@@ -3493,5 +3493,39 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         10/11/2022, 19:35 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        193
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">
+          26. Remove Duplicates from Sorted Array
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Two Pointers</code>
+      </td>
+      <td>
+        11/11/2022, 08:53 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        194
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/maximum-equal-frequency/">
+          1224. Maximum Equal Frequency
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Hash Table</code>
+      </td>
+      <td>
+        11/11/2022, 21:42 IST
+      </td>
+    </tr>
   </tbody>
 </table>
