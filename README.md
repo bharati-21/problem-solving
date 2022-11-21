@@ -3785,5 +3785,22 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         16/11/2022, 15:16 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        208
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/rectangle-area/">
+          223. Rectangle Area
+        </a>
+      </td>
+      <td>
+        <code>Math/code>
+        <code>Geometry</code>
+      </td>
+      <td>
+        17/11/2022, 10:31 IST
+      </td>
+    </tr>
   </tbody>
 </table>
