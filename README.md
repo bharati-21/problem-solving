@@ -3729,5 +3729,23 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         14/11/2022, 21:56 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        205
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/count-complete-tree-nodes/">
+          222. Count Complete Tree Nodes
+        </a>
+      </td>
+      <td>
+        <code>Binary Tree</code>
+        <code>Depth First Search</cdode>
+        <code>Tree</code>
+      </td>
+      <td>
+        15/11/2022, 08:38 IST
+      </td>
+    </tr>
   </tbody>
 </table>
