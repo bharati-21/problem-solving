@@ -3802,5 +3802,58 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         17/11/2022, 10:31 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        209
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/ugly-number/">
+          263. Ugly Number
+        </a>
+      </td>
+      <td>
+        <code>Math/code>
+      </td>
+      <td>
+        18/11/2022, 09:11 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        210
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/">
+          124. Binary Tree Maximum Path Sum
+        </a>
+      </td>
+      <td>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Dynamic Progrramming</code>
+        <code>Depth First Search</code>
+      </td>
+      <td>
+        18/11/2022, 11:23 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        211
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/">
+          103. Binary Tree Zigzag Level Order Traversal
+        </a>
+      </td>
+      <td>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        18/11/2022, 19:32 IST
+      </td>
+    </tr>
   </tbody>
 </table>
