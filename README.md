@@ -3873,5 +3873,43 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         19/11/2022, 20:42 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        213
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/basic-calculator/">
+          224. Basic Calculator
+        </a>
+      </td>
+      <td>
+        <code>String</code>
+        <code>Math</code>
+        <code>Stack</code>
+        <code>Recursion</code>
+      </td>
+      <td>
+        20/11/2022, 09:56 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        214
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/">
+          987. Vertical Order Traversal of a Binary Tree
+        </a>
+      </td>
+      <td>
+        <code>Tree</code>
+        <code>Binary Tree</code>
+        <code>Depth First Search</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        20/11/2022, 18:53 IST
+      </td>
+    </tr>
   </tbody>
 </table>
