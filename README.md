@@ -3462,17 +3462,35 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         191
       </td>
       <td>
-        <a href="https://leetcode.com/problems/cherry-pickup-ii/">
-          589. N-ary Tree Preorder Traversal
+        <a href="https://leetcode.com/problems/perfect-squares/">
+          279. Perfect Squares
         </a>
       </td>
       <td>
-        <code>Tree</code>
-        <code>Stack</code>
-        <code>Depth First Search</code>
+        <code>Math</code>
+        <code>Dynamic Programming</code>
+        <code>Breadth First Search</code>
       </td>
       <td>
-        10/11/2022, 08:50 IST
+        10/11/2022, 19:13 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        192
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/cherry-pickup-ii/">
+          1463. Cherry Pickup II
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Dynamic Programming</code>
+        <code>Matrix</code>
+      </td>
+      <td>
+        10/11/2022, 19:35 IST
       </td>
     </tr>
   </tbody>
