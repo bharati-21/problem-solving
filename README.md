@@ -3855,5 +3855,23 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         18/11/2022, 19:32 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        212
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/erect-the-fence/">
+          587. Erect the Fence
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Math</code>
+        <code>Geometry</code>
+      </td>
+      <td>
+        19/11/2022, 20:42 IST
+      </td>
+    </tr>
   </tbody>
 </table>
