@@ -3747,5 +3747,43 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         15/11/2022, 08:38 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        206
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/symmetric-tree/">
+          101. Symmetric Tree
+        </a>
+      </td>
+      <td>
+        <code>Binary Tree</code>
+        <code>Depth First Search</cdode>
+        <code>Tree</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        16/11/2022, 14:59 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        207
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/path-sum/">
+          112. Path Sum
+        </a>
+      </td>
+      <td>
+        <code>Binary Tree</code>
+        <code>Depth First Search</cdode>
+        <code>Tree</code>
+        <code>Breadth First Search</code>
+      </td>
+      <td>
+        16/11/2022, 15:16 IST
+      </td>
+    </tr>
   </tbody>
 </table>
