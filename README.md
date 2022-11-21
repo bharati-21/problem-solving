@@ -3527,5 +3527,41 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
         11/11/2022, 21:42 IST
       </td>
     </tr>
+    <tr>
+      <td>
+        195
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/design-a-number-container-system/">
+          2349. Design a Number Container System
+        </a>
+      </td>
+      <td>
+        <code>Design</code>
+        <code>Heap</code>
+        <code>Priority Queue</code>
+        <code>Hash Table</code>
+      </td>
+      <td>
+        12/11/2022, 12:36 IST
+      </td>
+    </tr>
+    <tr>
+      <td>
+        196
+      </td>
+      <td>
+        <a href="https://leetcode.com/problems/third-maximum-number/">
+          414. Third Maximum Number
+        </a>
+      </td>
+      <td>
+        <code>Array</code>
+        <code>Sorting</code>
+      </td>
+      <td>
+        12/11/2022, 12:46 IST
+      </td>
+    </tr>
   </tbody>
 </table>
