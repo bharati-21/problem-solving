@@ -14,26 +14,17 @@ class Solution {
                 if(!map.containsKey(rowKey)) {
                     map.put(rowKey, new HashSet());
                 }
-                if(map.get(rowKey).contains(ch)) {
-                    return false;
-                }
-                map.get(rowKey).add(ch);
+                if(!map.get(rowKey).add(ch)) return false;
                 
                 if(!map.containsKey(colKey)) {
                     map.put(colKey, new HashSet());
                 }
-                if(map.get(colKey).contains(ch)) {
-                    return false;
-                }
-                map.get(colKey).add(ch);
+                if(!map.get(colKey).add(ch)) return false;
                 
                 if(!map.containsKey(grid)) {
                     map.put(grid, new HashSet());
                 }
-                if(map.get(grid).contains(ch)) {
-                    return false;
-                }
-                map.get(grid).add(ch);
+                if(!map.get(grid).add(ch)) return false;
             }
         }
         
