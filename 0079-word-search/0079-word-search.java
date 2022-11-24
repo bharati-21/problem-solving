@@ -21,17 +21,17 @@ class Solution {
     }
     
     private boolean search(char[][] board, String word, int row, int col, int index) {
+        int len = word.length();
+        if(index >= len) {
+            return true;
+        }
+        
         if(row < 0 || row >= m || col < 0 || col >= n || board[row][col] == '.') {
             return false;
         }
         
         char ch = board[row][col];
         char wordCh = word.charAt(index);
-        int len = word.length();
-        
-        if(index == len-1) {
-            return (ch == wordCh);   
-        }
         
         if(ch != wordCh)  return false;
         
