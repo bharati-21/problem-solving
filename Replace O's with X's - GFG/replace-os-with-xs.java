@@ -53,21 +53,21 @@ class Solution {
         }
         
         for(int row = 0; row < n; row++) {
-            if(a[row][0] == 'O') {
+            if(a[row][0] == 'O' && !visited[row][0]) {
                 traverseAdjacentNodes(row, 0, a, grid, visited);
             }
             
-            if(a[row][m-1] == 'O') {
+            if(a[row][m-1] == 'O' && !visited[row][m-1]) {
                 traverseAdjacentNodes(row, m-1, a, grid, visited);
             }
         }
         
         for(int col = 0; col < m; col++) {
-            if(a[0][col] == 'O') {
+            if(a[0][col] == 'O' && !visited[0][col]) {
                 traverseAdjacentNodes(0, col, a, grid, visited);
             }
             
-            if(a[n-1][col] == 'O') {
+            if(a[n-1][col] == 'O' && !visited[n-1][col]) {
                 traverseAdjacentNodes(n-1, col, a, grid, visited);
             }
         }
