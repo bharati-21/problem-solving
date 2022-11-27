@@ -24,7 +24,3 @@ class Solution {
         return numSlices;
     }
 }
-
-/*
-Naive solution: O(n^3) where we check for all combinations of i,j,k 
-*/
