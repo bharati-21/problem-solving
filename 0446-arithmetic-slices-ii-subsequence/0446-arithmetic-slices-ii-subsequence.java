@@ -7,10 +7,12 @@ class Solution {
         
         long numSlices = 0;
         map = new Map[n];
-        for(int i = 0; i<n; i++) {
+        map[0] = new HashMap<>();
+        
+        for(int i = 1; i<n; i++) {
             map[i] = new HashMap<>();
             for(int j = 0; j<i; j++) {
-                double difference = (double) nums[i] - (double)nums[j];
+                double difference = (double) nums[i] - (double) nums[j];
                 int diff = (int) difference;
                 int sum = 0, origin = 0;
                 if(map[j].containsKey(diff)) {
