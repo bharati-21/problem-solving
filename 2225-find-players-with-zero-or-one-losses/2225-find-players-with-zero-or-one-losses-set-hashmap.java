@@ -2,7 +2,6 @@ class Solution {
     public List<List<Integer>> findWinners(int[][] matches) {
         Set<Integer> allPlayers = new HashSet();
         Map<Integer, Integer> lossCountByPlayers = new HashMap();
-        Set<Integer> moreLoss = new HashSet();
         
         for(int[] match: matches) {
             int winner = match[0];
