@@ -44,7 +44,7 @@ class Solution
         
         for(int i = 0; i<V; i++) {
             if(visited[i] == 0) {
-                boolean isComponentBipartite = traverseNodesAndNeighbors(i, adj);
+                boolean isComponentBipartite = traverseNodesInDepth(i, 0, adj);
                 if(!isComponentBipartite) return false;
             }
         }
@@ -72,6 +72,23 @@ class Solution
                 else if(visited[nextNode] == currColor) {
                     return false;
                 }
+            }
+        }
+        
+        return true;
+    }
+    
+    private boolean traverseNodesInDepth(int node, int prevColor, ArrayList<ArrayList<Integer>>adj) {
+        int currColor = (prevColor == 1) ? 2 : 1;
+        visited[node] = currColor; 
+        
+        for(int neighbor: adj.get(node)) {
+            if(visited[neighbor] == 0) {
+                boolean answer = traverseNodesInDepth(neighbor, currColor, adj);
+                if(!answer) return false;
+            }
+            else if(visited[neighbor] == currColor) {
+                return false;
             }
         }
         
