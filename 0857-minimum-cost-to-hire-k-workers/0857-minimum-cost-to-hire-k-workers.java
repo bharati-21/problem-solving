@@ -20,23 +20,19 @@ class Solution {
             } 
         });
         
-        PriorityQueue<Worker> pq = new PriorityQueue(new Comparator<Worker>() {
-            public int compare(Worker w1, Worker w2) {
-                if(w2.quality < w1.quality) {
-                    return -1;
-                }
-                return 1;
-            }
-        });
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>((a,b) -> b - a);
+        
+        
         
         // build heap to find qualities of smallest k workers
         double sumQuality = 0;
         for(int i = 0; i<n; i++) {
             Worker current = workers[i];
-            pq.add(current);
+            pq.add(current.quality);
+                        
             sumQuality += current.quality;
             if(pq.size() > k) {
-                sumQuality -= pq.poll().quality;
+                sumQuality -= pq.poll();
             }
             if(pq.size() == k) {
                 double currTotal = current.ratio * sumQuality;
