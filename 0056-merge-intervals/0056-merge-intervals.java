@@ -32,6 +32,6 @@ class Solution {
     }
     
     private boolean isNotOverlapping(int[] interval1, int[] interval2) {
-        return (interval1[0] > interval2[1] || interval1[1] < interval2[0]);
+        return (interval1[1] < interval2[0]);
     }
 }
