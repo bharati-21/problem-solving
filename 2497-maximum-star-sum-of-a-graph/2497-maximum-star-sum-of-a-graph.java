@@ -27,6 +27,7 @@ class Solution {
             int numNeighbors = neighbors.size();
             int sum = vals[i];
             int j = 0;
+            
             while(j < k && j < numNeighbors) {
                 int val = neighbors.get(j);
                 if(val < 0) break;
