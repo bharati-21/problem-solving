@@ -1,39 +1,54 @@
-class Solution {
-    private List<List<Integer>> adj;
-    private Set<Integer> visited;
-    
-    public boolean validPath(int n, int[][] edges, int source, int destination) {
-        adj = new ArrayList();
+class UnionFind {
+    int n;
+    int[] rank, parent;
+    UnionFind(int n) {
+        this.n = n;
+        rank = new int[n];
+        parent = new int[n];
+        
         for(int i = 0; i<n; i++) {
-            adj.add(new ArrayList());
-        }
-        generateAdjList(edges);
-        visited = new HashSet();
-        return dfs(source, destination);
-    }
-    
-    private void generateAdjList(int[][] edges) {
-        for(int[] edge: edges) {
-            int u = edge[0];
-            int v = edge[1];
-            
-            adj.get(u).add(v);
-            adj.get(v).add(u);
+            rank[i] = 0;
+            parent[i] = i;
         }
     }
     
-    private boolean dfs(int source, int destination) {
-        visited.add(source);
-        if(source == destination) return true;
+    private int find(int x) {
+        if(parent[x] == x) return x;
         
-        boolean hasPath = false;
+        return parent[x] = find(parent[x]);
+    }
+    
+    public void union(int x, int y) {
+        int parX = find(x);
+        int parY = find(y);
         
-        for(int node: adj.get(source)) {
-            if(!visited.contains(node)) {
-                hasPath |= dfs(node, destination);
+        if(parX != parY) {
+            if(rank[parX] > rank[parY]) {
+                parent[parY] = parX;
+            }
+            else if(rank[parY] > rank[parX]) {
+                parent[parX] = parY;
+            }
+            else {
+                parent[parY] = parX;
+                rank[parX] += 1;
             }
         }
+    }
+    
+    public boolean isConnected(int x, int y) {
+        return find(x) == find(y);
+    }
+}
+
+class Solution {
+    public boolean validPath(int n, int[][] edges, int source, int destination) {
+        UnionFind uf = new UnionFind(n);
         
-        return hasPath;
+        for(int[] edge: edges) {
+            uf.union(edge[0], edge[1]);
+        }
+        
+        return uf.isConnected(source, destination);
     }
 }
