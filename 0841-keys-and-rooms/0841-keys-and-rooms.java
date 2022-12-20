@@ -1,22 +1,26 @@
 class Solution {
+    private int n;
+    private boolean[] visitedRooms;
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
-        int n = rooms.size();
-        Set<Integer> visitedRooms = new HashSet();
-        Queue<Integer> roomsToBeProcessed = new LinkedList();
-        roomsToBeProcessed.add(0);
-        visitedRooms.add(0);
+        n = rooms.size();
+        visitedRooms = new boolean[n];
         
-        while(!roomsToBeProcessed.isEmpty()) {
-            int currRoom = roomsToBeProcessed.poll();
-            
-            for(int nextRoom: rooms.get(currRoom)) {
-                if(!visitedRooms.contains(nextRoom)) {
-                    visitedRooms.add(nextRoom);
-                    roomsToBeProcessed.add(nextRoom);
-                }
-            }
+        traverseRooms(rooms, 0);
+        
+        for(boolean isVisited: visitedRooms) {
+            if(!isVisited) return false;
         }
         
-        return visitedRooms.size() == n;
+        return true;
+    }
+    
+    private void traverseRooms(List<List<Integer>> rooms, int room) {
+        visitedRooms[room] = true;
+        
+        for(int nextRoom: rooms.get(room)) {
+            if(!visitedRooms[nextRoom]) {
+                traverseRooms(rooms, nextRoom);
+            }
+        }
     }
 }
