@@ -1,3 +1,47 @@
+class UnionFind {
+    int[] parent, rank;
+    int n;
+    
+    UnionFind(int n) {
+        this.n = n;
+        parent = new int[n+1];
+        rank = new int[n+1];
+        for(int i = 0; i<=n; i++) {
+            parent[i] = i;
+        }
+        
+        for(int i = 0; i<=n; i++) {
+            rank[i] = 1;
+        }
+    }
+    
+    public int find(int u) {
+        if(parent[u] == u) return u;
+        
+        return parent[u] = find(parent[u]);
+    } 
+    
+    public void union(int u, int v) {
+        int parU = find(u);
+        int parV = find(v);
+        
+        if(parU == parV) {
+            return;
+        }
+        
+        if(rank[parU] < rank[parV]) {
+            parent[parU] = parV;
+        }
+        else if(rank[parV] < rank[parU]) {
+            parent[parV] = parU;
+        }
+        else {
+            parent[parV] = parU;
+            rank[parU]++;
+        }
+    }
+}
+
 class Solution {
     private List<List<Integer>> adj;
     private int[] colors;
@@ -7,12 +51,15 @@ class Solution {
             adj.add(new ArrayList());
         }
         generateAdjList(dislikes);
-        colors = new int[n+1];
-        
-        for(int i = 1; i<=n; i++) {
-            if(colors[i] == 0) {
-                boolean isBipartite = traverseNodes(n, i, 1);
-                if(!isBipartite) return false;
+
+        UnionFind uf = new UnionFind(n);
+        for(int node = 1; node<=n; node++) {
+            for(int neighbor: adj.get(node)) {
+                if(uf.find(node) == uf.find(neighbor)) {
+                    return false;
+                }
+                
+                uf.union(adj.get(node).get(0), neighbor);
             }
         }
         
@@ -26,40 +73,4 @@ class Solution {
             adj.get(v).add(u);
         }
     }
-    
-    private boolean traverseNodes(int n, int currNode, int prevColor) {
-        int currColor = (prevColor == 1) ? 2 : 1;
-        colors[currNode] = currColor;
-        
-        for(int nextNode: adj.get(currNode)) {
-            if(colors[nextNode] == 0) {
-                boolean isBipartite = traverseNodes(n, nextNode, currColor);
-                if(!isBipartite) return false;
-            } 
-            else if(colors[nextNode] == currColor) {
-                return false;
-            }
-        }
-        
-        return true;
-    }
 }
-
-/*
-1->[2,3]
-2->[4]
-
-1->[2,3]
-2->[3]
-
-1->[2,5]
-2->[3]
-3->[4]
-4->[5]
-
-// create an adj list
-// try to color it with 2 colors. If possible, then return true. Else false
-
-//
-
-*/
