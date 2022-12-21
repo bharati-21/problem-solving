@@ -11,7 +11,7 @@ class Solution {
         
         for(int i = 1; i<=n; i++) {
             if(colors[i] == 0) {
-                boolean isBipartite = traverseNodes(n, i);
+                boolean isBipartite = traverseNodes(n, i, 1);
                 if(!isBipartite) return false;
             }
         }
@@ -27,25 +27,17 @@ class Solution {
         }
     }
     
-    private boolean traverseNodes(int n, int source) {
-        Queue<Integer> nodes = new LinkedList();
+    private boolean traverseNodes(int n, int currNode, int prevColor) {
+        int currColor = (prevColor == 1) ? 2 : 1;
+        colors[currNode] = currColor;
         
-        
-        colors[source] = 1;
-        nodes.add(source);
-        
-        while(!nodes.isEmpty()) {
-            int currNode = nodes.poll();
-            int currColor = colors[currNode];
-            
-            for(int nextNode: adj.get(currNode)) {
-                if(colors[nextNode] == 0) {
-                    colors[nextNode] = (currColor == 1) ? 2 : 1;
-                    nodes.add(nextNode);
-                } 
-                else if(colors[nextNode] == currColor) {
-                    return false;
-                }
+        for(int nextNode: adj.get(currNode)) {
+            if(colors[nextNode] == 0) {
+                boolean isBipartite = traverseNodes(n, nextNode, currColor);
+                if(!isBipartite) return false;
+            } 
+            else if(colors[nextNode] == currColor) {
+                return false;
             }
         }
         
