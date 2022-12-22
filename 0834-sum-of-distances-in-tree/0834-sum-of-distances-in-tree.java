@@ -1,40 +1,57 @@
 class Solution {
-    // TC : O(n)
-    private int[] res;
-    private int[] count;
-    private List<HashSet<Integer>> tree;
+    private List<HashSet<Integer>> adj;
+    private int[] countNodes;
+    private int[] sumDist;
     
-    public int[] sumOfDistancesInTree(int N, int[][] edges) {
-        tree = new ArrayList<HashSet<Integer>>();
-        res = new int[N];
-        count = new int[N];
-        for (int i = 0; i < N ; ++i)
-            tree.add(new HashSet<Integer>());
-        for (int[] e : edges) {
-            tree.get(e[0]).add(e[1]);
-            tree.get(e[1]).add(e[0]);
+    public int[] sumOfDistancesInTree(int n, int[][] edges) {
+        // generate adjacency list
+        adj = new ArrayList();
+        for(int i = 0; i<n; i++) {
+            adj.add(new HashSet());
         }
-        postOrder(0, -1);
-        preOrder(0, -1);
-        return res;
+        generateAdjList(edges, n);
+        
+        countNodes = new int[n];
+        sumDist = new int[n];
+        
+        getDistFromRoot(0, -1);
+        getSumOfDistances(0, -1, n);
+        return sumDist;
     }
-
-    public void postOrder(int root, int pre) {
-        for (int i : tree.get(root)) {
-            if (i == pre) continue;
-            postOrder(i, root);
-            count[root] += count[i];
-            res[root] += res[i] + count[i];
+    
+    private void generateAdjList(int[][] edges, int n) {
+        for(int[] edge: edges) {
+            int u = edge[0], v = edge[1];
+            adj.get(u).add(v);
+            adj.get(v).add(u);
         }
-        count[root]++;
     }
-
-
-    public void preOrder(int root, int pre) {
-        for (int i : tree.get(root)) {
-            if (i == pre) continue;
-            res[i] = res[root] - count[i] + count.length - count[i];
-            preOrder(i, root);
+    
+    private void getDistFromRoot(int root, int parent) {
+        for(int child: adj.get(root)) {
+            if(child == parent) continue;
+            
+            getDistFromRoot(child, root);
+            
+            countNodes[root] += countNodes[child];
+            sumDist[root] += sumDist[child] + countNodes[child];
+        }
+        
+        countNodes[root]++;
+    }
+    
+    private void getSumOfDistances(int root, int parent, int n) {
+        for(int child: adj.get(root)) {
+            if(child == parent) continue;
+            
+            sumDist[child] = sumDist[root] - countNodes[child] + n - countNodes[child];
+            getSumOfDistances(child, root, n);
         }
     }
 }
+
+// 1 -> 0 1
+// 1 -> 2 2
+// 1 -> 3 3
+// 1 -> 4 3
+// 1 -> 5 3
