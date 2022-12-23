@@ -8,17 +8,20 @@ class Solution {
                 int price = prices[index];
                 int profit = 0;
                 
+                int next = index+1;
                 if(canBuy == 1) {
-                    int next = index+1;
-                
-                    int buyNow = -price + ((next >= n) ? 0 : dp[next][0]);
+                    int buyNow = -price + 
+                        (next >= n ? 0 : dp[next][0]);
                     int buyNext = (next >= n) ? 0 : dp[next][1];
                     
                     profit = Math.max(buyNow, buyNext);    
                 }
                 else {
-                    int sellNow = price + (((index+2) >= n) ? 0 : dp[index+2][1]);
-                    int sellNext = ((index+1) >= n) ? 0 : dp[index+1][0];
+                    int sellNowNext = index+2;
+                    
+                    int sellNow = price + 
+                        (sellNowNext >= n ? 0 : dp[sellNowNext][1]);
+                    int sellNext = (next >= n) ? 0 : dp[next][0];
                     
                     profit = Math.max(sellNow, sellNext); 
                 }
