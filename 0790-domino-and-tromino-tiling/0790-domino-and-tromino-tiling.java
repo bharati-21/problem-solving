@@ -1,23 +1,40 @@
 class Solution {
     int mod = (int) (1e9 + 7);
-    int[] memo;
+    long[] memo, tromino;
     public int numTilings(int n) {
-        memo = new int[n+1];
-        Arrays.fill(memo, -1);
+        memo = new long[n+1];
+        tromino = new long[n+1];
         
-        return numTilingsHelper(n);
+        Arrays.fill(memo, -1);
+        Arrays.fill(tromino, -1);
+        
+        return (int) numTilingsHelper(n) % mod;
     }
     
-    private int numTilingsHelper(int n) {
-        if(n <= 0) return 0;
+    private long numTilingsHelper(int n) {
+        if(n <= 0) return 0l;
         if(n <= 2) return n;
-        if(n == 3) return 5;
         
         if(memo[n] != -1) return memo[n] % mod;
         
-        int vert = 2 * numTilingsHelper(n-1) % mod;
-        int tro = numTilingsHelper(n-3) % mod;
+        // f(n-1) + f(n-2) + 2*g(n-1)
+        long vert = numTilingsHelper(n-1) % mod;
+        long hor = numTilingsHelper(n-2) % mod;
+        long tro = numTilingsTromino(n-1) % mod;
         
-        return memo[n] = (vert + tro) % mod;
+        return memo[n] = (vert + hor + 2 * tro) % mod;
+    }
+    
+    private long numTilingsTromino(int n) {
+        if(n <= 1) return 0l;
+        if(n == 2) return 1l;
+        
+        if(tromino[n] != -1) return tromino[n];
+        
+        // g(n) = g(n-1) + f(n-1)
+        long hor = numTilingsTromino(n-1) % mod;
+        long tro = numTilingsHelper(n-2) % mod;
+                
+        return tromino[n] = (hor + tro) % mod;
     }
 }
