@@ -30,8 +30,7 @@ class Solution {
         while(start <= end) {
             int mid = start + (end - start)/2;
             if(nums[mid] == target) {
-                answer = mid;
-                break;
+                return mid + 1;
             }
             if(nums[mid] > target) {
                 end = mid - 1;
@@ -43,7 +42,7 @@ class Solution {
         }
         if(answer == -1) return 0;
         
-        return (answer+1);
+        return end + 1;
     }
 }
 
