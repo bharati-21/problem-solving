@@ -19,18 +19,12 @@ class Solution {
                 continue;
             }
             
-            if(currCap > additionalRocks) {
-                // use up all the additional rocks
-                currCap -= additionalRocks;
-                break;
-            }
-            else if(currCap <= additionalRocks) {
+            if(currCap <= additionalRocks) {
                 additionalRocks -= currCap;
                 fullBags++;
-                
-                if(additionalRocks == 0) {
-                    break;
-                }
+            }
+            else {
+                break;
             }
         }
         
