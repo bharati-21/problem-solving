@@ -60,39 +60,39 @@ class Main {
 
 class Solution
 {
-    private static Stack<Integer> order;
-    private static Set<Integer> visited;
     //Function to return list containing vertices in Topological order. 
     static int[] topoSort(int V, ArrayList<ArrayList<Integer>> adj) 
     {
-        // add your code here
-        order = new Stack<Integer>();
-        visited = new HashSet<Integer>();
+        int[] indegree = new int[V];
+        int[] order = new int[V];
         
         for(int i = 0; i<V; i++) {
-            if(!visited.contains(i)) {
-                traverseNodes(i, adj);
+            for(int node: adj.get(i)) {
+                indegree[node]++;
             }
         }
         
-        int[] ans = new int[order.size()];
-        int i = 0;
-        while(!order.isEmpty()) {
-            ans[i++] = order.pop();
+        Queue<Integer> queue = new LinkedList();
+        for(int i = 0; i<V; i++) {
+            if(indegree[i] == 0) {
+                queue.add(i);
+            }
         }
         
-        return ans;
+        int index = 0;
+        while(!queue.isEmpty()) {
+            int currNode = queue.poll();
+            order[index++] = currNode;
+            
+            for(int nextNode: adj.get(currNode)) {
+                indegree[nextNode]--;
+                if(indegree[nextNode] == 0) {
+                    queue.add(nextNode);
+                }
+            }
+        }
+        
+        return order;
     }
     
-    private static void traverseNodes(int node, ArrayList<ArrayList<Integer>> adj) {
-        visited.add(node);
-        
-        for(int neighbor: adj.get(node)) {
-            if(!visited.contains(neighbor)) {
-                traverseNodes(neighbor, adj);
-            }
-        }
-        
-        order.add(node);
-    }
 }
