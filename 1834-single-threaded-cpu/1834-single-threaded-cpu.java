@@ -23,7 +23,7 @@ class Solution {
         
         // sort tasks by enqueue time
         PriorityQueue<int[]> processedTasks = new PriorityQueue<int[]>((a,b) -> a[1] == b[1] ? a[2] - b[2] : a[1] - b[1]);
-        int startTime = 0, index = 0, currTime = 0;
+        int index = 0, currTime = tasksByEnqueue[index][0];
         int[] order = new int[n];
         int orderIndex = 0;
         
@@ -32,8 +32,7 @@ class Solution {
                 processedTasks.add(tasksByEnqueue[index]);
                 index++;
             }
-            
-            
+
             if(!processedTasks.isEmpty()) {
                 int[] currTask = processedTasks.poll();
                 int processTime = currTask[1];
