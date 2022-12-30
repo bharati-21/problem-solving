@@ -1,0 +1,75 @@
+class Solution {
+    private List<Integer> safeNodes;
+    private boolean[] visited; 
+    private boolean[] pathVisited;
+    private boolean[] safe;
+    private int n;
+    
+    public List<Integer> eventualSafeNodes(int[][] graph) {
+        n = graph.length;
+        safeNodes = new ArrayList();
+        visited = new boolean[n];
+        pathVisited = new boolean[n];
+        safe = new boolean[n];
+        
+        for(int node = 0; node < n; node++) {
+            if(!visited[node]) {
+                traverseNodes(graph, node);
+            }
+        }
+        
+        for(int node = 0; node < n; node++) {
+            if(safe[node]) {
+                safeNodes.add(node);
+            }
+        }
+        
+        return safeNodes;
+    }
+    
+    private boolean traverseNodes(int[][] graph, int node) {
+        visited[node] = true;
+        pathVisited[node] = true;
+        
+        for(int nextNode: graph[node]) {
+            if(!visited[nextNode]) {
+                boolean hasCycle = traverseNodes(graph, nextNode);
+                if(hasCycle) return true;
+            }
+            else if(pathVisited[nextNode]) {
+                return true;
+            }
+        }
+        
+        safe[node] = true;
+        pathVisited[node] = false;
+        return false;
+    }
+}
+
+/*
+- terminal node: node with no outgoing edges
+- safe node: every path starting from node leads to a terminal node or another safe node
+*/
+
+/*
+0 -> [1,2]
+1 -> [2,3]
+2 -> [5]
+3 -> [0]
+4 -> [5]
+5 -> []
+6 -> []
+
+indegree = [1, 1, 2, 1, 0, 2, 0]
+*/
+
+/*
+0 -> [1,2,3,4]
+1 -> [1,2]
+2 -> [3,4]
+3 -> [0,4]
+4 -> []
+
+indegree = [1, 2, 2, 2, 3]
+*/
