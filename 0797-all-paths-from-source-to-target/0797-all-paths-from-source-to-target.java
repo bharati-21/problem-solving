@@ -1,3 +1,12 @@
+class NodePath {
+    int node;
+    List<Integer> path;
+    NodePath(int node, List<Integer> path) {
+        this.node = node;
+        this.path = path;
+    } 
+}
+
 class Solution {
     private int n;
     private List<List<Integer>> paths;
@@ -6,23 +15,30 @@ class Solution {
         n = graph.length;
         paths = new ArrayList();
         
-        traverseNodes(0, graph, new ArrayList());
+        Queue<NodePath> nodesToProcess = new LinkedList();
+        NodePath initial = new NodePath(0, new ArrayList());
+        nodesToProcess.add(initial);
         
+        while(!nodesToProcess.isEmpty()) {
+            NodePath currNodePath = nodesToProcess.poll();
+            int currNode = currNodePath.node;
+            List<Integer> currPath = currNodePath.path;
+            
+            currPath.add(currNode);
+            
+            if(currNode == n-1) {
+                paths.add(new ArrayList(currPath));
+            }
+            else {
+                for(int nextNode: graph[currNode]) {
+                    NodePath nextNodePath = new NodePath(nextNode, new ArrayList(currPath));
+                    nodesToProcess.add(nextNodePath);
+                }
+            }
+            
+        }
         
         return paths;
-    }
-    
-    private void traverseNodes(int node, int[][] graph, List<Integer> path) {
-        path.add(node);
-        if(node == n-1) {
-            paths.add(new ArrayList(path));
-        }
-        
-        for(int nextNode: graph[node]) {
-            traverseNodes(nextNode, graph, path);
-        }
-        
-        path.remove(path.size()-1);
     }
 }
 
