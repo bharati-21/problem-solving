@@ -1,25 +1,25 @@
 class Solution {
     private List<Integer> safeNodes;
-    private boolean[] visited; 
-    private boolean[] pathVisited;
-    private boolean[] safe;
+    private int[] visited; 
     private int n;
     
+    // 0 -> not visited
+    // 1 -> visited
+    // 2 -> path visited
+    // 3 -> safe
     public List<Integer> eventualSafeNodes(int[][] graph) {
         n = graph.length;
+        visited = new int[n];
         safeNodes = new ArrayList();
-        visited = new boolean[n];
-        pathVisited = new boolean[n];
-        safe = new boolean[n];
         
         for(int node = 0; node < n; node++) {
-            if(!visited[node]) {
+            if(visited[node] == 0) {
                 traverseNodes(graph, node);
             }
         }
         
         for(int node = 0; node < n; node++) {
-            if(safe[node]) {
+            if(visited[node] == 3) {
                 safeNodes.add(node);
             }
         }
@@ -28,21 +28,19 @@ class Solution {
     }
     
     private boolean traverseNodes(int[][] graph, int node) {
-        visited[node] = true;
-        pathVisited[node] = true;
+        visited[node] = 2;
         
         for(int nextNode: graph[node]) {
-            if(!visited[nextNode]) {
+            if(visited[nextNode] == 0) {
                 boolean hasCycle = traverseNodes(graph, nextNode);
                 if(hasCycle) return true;
             }
-            else if(pathVisited[nextNode]) {
+            else if(visited[nextNode] == 2) {
                 return true;
             }
         }
         
-        safe[node] = true;
-        pathVisited[node] = false;
+        visited[node] = 3;
         return false;
     }
 }
