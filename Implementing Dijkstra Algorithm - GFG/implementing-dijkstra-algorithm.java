@@ -69,16 +69,17 @@ class Solution
     static int[] dijkstra(int V, ArrayList<ArrayList<ArrayList<Integer>>> adj, int S)
     {
         int[] distance = new int[V];
-        PriorityQueue<Pair> pq = new PriorityQueue<Pair>((a,b) -> a.dist - b.dist);
-        
         Arrays.fill(distance, Integer.MAX_VALUE);
+        
+        TreeSet<Pair> set = new TreeSet<Pair>((a,b) -> a.dist == b.dist ? a.node - b.node : a.dist - b.dist);
         
         // distance of source = 0
         distance[S] = 0;
-        pq.add(new Pair(S, 0));
+        set.add(new Pair(S, 0));
         
-        while(!pq.isEmpty()) {
-            Pair front = pq.poll();
+        while(!set.isEmpty()) {
+            Pair front = set.first();
+            set.remove(front);
             int currDist = front.dist;
             int currNode = front.node;
             
@@ -88,8 +89,9 @@ class Solution
                 
                 int nextDist = currDist + nextNodeWt;
                 if(nextDist < distance[nextNode]) {
+                    set.remove(new Pair(nextNode, distance[nextNode]));
                     distance[nextNode] = nextDist;
-                    pq.add(new Pair(nextNode, nextDist));
+                    set.add(new Pair(nextNode, nextDist));
                 }
             }
         }
