@@ -47,38 +47,95 @@ class DriverClass
 
 
 // User function Template for Java
+class Edge implements Comparable<Edge> {
+    int u, v, wt;
+    Edge(int u, int v, int wt) {
+        this.u = u;
+        this.v = v;
+        this.wt = wt;
+    }
+    
+    public int compareTo(Edge e) {
+        return this.wt - e.wt;
+    }
+}
 
-class Solution
-{
-    //Function to find sum of weights of edges of the Minimum Spanning Tree.
-    static int spanningTree(int V, ArrayList<ArrayList<ArrayList<Integer>>> adj) 
-    {
-        // Add your code here
-        PriorityQueue<int[]> pq = new PriorityQueue<int[]>((a,b) -> a[1] - b[1]);
-        // [node, weight]
-        
-        pq.add(new int[]{ 0, 0 });
-        boolean[] visited = new boolean[V];
-        int sum = 0;
-        
-
-        while(!pq.isEmpty()) {
-            int[] curr = pq.poll();
-            int currNode = curr[0], currWt = curr[1];
+class UnionFind {
+        int[] parent, rank;
+        int n;
+        UnionFind(int n) {
+            this.n = n;
+            parent = new int[n];
+            rank = new int[n];
             
-            if(visited[currNode]) continue;
-            visited[currNode] = true;
-            sum += currWt;
-            
-            for(ArrayList<Integer> next: adj.get(currNode)) {
-                int nextNode = next.get(0), nextWt = next.get(1);
-                
-                if(visited[nextNode]) continue;
-                
-                pq.add(new int[] { nextNode, nextWt });
+            for(int i = 0; i<n; i++) {
+                rank[i] = 0;
+                parent[i] = i;
             }
         }
         
-        return sum;
+        int find(int u) {
+            if(parent[u] == u) return u;
+            
+            return parent[u] = find(parent[u]);
+        }
+        
+        void union(int u, int v) {
+            int parU = find(u);
+            int parV = find(v);
+            
+            if(parU == parV) {
+                return;
+            }
+            
+            if(rank[parU] > rank[parV]) {
+                parent[parV] = parU;
+            }
+            else if(rank[parU] < rank[parV]) {
+                parent[parU] = parV;
+            }
+            else {
+                parent[parV] = parU;
+                rank[parU]++;
+            }
+        }
+    }
+
+class Solution
+{
+    
+    //Function to find sum of weights of edges of the Minimum Spanning Tree.
+    static int spanningTree(int V, ArrayList<ArrayList<ArrayList<Integer>>> adj) 
+    {
+        int weightSum = 0;
+        
+        List<Edge> edgeList = new ArrayList<Edge>();
+
+        for(int i = 0; i<adj.size(); i++) {
+            ArrayList<ArrayList<Integer>> edge = adj.get(i);
+            for(ArrayList<Integer> e: edge) {
+                Edge newEdge = new Edge(i, e.get(0), e.get(1));
+                edgeList.add(newEdge);
+            }
+        }
+        
+        UnionFind uf = new UnionFind(V);
+        Collections.sort(edgeList);
+        
+        for(Edge edge: edgeList) {
+            int u = edge.u, v = edge.v;
+            
+            int parU = uf.find(u);
+            int parV = uf.find(v);
+            
+            if(parU == parV) continue;
+            
+            uf.union(u, v);
+            weightSum += edge.wt;
+        }
+        
+        return weightSum;
     }
 }
+
+
