@@ -35,7 +35,7 @@ class Solution {
         
         int city = 0, count = max;
         
-        for(int i = 0; i<n; i++) {
+        for(int i = n-1; i>=0; i--) {
             int currCount = 0;
             for(int j = 0; j<n; j++) {
                 if(distance[i][j] <= distanceThreshold) {
@@ -45,9 +45,6 @@ class Solution {
             
             if(count > currCount) {
                 count = currCount;
-                city = i;
-            }
-            else if(count == currCount && city < i) {
                 city = i;
             }
         }
