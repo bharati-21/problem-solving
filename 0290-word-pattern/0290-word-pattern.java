@@ -1,7 +1,6 @@
 class Solution {
     public boolean wordPattern(String pattern, String s) {
-        Map<Character, String> patternToString = new HashMap();
-        Map<String, Character> stringToPattern = new HashMap();
+        Map<Character, String> map = new HashMap();
         
         String[] sArr = s.split("\s");
                 
@@ -14,15 +13,14 @@ class Solution {
             char ch = pattern.charAt(i);
             String str = sArr[i];
             
-            if(!patternToString.containsKey(ch) && !stringToPattern.containsKey(str)) {
-                patternToString.put(ch, str);
-                stringToPattern.put(str, ch);
+            if(!map.containsKey(ch) && !map.containsValue(str)) {
+                map.put(ch, str);
             }
-            else if(patternToString.containsKey(ch) && !stringToPattern.containsKey(str) ||
-                   !patternToString.containsKey(ch) && stringToPattern.containsKey(str)) {
+            else if(map.containsKey(ch) && !map.containsValue(str) ||
+                   !map.containsKey(ch) && map.containsValue(str)) {
                 return false;
             }
-            else if(!patternToString.get(ch).equals(str) || stringToPattern.get(str) != ch) {
+            else if(!map.get(ch).equals(str)) {
                 return false;
             }
         }
