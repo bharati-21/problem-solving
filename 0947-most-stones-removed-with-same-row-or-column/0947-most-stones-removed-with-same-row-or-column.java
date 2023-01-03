@@ -1,94 +1,90 @@
 class UnionFind {
-    int[] parent, rank;
-    int n;
-    int connectedComponents;
+    Map<String, String> parent;
+    Map<String, Integer> rank;
     
-    UnionFind(int n) {
-        this.n = n;
-        parent = new int[n];
-        rank = new int[n];
-        connectedComponents = n;
+    UnionFind(int[][] stones) {
+        parent = new HashMap();
+        rank = new HashMap();
         
-        for(int i = 0; i<n; i++) {
-            parent[i] = i;
-            rank[i] = 0;
+        for(int[] stone: stones) {
+            String r = stone[0] + "r";
+            String c = stone[1] + "c";
+            
+            parent.put(r, r);
+            parent.put(c, c);
+            
+            rank.put(r, 0);
+            rank.put(c, 0);
         }
     }
     
-    private int find(int x) {
-        if(x == parent[x]) return x;
+    String find(String r) {
+        if(parent.get(r).equals(r)) {
+            return r;
+        }
         
-        return parent[x] = find(parent[x]);
+        String newP = find(parent.get(r));
+        parent.put(r, newP);
+        return newP;
     }
     
-    public void union(int x, int y) {
-        int parX = find(x);
-        int parY = find(y);
+    void union(String r, String c) {
+        String parR = find(r);
+        String parC = find(c);
         
-        if(parX == parY) {
+        if(parR.equals(parC)) {
             return;
         }
         
-        if(rank[parX] < rank[parY]) {
-            parent[parX] = parent[parY];
-            rank[parY]++;
+        if(rank.get(parR) > rank.get(parC)) {
+            parent.put(parC, parR);
+        }
+        else if(rank.get(parR) < rank.get(parC)) {
+            parent.put(parR, parC);
         }
         else {
-            parent[parY] = parent[parX];
-            rank[parX]++;
+            parent.put(parR, parC);
+            rank.put(parR, rank.get(parR) + 1);
         }
-        
-        connectedComponents--;
     }
     
-    public int getNumConnectedComponents() {
-        return connectedComponents;
+    int getNumComponents() {
+        int components = 0;
+        for(Map.Entry<String, String> map: parent.entrySet()) {
+            if(map.getKey().equals(map.getValue())) {
+                components++;
+            }
+        }
+        
+        return components;
     }
 }
 
 class Solution {
     public int removeStones(int[][] stones) {
-        if(stones == null || stones.length == 0) return 0;
+        UnionFind uf = new UnionFind(stones);
         
-        int n = stones.length;
-        UnionFind uf = new UnionFind(n);
-        
-        Map<Integer, List<Integer>> rows = new HashMap(), cols = new HashMap();
-        
-        for(int i = 0; i<n; i++) {
-            int[] stone = stones[i];
-            int row = stone[0], col = stone[1];
-            
-            if(!rows.containsKey(col)) {
-                rows.put(col, new ArrayList());
-            }
-            rows.get(col).add(i);
-            
-            if(!cols.containsKey(row)) {
-                cols.put(row, new ArrayList());
-            }
-            cols.get(row).add(i);
+        for(int[] stone: stones) {
+            uf.union(stone[0]+"r", stone[1]+"c");
         }
         
-        for(int col: rows.keySet()) {
-            List<Integer> list = rows.get(col);
-            int parentIndex = list.get(0);
-            
-            for(int i = 1; i<list.size(); i++) {
-                int childIndex = list.get(i);
-                uf.union(parentIndex, childIndex);
-            }
-        }
-        
-        for(int row: cols.keySet()) {
-            List<Integer> list = cols.get(row);
-            int parentIndex = list.get(0);
-            
-            for(int i = 1; i<list.size(); i++) {
-                int childIndex = list.get(i);
-                uf.union(parentIndex, childIndex);
-            }
-        }
-        return n - uf.getNumConnectedComponents();
+        return stones.length - uf.getNumComponents();
     }
 }
+
+/*
+
+[[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]
+
+- [[0,0],[0,1],[1,0],[1,2],[2,1]] ==> [2,2] shares as col as [1,2]
+- [[0,0],[0,1],[1,0],[1,2]] ==> [2,1] shares the same column as [0,1]
+- [[0,0],[0,1],[1,0]] ==> [1,2] shares the as row as [1,0]
+- [[0,0],[0,1]] ==> [1,0] shares the same row as [0,0]
+- [[0,0]] ==> [0,1] shares the same row as [0,0]
+
+
+[[0,0],[0,2],[1,1],[2,0],[2,2]]
+- [[0,0],[0,2],[1,1],[2,0]] ==> [2,2] shares same row as [2,0]
+- [[0,0],[0,2],[1,1]] ==> [2,0] shares same col as [0,0]
+- [[0,0],[1,1]] ==> [0,1] shares same row as [0,0]
+*/
