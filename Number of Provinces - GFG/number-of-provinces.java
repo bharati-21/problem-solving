@@ -33,6 +33,7 @@ class GFG {
 class UnionFind {
     int[] parent, rank;
     int n;
+    int components;
     UnionFind(int n) {
         this.n = n;
         parent = new int[n];
@@ -41,6 +42,7 @@ class UnionFind {
             parent[i] = i;
             rank[i] = 0;
         }
+        components = n;
     }
     
     int find(int u) {
@@ -65,6 +67,7 @@ class UnionFind {
             parent[parV] = parU;
             rank[parU]++;
         }
+        components--;
     }
 }
 
@@ -87,6 +90,6 @@ class Solution {
             }
         }
         
-        return count;
+        return uf.components;
     }
 };
