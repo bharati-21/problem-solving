@@ -1,0 +1,4 @@
+- use map to store {level, numTasks}
+- any level can be expressed as a sum of 2s and 3s
+- tasks cannot be completed if there are any tasks that have only 1 left
+- If there are odd number of tasks then perform numTasks - 3 for all numTasks >3
