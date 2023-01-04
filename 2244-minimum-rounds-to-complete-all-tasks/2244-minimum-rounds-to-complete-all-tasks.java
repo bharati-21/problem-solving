@@ -18,15 +18,9 @@ class Solution {
             if(numTasks % 3 == 0) {
                 rounds += numTasks/3;
             }
-            else if(numTasks % 3 == 2) {
-                rounds += numTasks/3;
-                numTasks %= 3;
-                rounds += numTasks/2;
-            }
+            
             else {
-                rounds += (numTasks-1)/3;
-                numTasks = (numTasks+1) % 3;
-                rounds += numTasks/2;
+                rounds += (numTasks /3) + 1;
             }
         }
          
