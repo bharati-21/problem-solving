@@ -11,3 +11,4 @@
 // Then check if points overlap
 // If they overlap, then merge such that: [max(x1,x2), min(y1,y2)]
 // This is to ensure that we cover only the overlapping area and know the common coorindates to drop arrow
+// use Integer.compare() to avoid overflow issues
