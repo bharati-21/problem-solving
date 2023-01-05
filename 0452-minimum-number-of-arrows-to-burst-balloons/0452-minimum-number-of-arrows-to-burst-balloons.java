@@ -5,7 +5,7 @@ class Solution {
         }
         
         // sort by start time
-        Arrays.sort(points, (a,b) -> a[0] - b[0]);
+        Arrays.sort(points, (a,b) -> a[0] < b[0] ? -1 : 1);
         
         int[] prev = points[0];
         int numArrows = 0;
@@ -26,6 +26,6 @@ class Solution {
     }
     
     private boolean doesNotOverlap(int[] prev, int[] curr) {
-        return (prev[1] < curr[0] || prev[0] > curr[1]);
+        return (prev[1] < curr[0]);
     }
 }
