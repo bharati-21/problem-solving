@@ -5,7 +5,7 @@ class Solution {
         }
         
         // sort by start time
-        Arrays.sort(points, (a,b) -> a[0] < b[0] ? -1 : 1);
+        Arrays.sort(points, (a,b) -> Integer.compare(a[0], b[0]));
         
         int[] prev = points[0];
         int numArrows = 0;
