@@ -1,0 +1,2 @@
+- If we want to buy as many ice-creams as we can, then the best way is to minimize the cost spent
+- We'll buy ice-creams that cost the least and then keep buying until we have enough coins
