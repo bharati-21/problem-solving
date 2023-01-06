@@ -1,0 +1,3 @@
+- at level 1 - take root val (1)
+- at level 2 - take children of root(2+3)
+- at level 3 - take level-2 + this level sum or
