@@ -1,1 +1,4 @@
-​
+-- The idea is basically: gas represents something that you get and the cost represent something that is taken from you
+1. If the sum(cost) > sum(gas) => more is taken from you than given to you
+2. Whenever we see the diff gas[i] - cost[i] > 0, only then we can begin the journey from that station => representing that there's enough gas with us to cirlce over all stations
+3. Another idea is that whenever we see that at a gas station i-1, the tank becomes -ve this means that any point from start to i cannot be considered as a starting point, since there is some kind of deficit when we reach station i.
