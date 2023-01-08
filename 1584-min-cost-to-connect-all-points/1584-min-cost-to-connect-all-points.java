@@ -1,58 +1,86 @@
+class Edge implements Comparable<Edge> {
+    int p1, p2, dist;
+    Edge(int i, int j, int d) {
+        p1 = i;
+        p2 = j;
+        dist = d;
+    }
+    
+    public int compareTo(Edge e) {
+        return this.dist - e.dist;
+    }
+}
+class UnionFind {
+    int[] parent, rank;
+    int n;
+    
+    UnionFind(int n) {
+        this.n = n;
+        parent = new int[n];
+        rank = new int[n];
+        
+        for(int i = 0; i<n; i++) {
+            parent[i] = i;
+            rank[i] = 0;
+        }
+    }
+    
+    int find(int u) {
+        if(parent[u] == u) return u;
+        
+        return parent[u] = find(parent[u]);
+    }
+    
+    void union(int u, int v) {
+        int parU = find(u);
+        int parV = find(v);
+        if(parU == parV) return;
+        
+        if(rank[parU] < rank[parV]) {
+            parent[parU] = parent[parV];
+        }
+        else {
+            parent[parV] = parent[parU];
+            if(rank[parU] == rank[parV]) {
+                rank[parU]++;
+            }
+        }
+    }
+}
 class Solution {
     public int minCostConnectPoints(int[][] points) {
+        List<Edge> edges = new ArrayList();
         int n = points.length;
-        ArrayList<int[]>[] adj = new ArrayList[n];
-        
-        // 0 -> [[],[]]
-        for(int i = 0; i<n; i++) {
-            adj[i] = new ArrayList();
-        }
         
         for(int i = 0; i<n; i++) {
-            int x1 = points[i][0];
-            int y1 = points[i][1];
+            int[] p1 = points[i];
+            int x1 = p1[0], y1 = p1[1];
             for(int j = i+1; j<n; j++) {
-                int x2 = points[j][0];
-                int y2 = points[j][1];
+                int[] p2 = points[j];
+                int x2 = p2[0], y2 = p2[1];
                 
-                int d = Math.abs(x2-x1) + Math.abs(y2-y1);
-                
-                adj[i].add(new int[]{
-                    j, d
-                });
-                adj[j].add(new int[]{
-                    i, d
-                });
+                int dist = Math.abs(x2-x1) + Math.abs(y2-y1);
+                Edge e = new Edge(i, j, dist);
+                edges.add(e);
             }
         }
         
-        PriorityQueue<int[]> pq = new PriorityQueue<int[]>((a,b) -> a[1] - b[1]);
-        pq.add(new int[]{
-            0,0
-        });
+        Collections.sort(edges);
+        UnionFind uf = new UnionFind(n);
         
         int sum = 0;
-        boolean[] visited = new boolean[n];
-        
-        while(!pq.isEmpty()) {
-            int[] curr = pq.poll();
-            int currI = curr[0];
-            int currD = curr[1];
+        for(Edge e: edges) {
+            int u = e.p1;
+            int v = e.p2;
+            int d = e.dist;
             
-            if(visited[currI]) continue;
-            visited[currI] = true;
-            sum += currD;
+            int parU = uf.find(u);
+            int parV = uf.find(v);
             
-            for(int[] next: adj[currI]) {
-                int nextI = next[0];
-                int nextD = next[1];
-                
-                if(visited[nextI]) continue;
-                
-                pq.add(new int[] {
-                    nextI, nextD
-                });
-            }
+            if(parU == parV) continue;
+            
+            uf.union(u, v);
+            sum += d;
         }
         
         return sum;
