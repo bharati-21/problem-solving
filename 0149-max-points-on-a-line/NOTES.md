@@ -2,11 +2,6 @@
 - can use gradient?
 ​
 ​
-[[1,1],[2,2],[3,3]]
-2-1/2-1
 ​
-4-3/1-2
-1/-1
-2-1/3-4 = 1/-1
-​
+- Can't use double and float as the precision becomes very high when two numbers that are close are divided
 ​
