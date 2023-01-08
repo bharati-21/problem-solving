@@ -1,0 +1,2 @@
+- connect point[i] with every other point[j]
+- Then do a minimum spanning tree cost
