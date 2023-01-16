@@ -2,65 +2,51 @@ class Trie {
     TrieNode root;
     
     class TrieNode {
-        char ch;
-        Map<Character, TrieNode> children;
-        boolean isWord;
-        TrieNode(char ch) {
-            this.ch = ch;
-            children = new HashMap();
-            isWord = false;
+        boolean isEnd;
+        TrieNode[] children;
+        
+        TrieNode() {
+            isEnd = false;
+            children = new TrieNode[26];
         }
     }
     
     public Trie() {
-        root = new TrieNode('\0');
+        root = new TrieNode();
     }
     
     public void insert(String word) {
-        int n = word.length();
+        TrieNode curr = root;
         
-        TrieNode current = root;
-        for(int i = 0; i<n; i++) {
-            char ch = word.charAt(i);
-            
-            if(!current.children.containsKey(ch)) {
-                current.children.put(ch, new TrieNode(ch));
+        for(char ch: word.toCharArray()) {
+            if(curr.children[ch-'a'] == null) {
+                curr.children[ch-'a'] = new TrieNode();
             }
-            
-            current = current.children.get(ch);
+            curr = curr.children[ch-'a'];
         }
-        current.isWord = true;
+        
+        curr.isEnd = true;
     }
     
     public boolean search(String word) {
-        int n = word.length();
-        TrieNode current = root;
+        TrieNode curr = root;
         
-        for(int i = 0; i<n; i++) {
-            char ch = word.charAt(i);
+        for(char ch: word.toCharArray()) {
+            if(curr.children[ch-'a'] == null) return false;
             
-            if(!current.children.containsKey(ch)) {
-                return false;
-            }
-            
-            current = current.children.get(ch);
+            curr = curr.children[ch-'a'];
         }
         
-        return current.isWord;
+        return curr.isEnd;
     }
     
     public boolean startsWith(String prefix) {
-        int n = prefix.length();
-        TrieNode current = root;
+        TrieNode curr = root;
         
-        for(int i = 0; i<n; i++) {
-            char ch = prefix.charAt(i);
+        for(char ch: prefix.toCharArray()) {
+            if(curr.children[ch-'a'] == null) return false;
             
-            if(!current.children.containsKey(ch)) {
-                return false;
-            }
-            
-            current = current.children.get(ch);
+            curr = curr.children[ch-'a'];
         }
         
         return true;
