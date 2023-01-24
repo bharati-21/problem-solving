@@ -50,12 +50,21 @@ class Solution {
         return -1;
     }
     
-    private int[] getCoordinates(int next, int n) {
-        int r = (next - 1) / n;
-        int x = n - 1 - r;
-        int y = r % 2 == 0 ? next - 1 - r * n : n + r * n - next;
+    int[] getCoordinates(int next, int n) {
+        int m = n*n;
+        
+        int i = (m-next)/n;
+        int j = (m-next)%n;
+        
+        if(m%2 ==0 && i%2 != 0) {
+            j = n-1-j;
+        }
+        else if(m%2 !=0 && i%2 == 0) {
+            j = n-1-j;
+        }
+        
         return new int[] {
-            x, y
+            i, j
         };
     }
 }
