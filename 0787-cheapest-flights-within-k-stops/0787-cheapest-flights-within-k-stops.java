@@ -1,58 +1,65 @@
-class Tuple {
-    int node, stops, price;
-    
-    Tuple(int node, int stops, int price) {
+class Stop {
+    int node, price;
+    Stop(int node, int price) {
         this.node = node;
-        this.stops = stops;
         this.price = price;
     }
 }
+
+class Node {
+    int node, stop, price;
+    Node(int node, int stop, int price) {
+        this.node = node;
+        this.stop = stop;
+        this.price = price;
+    }
+}
+
 class Solution {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
-        int[] prices = new int[n];
+        List<List<Stop>> adj = new ArrayList();
         
-        List<List<int[]>> adj = new ArrayList();
-        for(int i = 0; i<n; i++) {
+        for(int i = 0; i < n; i++) {
             adj.add(new ArrayList());
         }
         
         for(int[] flight: flights) {
-            int from = flight[0], to = flight[1], price = flight[2];
-            adj.get(from).add(new int[] {
-                to, price
-            });
+            int s = flight[0], d = flight[1], price = flight[2];
+            
+            Stop stop = new Stop(d, price);
+            adj.get(s).add(stop);
         }
         
-        Arrays.fill(prices, Integer.MAX_VALUE);
-        prices[src] = 0;
+        int[] dist = new int[n];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        dist[src] = 0;
         
-        Queue<Tuple> path = new LinkedList();
-        path.add(new Tuple(src, 0, 0));
         
-        while(!path.isEmpty()) {
-            Tuple currTuple = path.poll();
-            int currNode = currTuple.node;
-            int currPrice = currTuple.price;
-            int currStops = currTuple.stops;
+        Queue<Node> nodes = new LinkedList();
+        nodes.add(new Node(src, 0, 0));
+        
+        while(!nodes.isEmpty()) {
+            Node curr = nodes.poll();
+            int currNode = curr.node;
+            int currStop = curr.stop;
+            int currDist = curr.price;
+                        
+            if(currStop > k) {
+                break;
+            }
             
-            for(int[] next: adj.get(currNode)) {
-                int nextNode = next[0];
-                int nextPrice = next[1] + currPrice;
-                int nextStops = currStops + 1;
+            for(Stop stop: adj.get(currNode)) {
+                int nextNode = stop.node;
+                int nextPrice = stop.price;
                 
-                if(currStops == k && nextNode != dst) {
-                    continue;
-                }
-                
-                if(nextPrice < prices[nextNode]) {
-                    prices[nextNode] = nextPrice;
-                    path.add(new Tuple(nextNode, nextStops, nextPrice));
+                if(dist[nextNode] > currDist + nextPrice) {
+                    dist[nextNode] = currDist + nextPrice;
+                    Node next = new Node(nextNode, currStop+1, dist[nextNode]);
+                    nodes.add(next);
                 }
             }
         }
         
-        if(prices[dst] == Integer.MAX_VALUE) return -1;
-        
-        return prices[dst];
+        return dist[dst] == Integer.MAX_VALUE ? -1 : dist[dst];
     }
-}
+} 
