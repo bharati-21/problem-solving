@@ -1,27 +1,38 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
 class Solution {
-  int minDistance = Integer.MAX_VALUE;
-  // Initially, it will be null.
-  TreeNode prevValue;
-
-  void inorderTraversal(TreeNode root) {
-    if (root == null) {
-      return;
+    TreeNode prev;
+    int minDist = Integer.MAX_VALUE;
+    public int minDiffInBST(TreeNode root) {
+        minDiffInBSTHelper(root);
+        
+        return minDist;
     }
-
-    inorderTraversal(root.left);
-
-    // Find the difference with the previous value if it is there.
-    if (prevValue != null) {
-      minDistance = Math.min(minDistance, root.val - prevValue.val);
+    
+    private void minDiffInBSTHelper(TreeNode root) {
+        if(root == null) return;
+        
+        minDiffInBSTHelper(root.left);
+        
+        if(prev != null) {
+            minDist = Math.min(minDist, root.val - prev.val);
+        }
+        
+        prev = root;
+        
+        minDiffInBSTHelper(root.right);
     }
-    prevValue = root;
-
-    inorderTraversal(root.right);
-  }
-
-  public int minDiffInBST(TreeNode root) {
-    inorderTraversal(root);
-
-    return minDistance;
-  }
-};
+}
